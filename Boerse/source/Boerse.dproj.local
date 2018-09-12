@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frameTransfer.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\untCalc.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_transfer.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dproj,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Boerse.dproj=C:\Users\Thomas\Documents\RAD Studio\Projekte\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntBoerse.dfm=C:\Users\Thomas\Documents\RAD Studio\Projekte\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntGutschrift.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\untDM.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_bilanz.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntNeuAktie.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntBoerse.pas=C:\Users\Thomas\Documents\RAD Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntSplitt.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_NeueAktie.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\allgemein\o_Field.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_db.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_benutzer.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_NeueAktie.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_Transferlist.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntNeuBasis.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntNeuAktie.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntGutschrift.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntLogin.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_bestand.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntSplitt.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\untDM.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_Transferlist.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_aktielist.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_dblist.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_GUVDetail.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_GUVDetail.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\allgemein\o_guvdetail.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_bestand.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_bestand.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntBestand.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntBestand.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frame_bilanz.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_aktie.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\allgemein\md5.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntLogin.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntNeuBasis.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\frameTransfer.dfm=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\fntTransfer.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Bachmann\Delphi 2010\Projekte\Boerse\source\db\o_bilanz.pas=C:\Bachmann\Delphi 2010\Projekte\Boerse\source\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
