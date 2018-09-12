@@ -1,0 +1,64 @@
+object fra_OrdnerIgnorieren: Tfra_OrdnerIgnorieren
+  Left = 0
+  Top = 0
+  Width = 320
+  Height = 240
+  TabOrder = 0
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 320
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    ShowCaption = False
+    TabOrder = 0
+    ExplicitLeft = 48
+    ExplicitTop = 3
+    ExplicitWidth = 185
+    object btn_Neu: TButton
+      AlignWithMargins = True
+      Left = 10
+      Top = 8
+      Width = 55
+      Height = 25
+      Margins.Left = 10
+      Margins.Top = 8
+      Margins.Bottom = 8
+      Align = alLeft
+      Caption = 'Neu'
+      TabOrder = 0
+      OnClick = btn_NeuClick
+      ExplicitTop = 5
+    end
+    object btn_Loeschen: TButton
+      AlignWithMargins = True
+      Left = 78
+      Top = 8
+      Width = 55
+      Height = 25
+      Margins.Left = 10
+      Margins.Top = 8
+      Margins.Bottom = 8
+      Align = alLeft
+      Caption = 'L'#246'schen'
+      TabOrder = 1
+      OnClick = btn_LoeschenClick
+      ExplicitLeft = 10
+    end
+  end
+  object lsb: TListBox
+    Left = 0
+    Top = 41
+    Width = 320
+    Height = 199
+    Align = alClient
+    ItemHeight = 13
+    TabOrder = 1
+    ExplicitLeft = 56
+    ExplicitTop = 80
+    ExplicitWidth = 121
+    ExplicitHeight = 97
+  end
+end

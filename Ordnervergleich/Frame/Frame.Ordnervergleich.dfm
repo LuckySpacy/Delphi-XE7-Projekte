@@ -1,0 +1,2 @@
+inherited fra_Ordnervergleich: Tfra_Ordnervergleich
+end
