@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0A196A5E-9BC8-4CBB-A36F-E1494BC95AF1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TSIAnsicht.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\TSI\TSI\Form\TSI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\TSI\Server\Form\TSIServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Test\TestMySqlConnect.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TSIAnsicht">
+        <MSBuild Projects="TSIAnsicht.dproj"/>
+    </Target>
+    <Target Name="TSIAnsicht:Clean">
+        <MSBuild Projects="TSIAnsicht.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TSIAnsicht:Make">
+        <MSBuild Projects="TSIAnsicht.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TSI">
+        <MSBuild Projects="..\..\TSI\TSI\Form\TSI.dproj"/>
+    </Target>
+    <Target Name="TSI:Clean">
+        <MSBuild Projects="..\..\TSI\TSI\Form\TSI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TSI:Make">
+        <MSBuild Projects="..\..\TSI\TSI\Form\TSI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TSIServer">
+        <MSBuild Projects="..\..\TSI\Server\Form\TSIServer.dproj"/>
+    </Target>
+    <Target Name="TSIServer:Clean">
+        <MSBuild Projects="..\..\TSI\Server\Form\TSIServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TSIServer:Make">
+        <MSBuild Projects="..\..\TSI\Server\Form\TSIServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestMySqlConnect">
+        <MSBuild Projects="..\Test\TestMySqlConnect.dproj"/>
+    </Target>
+    <Target Name="TestMySqlConnect:Clean">
+        <MSBuild Projects="..\Test\TestMySqlConnect.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestMySqlConnect:Make">
+        <MSBuild Projects="..\Test\TestMySqlConnect.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TSIAnsicht;TSI;TSIServer;TestMySqlConnect"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TSIAnsicht:Clean;TSI:Clean;TSIServer:Clean;TestMySqlConnect:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TSIAnsicht:Make;TSI:Make;TSIServer:Make;TestMySqlConnect:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
