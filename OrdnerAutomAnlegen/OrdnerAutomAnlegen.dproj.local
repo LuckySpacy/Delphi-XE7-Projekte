@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.275,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.556,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2017.09.12 14:28:45.132,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2017.09.12 14:29:56.648,C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Form\Form.OrdnerAutomAnlegen.dfm=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.dfm</Transaction>
+    <Transaction>2017.09.12 14:29:56.648,C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Form\Form.OrdnerAutomAnlegen.pas=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2017.09.12 14:30:05.845,C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\OrdnerAutomAnlegen.dproj=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Project1.dproj</Transaction>
+    <Transaction>2017.09.12 14:34:46.690,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Allgemein\Allgemein.Types.pas</Transaction>
+    <Transaction>2017.09.12 14:34:53.651,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Allgemein\Allgemein.System.pas</Transaction>
+    <Transaction>2017.09.12 14:35:00.968,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Allgemein\Allgemein.Ini.pas</Transaction>
+    <Transaction>2017.09.12 14:35:10.211,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Allgemein\Allgemein.Folderlocation.pas</Transaction>
+    <Transaction>2017.09.12 14:36:05.267,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Objekt\Objekt.Global.pas</Transaction>
+    <Transaction>2017.09.12 14:36:21.180,=C:\Bachmann\Delphi XE 7\Projekte\OrdnerAutomAnlegen\Objekt\Objekt.Ini.pas</Transaction>
+  </Transactions>
+</BorlandProject>
