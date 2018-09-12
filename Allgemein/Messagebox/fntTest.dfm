@@ -1,0 +1,445 @@
+object frm_Test: Tfrm_Test
+  Left = 0
+  Top = 0
+  Caption = 'Test'
+  ClientHeight = 300
+  ClientWidth = 689
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 8
+    Top = 80
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object RichViewEdit1: TRichViewEdit
+    Left = 8
+    Top = 111
+    Width = 169
+    Height = 170
+    ReadOnly = False
+    TabOrder = 1
+    DoInPaletteMode = rvpaCreateCopies
+    RTFReadProperties.TextStyleMode = rvrsAddIfNeeded
+    RTFReadProperties.ParaStyleMode = rvrsAddIfNeeded
+    RVFOptions = [rvfoSavePicturesBody, rvfoSaveControlsBody, rvfoSaveBinary, rvfoSaveTextStyles, rvfoSaveParaStyles, rvfoSaveDocProperties, rvfoLoadDocProperties]
+    Style = RVStyle1
+    WordWrap = False
+  end
+  object Button2: TButton
+    Left = 89
+    Top = 80
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object TbToolbar1: TTbToolbar
+    Left = -1
+    Top = -1
+    Width = 680
+    Height = 24
+    FontSizeBox.Position = 0
+    FontSizeBox.Visible = True
+    Fontbox.Position = 0
+    Fontbox.Visible = True
+    Fontbox.Margins.Top = 0
+    Fontbox.Margins.Bottom = 0
+    Fontbox.Witdh = 145
+    Buttons.Positions.Bold = 1
+    Buttons.Positions.Italic = 2
+    Buttons.Positions.Underline = 3
+    Buttons.Positions.Left = 4
+    Buttons.Positions.Center = 5
+    Buttons.Positions.Right = 6
+    Buttons.Positions.Justify = 7
+    Buttons.Positions.Fontcolor = 11
+    Buttons.Positions.Backgroundcolor = 29
+    Buttons.Positions.ParagraphBackground = 30
+    Buttons.Positions.Bullets = 14
+    Buttons.Positions.Number = 15
+    Buttons.Positions.Save = 21
+    Buttons.Positions.Open = 22
+    Buttons.Positions.Picture = 23
+    Buttons.Positions.LargeEditor = 13
+    Buttons.Positions.TextHoch = 19
+    Buttons.Positions.TextTief = 20
+    Buttons.Positions.Standardfont = 12
+    Buttons.Positions.Fontfavoriten = 8
+    Buttons.Positions.IndentInc = 16
+    Buttons.Positions.IndentDec = 17
+    Buttons.Positions.Linespace = 18
+    Buttons.Positions.Print = 24
+    Buttons.Positions.Clipboard = 25
+    Buttons.Positions.Reverse = 26
+    Buttons.Positions.Cut = 27
+    Buttons.Positions.Paste = 28
+    Buttons.Positions.Fontbox = 9
+    Buttons.Positions.Fontsize = 10
+    Buttons.Bold.Visible = True
+    Buttons.Bold.Margins.Left = 0
+    Buttons.Bold.Margins.Top = 0
+    Buttons.Bold.Margins.Right = 0
+    Buttons.Bold.Margins.Bottom = 0
+    Buttons.Italic.Visible = True
+    Buttons.Italic.Margins.Left = 0
+    Buttons.Italic.Margins.Top = 0
+    Buttons.Italic.Margins.Right = 0
+    Buttons.Italic.Margins.Bottom = 0
+    Buttons.Underline.Visible = True
+    Buttons.Underline.Margins.Left = 0
+    Buttons.Underline.Margins.Top = 0
+    Buttons.Underline.Margins.Right = 0
+    Buttons.Underline.Margins.Bottom = 0
+    Buttons.Left.Visible = True
+    Buttons.Left.Margins.Left = 0
+    Buttons.Left.Margins.Top = 0
+    Buttons.Left.Margins.Right = 0
+    Buttons.Left.Margins.Bottom = 0
+    Buttons.Center.Visible = True
+    Buttons.Center.Margins.Left = 0
+    Buttons.Center.Margins.Top = 0
+    Buttons.Center.Margins.Right = 0
+    Buttons.Center.Margins.Bottom = 0
+    Buttons.Right.Visible = True
+    Buttons.Right.Margins.Left = 0
+    Buttons.Right.Margins.Top = 0
+    Buttons.Right.Margins.Right = 0
+    Buttons.Right.Margins.Bottom = 0
+    Buttons.Justify.Visible = True
+    Buttons.Justify.Margins.Left = 0
+    Buttons.Justify.Margins.Top = 0
+    Buttons.Justify.Margins.Right = 0
+    Buttons.Justify.Margins.Bottom = 0
+    Buttons.Fontcolor.Visible = True
+    Buttons.Fontcolor.Margins.Left = 0
+    Buttons.Fontcolor.Margins.Top = 0
+    Buttons.Fontcolor.Margins.Right = 0
+    Buttons.Fontcolor.Margins.Bottom = 0
+    Buttons.Backgroundcolor.Visible = True
+    Buttons.Backgroundcolor.Margins.Left = 0
+    Buttons.Backgroundcolor.Margins.Top = 0
+    Buttons.Backgroundcolor.Margins.Right = 0
+    Buttons.Backgroundcolor.Margins.Bottom = 0
+    Buttons.ParagraphBackground.Visible = True
+    Buttons.ParagraphBackground.Margins.Left = 0
+    Buttons.ParagraphBackground.Margins.Top = 0
+    Buttons.ParagraphBackground.Margins.Right = 0
+    Buttons.ParagraphBackground.Margins.Bottom = 0
+    Buttons.Bullets.Visible = True
+    Buttons.Bullets.Margins.Left = 0
+    Buttons.Bullets.Margins.Top = 0
+    Buttons.Bullets.Margins.Right = 0
+    Buttons.Bullets.Margins.Bottom = 0
+    Buttons.Number.Visible = True
+    Buttons.Number.Margins.Left = 0
+    Buttons.Number.Margins.Top = 0
+    Buttons.Number.Margins.Right = 0
+    Buttons.Number.Margins.Bottom = 0
+    Buttons.Save.Visible = True
+    Buttons.Save.Margins.Left = 0
+    Buttons.Save.Margins.Top = 0
+    Buttons.Save.Margins.Right = 0
+    Buttons.Save.Margins.Bottom = 0
+    Buttons.Open.Visible = True
+    Buttons.Open.Margins.Left = 0
+    Buttons.Open.Margins.Top = 0
+    Buttons.Open.Margins.Right = 0
+    Buttons.Open.Margins.Bottom = 0
+    Buttons.Picture.Visible = True
+    Buttons.Picture.Margins.Left = 0
+    Buttons.Picture.Margins.Top = 0
+    Buttons.Picture.Margins.Right = 0
+    Buttons.Picture.Margins.Bottom = 0
+    Buttons.LargeEditor.Visible = True
+    Buttons.LargeEditor.Margins.Left = 0
+    Buttons.LargeEditor.Margins.Top = 0
+    Buttons.LargeEditor.Margins.Right = 0
+    Buttons.LargeEditor.Margins.Bottom = 0
+    Buttons.TextHoch.Visible = True
+    Buttons.TextHoch.Margins.Left = 0
+    Buttons.TextHoch.Margins.Top = 0
+    Buttons.TextHoch.Margins.Right = 0
+    Buttons.TextHoch.Margins.Bottom = 0
+    Buttons.TextTief.Visible = True
+    Buttons.TextTief.Margins.Left = 0
+    Buttons.TextTief.Margins.Top = 0
+    Buttons.TextTief.Margins.Right = 0
+    Buttons.TextTief.Margins.Bottom = 0
+    Buttons.Standardfont.Visible = True
+    Buttons.Standardfont.Margins.Left = 0
+    Buttons.Standardfont.Margins.Top = 0
+    Buttons.Standardfont.Margins.Right = 0
+    Buttons.Standardfont.Margins.Bottom = 0
+    Buttons.Fontfavoriten.Visible = True
+    Buttons.Fontfavoriten.Margins.Left = 0
+    Buttons.Fontfavoriten.Margins.Top = 0
+    Buttons.Fontfavoriten.Margins.Right = 0
+    Buttons.Fontfavoriten.Margins.Bottom = 0
+    Buttons.IndentInc.Visible = True
+    Buttons.IndentInc.Margins.Left = 0
+    Buttons.IndentInc.Margins.Top = 0
+    Buttons.IndentInc.Margins.Right = 0
+    Buttons.IndentInc.Margins.Bottom = 0
+    Buttons.IndentDec.Visible = True
+    Buttons.IndentDec.Margins.Left = 0
+    Buttons.IndentDec.Margins.Top = 0
+    Buttons.IndentDec.Margins.Right = 0
+    Buttons.IndentDec.Margins.Bottom = 0
+    Buttons.Linespace.Visible = True
+    Buttons.Linespace.Margins.Left = 0
+    Buttons.Linespace.Margins.Top = 0
+    Buttons.Linespace.Margins.Right = 0
+    Buttons.Linespace.Margins.Bottom = 0
+    Buttons.Print.Visible = True
+    Buttons.Print.Margins.Left = 0
+    Buttons.Print.Margins.Top = 0
+    Buttons.Print.Margins.Right = 0
+    Buttons.Print.Margins.Bottom = 0
+    Buttons.Clipboard.Visible = True
+    Buttons.Clipboard.Margins.Left = 0
+    Buttons.Clipboard.Margins.Top = 0
+    Buttons.Clipboard.Margins.Right = 0
+    Buttons.Clipboard.Margins.Bottom = 0
+    Buttons.Reverse.Visible = True
+    Buttons.Reverse.Margins.Left = 0
+    Buttons.Reverse.Margins.Top = 0
+    Buttons.Reverse.Margins.Right = 0
+    Buttons.Reverse.Margins.Bottom = 0
+    Buttons.Cut.Visible = True
+    Buttons.Cut.Margins.Left = 0
+    Buttons.Cut.Margins.Top = 0
+    Buttons.Cut.Margins.Right = 0
+    Buttons.Cut.Margins.Bottom = 0
+    Buttons.Paste.Visible = True
+    Buttons.Paste.Margins.Left = 0
+    Buttons.Paste.Margins.Top = 0
+    Buttons.Paste.Margins.Right = 0
+    Buttons.Paste.Margins.Bottom = 0
+    RichviewEdit = tbRichviewEdit1
+    ButtonFrameColor = clSilver
+    UseButtonFrame = False
+  end
+  object tbRichviewEdit1: TtbRichviewEdit
+    Left = 184
+    Top = 29
+    Width = 497
+    Height = 263
+    ReadOnly = False
+    TabOrder = 4
+    DoInPaletteMode = rvpaCreateCopies
+    RTFReadProperties.TextStyleMode = rvrsAddIfNeeded
+    RTFReadProperties.ParaStyleMode = rvrsAddIfNeeded
+    RVFOptions = [rvfoSavePicturesBody, rvfoSaveControlsBody, rvfoSaveBinary, rvfoSaveTextStyles, rvfoSaveParaStyles, rvfoSaveDocProperties, rvfoLoadDocProperties]
+  end
+  object RVStyle1: TRVStyle
+    TextStyles = <
+      item
+        StyleName = 'Normal text'
+        FontName = 'Arial'
+        Unicode = True
+        Size = 10
+      end
+      item
+        StyleName = 'Heading'
+        FontName = 'Arial'
+        Style = [fsBold]
+        Color = clBlue
+        Unicode = True
+        Size = 10
+      end
+      item
+        StyleName = 'Subheading'
+        FontName = 'Arial'
+        Style = [fsBold]
+        Color = clNavy
+        Unicode = True
+        Size = 10
+      end
+      item
+        StyleName = 'Keywords'
+        FontName = 'Arial'
+        Style = [fsItalic]
+        Color = clMaroon
+        Unicode = True
+        Size = 10
+      end
+      item
+        StyleName = 'Jump 1'
+        FontName = 'Arial'
+        Style = [fsUnderline]
+        Color = clGreen
+        Unicode = True
+        Jump = True
+        Size = 10
+      end
+      item
+        StyleName = 'Jump 2'
+        FontName = 'Arial'
+        Style = [fsUnderline]
+        Color = clGreen
+        Unicode = True
+        Jump = True
+        Size = 10
+      end>
+    ParaStyles = <
+      item
+        StyleName = 'Paragraph Style'
+        Tabs = <>
+      end
+      item
+        StyleName = 'Centered'
+        Alignment = rvaCenter
+        Tabs = <>
+      end>
+    ListStyles = <>
+    InvalidPicture.Data = {
+      07544269746D617036100000424D361000000000000036000000280000002000
+      0000200000000100200000000000001000000000000000000000000000000000
+      0000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF000000FF000000FF00FFFF
+      FF00FFFFFF000000FF000000FF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000
+      FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF000000FF000000FF00FFFF
+      FF00FFFFFF000000FF000000FF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C00000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF008080800080808000808080008080800080808000808080008080
+      800080808000808080008080800080808000808080008080800080808000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      800080808000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000}
+    StyleTemplates = <>
+    Left = 56
+    Top = 88
+  end
+end

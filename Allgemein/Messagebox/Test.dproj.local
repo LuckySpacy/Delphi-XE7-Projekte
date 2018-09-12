@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014.08.14 16:52:40.643.pas,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit13.pas=D:\Delphi 2007\Test\MessageBox\fntTest.pas</Transaction>
+    <Transaction>2014.08.14 16:52:40.643.dfm,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit13.dfm=D:\Delphi 2007\Test\MessageBox\fntTest.dfm</Transaction>
+    <Transaction>2014.08.14 16:52:46.076.dproj,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Project9.dproj=D:\Delphi 2007\Test\MessageBox\Test.dproj</Transaction>
+    <Transaction>2014.08.14 16:56:55.569.pas,D:\Delphi 2007\Test\MessageBox\Unit1.pas=D:\Delphi 2007\Test\MessageBox\fntMessageDialog.pas</Transaction>
+    <Transaction>2014.08.14 16:56:55.569.dfm,D:\Delphi 2007\Test\MessageBox\Unit1.dfm=D:\Delphi 2007\Test\MessageBox\fntMessageDialog.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
