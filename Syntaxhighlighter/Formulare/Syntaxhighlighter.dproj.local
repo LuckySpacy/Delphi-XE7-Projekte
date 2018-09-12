@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.093,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.167,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\c_AllgTypes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.352,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\u_Allgfunc.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.Highlighter.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.197,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.HighlighterEdit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.373,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.Basis.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.603,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\Objekt.DBFeld.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.306,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\rcx.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.Syntaxhighlighter.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.665,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\Objekt.DBFeldList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.486,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\u_System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\u_RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.505,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Project1.dproj=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Syntaxhighlighter.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.229,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.BasisList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.974,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.Syntaxhighlighter.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.556,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.449,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\u_RTF.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.263,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\o_System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.StyleName.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.079,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.011,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\DBFields\Objekt.DBFields.DBFieldList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.248,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\Objekt.System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.219,=C:\Bachmann\Delphi XE 7\Projekte\Allgemein\Units\o_sysfolderlocation.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.901,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.HighlighterList.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.363,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\Objekt.BasisList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.StyleName.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.197,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.HighlighterEdit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.685,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.Font.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.684,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.Font.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.695,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.300,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.558,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\Objekt.Font.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.092,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Objekt\DBFields\Objekt.DBFields.DBField.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.356,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.791,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.313,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:26:06.384,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:27:05.712,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.Kommentar.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:27:05.712,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Frame\Frame.Kommentar.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.dfm</Transaction>
+    <Transaction>2017.06.05 15:32:22.662,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:32:46.430,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.KommentarEdit.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:32:46.430,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Form.KommentarEdit.dfm=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.dfm</Transaction>
+    <Transaction>2017.06.05 15:59:11.132,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 15:59:30.115,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.Kommentar.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 16:12:20.596,=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+    <Transaction>2017.06.05 16:12:44.068,C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Model\Model.KommentarList.pas=C:\Bachmann\Delphi XE 7\Projekte\Syntaxhighlighter\Formulare\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
