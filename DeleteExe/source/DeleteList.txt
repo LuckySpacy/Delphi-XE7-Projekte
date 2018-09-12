@@ -1,0 +1,2 @@
+c:\Bachmann\Delphi\Delphi XE7\projekte\TSI2\Ansicht\TSIAnsicht.exe
+c:\Bachmann\temp\TSIServer.exe
