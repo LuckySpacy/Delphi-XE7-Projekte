@@ -1,0 +1,16 @@
+docusave RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\document-save.ico"
+docuinet RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\document-internet.ico"
+docudel RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\delete_button_error.ico"
+docsaveinet RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\save-internet.ico"
+docsic RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\sic.ico"
+docs   RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\save_16x16.ico"
+doci   RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\Internet16x16.ico"
+docc   RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\cloud16x16.ico"
+docsc  RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\sc.ico"
+docsi  RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\si.ico"
+Link   RT_RCDATA "c:\Bachmann\Delphi XE 7\Projekte\DokuOrga\Icons\16x16\normal\link16x16.ico"
+ 
+
+
+
+

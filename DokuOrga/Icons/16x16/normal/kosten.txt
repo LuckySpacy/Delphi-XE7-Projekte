@@ -1,0 +1,16 @@
+Miete	                500,0	Verdienst	2294,24
+Strom	                 51,0		        2012,36
+Telefon	                 41,9		         281,88
+GEZ	                 17,98				
+DKV Krankenversicherung	  1,73				
+Allianz	                 46,17				
+AachenerMünchner	155,97				
+Fitness	                 44,9				
+Reisekrankenversicherung  0,67				
+Autosteuer	          9,17				
+Autoversicherung	 32,87				
+Benzin	                100,00				
+Handy	                  6,00				
+Kinder	                754,00        544  754		
+Autorückzahlung	        250,00				
+	               2012,36				

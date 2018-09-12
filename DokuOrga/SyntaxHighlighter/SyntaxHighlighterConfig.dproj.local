@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.163,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighterEdit.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.807,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.032,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.052,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.716,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.039,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.169,=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.845,D:\Delphi\XE2\Test\XML\Test 2\o_styleobj.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.444,=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.624,=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighterEdit.dfm=D:\Delphi\XE2\Test\XML\Test 2\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.113,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlshobj.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.416,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighterConfig.pas=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.159,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighter.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_StylenameList.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.368,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_FontNode.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.242,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_KommentarNode.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.159,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighter.dfm=D:\Delphi\XE2\Test\XML\Test 2\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.177,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_KommentarList.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.400,=D:\Delphi\XE2\Test\XML\Test 2\Allgemein\Units\u_RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.623,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_BereichNode.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_BereichList.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.817,=D:\Delphi\XE2\Test\XML\Test 2\fnt_Kommentar.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.571,D:\Delphi\XE2\Test\XML\Test 2\SyntaxHighlighterConfig.dproj=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Project14.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.476,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.448,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.445,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.274,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.364,=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.777,D:\Delphi\XE2\Test\XML\Test 2\XMLSyntaxHighlighter\o_xmlsh_StylenameNode.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.582,D:\Delphi\XE2\Test\XML\Test 2\o_syntaxhighlighter.pas=D:\Delphi\XE2\Test\XML\Test 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.416,D:\Delphi\XE2\Test\XML\Test 2\fnt_SyntaxHighlighterConfig.dfm=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.268,=D:\Delphi\XE2\Test\XML\Test 2\o_fontobj.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,846 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{369132FB-64D3-440C-ADC1-8F58E343C929}</ProjectGuid>
+        <ProjectVersion>16.0</ProjectVersion>
+        <MainSource>DokuOrga.dpr</MainSource>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <Base>True</Base>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <VCL_Custom_Styles>&quot;Amethyst Kamri|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\AmethystKamri.vsf&quot;</VCL_Custom_Styles>
+        <SanitizedProjectName>DokuOrga</SanitizedProjectName>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;IBX;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1031</VerInfo_Locale>
+        <DCC_ExeOutput>..\bin</DCC_ExeOutput>
+        <DCC_DependencyCheckOutputName>..\bin\DokuOrga.exe</DCC_DependencyCheckOutputName>
+        <DCC_DcuOutput>..\dcu</DCC_DcuOutput>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_Platform>x86</DCC_Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>DokuOrga_Icon.ico</Icon_MainIcon>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Icon_MainIcon>DokuOrga_Icon.ico</Icon_MainIcon>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_Define>ENTW;$(DCC_Define)</DCC_Define>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="fnt_DokuOrga.pas">
+            <Form>frm_DokuOrga</Form>
+        </DCCReference>
+        <DCCReference Include="..\..\DBReorg\o_DBReorg.pas"/>
+        <DCCReference Include="..\..\Allgemein\Units\u_RegIni.pas"/>
+        <DCCReference Include="fnt_Splash.pas">
+            <Form>frm_Splash</Form>
+        </DCCReference>
+        <DCCReference Include="..\Allgemein\o_sysobj.pas"/>
+        <DCCReference Include="..\..\Allgemein\ObServer\ObServerClient.pas"/>
+        <DCCReference Include="..\..\Allgemein\ObServer\ObServerUtils.pas"/>
+        <DCCReference Include="..\Allgemein\o_sysakt.pas"/>
+        <DCCReference Include="..\Allgemein\ObBusinessClasses.pas"/>
+        <DCCReference Include="..\DBExport\o_DataTrans.pas"/>
+        <DCCReference Include="..\DBExport\e_SysSpracheList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_DBGuid_Base.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_DBObj.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_DBObjExt.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_DBObjList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Sprache_Base.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_SysSprache_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_DBGuid_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Sprache_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Sprache_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SysSprache_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SysSprache_BaseStrukList.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBField.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBFieldList.pas"/>
+        <DCCReference Include="..\DBObj\o_DBGuid.pas"/>
+        <DCCReference Include="..\DBObj\o_Sprache.pas"/>
+        <DCCReference Include="..\DBObj\o_SpracheList.pas"/>
+        <DCCReference Include="..\DBObj\o_SysSprache.pas"/>
+        <DCCReference Include="..\DBObj\o_SysSpracheList.pas"/>
+        <DCCReference Include="..\Allgemein\c_DBTypes.pas"/>
+        <DCCReference Include="..\Allgemein\c_Types.pas"/>
+        <DCCReference Include="..\..\Allgemein\Units\o_sysfolderlocation.pas"/>
+        <DCCReference Include="..\..\Allgemein\Units\u_System.pas"/>
+        <DCCReference Include="..\Allgemein\u_dm.pas">
+            <Form>dm</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\fr_Base.pas">
+            <Form>frm_Base</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="of_Base.pas"/>
+        <DCCReference Include="..\Frame\fr_DashToolbar.pas">
+            <Form>fra_DashToolbar</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\of_DashToolbar.pas"/>
+        <DCCReference Include="..\..\Allgemein\Messagebox\fntMessageDialog.pas">
+            <Form>frm_MessageDialog</Form>
+        </DCCReference>
+        <DCCReference Include="..\Allgemein\o_Msg.pas"/>
+        <DCCReference Include="..\Komponenten\o_btnOrdner.pas"/>
+        <DCCReference Include="..\Frame\of_Ordner.pas"/>
+        <DCCReference Include="fnt_DialogBase.pas">
+            <Form>frm_DialogBase</Form>
+        </DCCReference>
+        <DCCReference Include="fnt_OrdnerProp.pas">
+            <Form>frm_OrdnerProp</Form>
+        </DCCReference>
+        <DCCReference Include="of_OrdnerProp.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_ItemList_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ItemList_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_ItemList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_SprachList_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SprachList_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_SprachList.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ItemList_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_ItemListList.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SprachList_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SprachListList.pas"/>
+        <DCCReference Include="..\DBObj\o_Ordnertyp.pas"/>
+        <DCCReference Include="..\DBObj\o_OrdnertypList.pas"/>
+        <DCCReference Include="..\Allgemein\c_TypesEvent.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_ButtonProp_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ButtonProp_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_ButtonProp.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ButtonProp_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_ButtonPropList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_BaumButton_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_BaumButton_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_BaumButton.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_BaumButton_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_BaumButtonList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Bilder_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Bilder_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Bilder.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Bilder_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_BilderList.pas"/>
+        <DCCReference Include="fnt_Bilder.pas">
+            <Form>frm_Bilder</Form>
+        </DCCReference>
+        <DCCReference Include="of_Bilder.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBFieldBmp.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBFieldIco.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBFieldPng.pas"/>
+        <DCCReference Include="..\Komponenten\DBFields\o_DBFieldJpg.pas"/>
+        <DCCReference Include="..\Frame\fr_Ordner.pas">
+            <Form>fra_Ordner</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\DBObj\Base\o_ZweigProp_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ZweigProp_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_ZweigProp.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_ZweigProp_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_ZweigPropList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_BaumStruk_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_BaumStruk_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_BaumStruk.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_BaumStruk_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_BaumStrukList.pas"/>
+        <DCCReference Include="..\Frame\fr_Zweig.pas">
+            <Form>fra_Zweig</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\of_Zweig.pas"/>
+        <DCCReference Include="fnt_ZweigProp.pas">
+            <Form>frm_ZweigProp</Form>
+        </DCCReference>
+        <DCCReference Include="of_ZweigProp.pas"/>
+        <DCCReference Include="fnt_Zweig.pas">
+            <Form>frm_Zweig</Form>
+        </DCCReference>
+        <DCCReference Include="fnt_DataExport.pas">
+            <Form>frm_DataExport</Form>
+        </DCCReference>
+        <DCCReference Include="of_DataExport.pas"/>
+        <DCCReference Include="..\DBExport\e_BilderList.pas"/>
+        <DCCReference Include="..\Frame\fr_Seite.pas">
+            <Form>fra_Seite</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\fr_SeiteInhalt.pas">
+            <Form>fra_SeiteInhalt</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\of_SeiteInhalt.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Seite_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Seite_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Seite.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Seite_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Seiteverbinden_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Seiteverbinden_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Seiteverbinden.pas"/>
+        <DCCReference Include="..\..\..\Komponenten\MyComponents\tbStringGrid\tbStringGrid.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Systemeinstellung_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Systemeinstellung_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Systemeinstellung.pas"/>
+        <DCCReference Include="..\Komponenten\o_SyField.pas"/>
+        <DCCReference Include="..\Allgemein\o_Einstellung.pas"/>
+        <DCCReference Include="fnt_Systemeinstellung.pas">
+            <Form>frm_Systemeinstellung</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="of_Systemeinstellung.pas"/>
+        <DCCReference Include="..\Frame\Konfig\of_konf_base.pas"/>
+        <DCCReference Include="..\Frame\Konfig\of_konf_dokumente.pas"/>
+        <DCCReference Include="..\Frame\fr_Dokumente.pas">
+            <Form>fra_Dokumente</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\of_Dokumente.pas"/>
+        <DCCReference Include="..\..\Allgemein\Units\c_AllgTypes.pas"/>
+        <DCCReference Include="..\Frame\of_SeiteEinstellung.pas"/>
+        <DCCReference Include="..\Frame\fr_SeiteEinstellung.pas">
+            <Form>fra_SeiteEinstellung</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_base.pas">
+            <Form>fra_Konf_Base</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_dokumente.pas">
+            <Form>fra_Konf_Dokumente</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\fr_DokumenteToolbar.pas">
+            <Form>fra_DokumenteToolbar</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\of_DokumenteToolbar.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Dokument_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Dokument_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Dokument.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Dokument_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_DokumentList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_SeiteDokument_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteDokument_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteDokument.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteDokument_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteDokumentList.pas"/>
+        <DCCReference Include="fnt_Dialog.pas">
+            <Form>frm_Dialog</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="of_Dialog.pas"/>
+        <DCCReference Include="fnt_DialogDokumentBez.pas">
+            <Form>frm_DialogDokumentBez</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Allgemein\o_fileicon.pas"/>
+        <DCCReference Include="..\Allgemein\o_fileicons.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Benutzer_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Benutzer_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Benutzer_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_BenutzerList.pas"/>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_masterpw.pas">
+            <Form>fra_Konf_MasterPW</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\of_konf_masterpw.pas"/>
+        <DCCReference Include="..\DBObj\o_Benutzer.pas"/>
+        <DCCReference Include="fnt_MasterPW.pas">
+            <Form>frm_MasterPW</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="fnt_Passwort.pas">
+            <Form>frm_Passwort</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="of_Passwort.pas"/>
+        <DCCReference Include="fnt_Passwort_festlegen.pas">
+            <Form>frm_Passwort_festlegen</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="of_Passwort_festlegen.pas"/>
+        <DCCReference Include="..\DBExport\e_DokumentList.pas"/>
+        <DCCReference Include="..\DBExport\e_SeiteList.pas"/>
+        <DCCReference Include="..\DBExport\e_SeitedokumentList.pas"/>
+        <DCCReference Include="..\DBExport\e_Itemlist.pas"/>
+        <DCCReference Include="..\DBExport\e_ButtonpropList.pas"/>
+        <DCCReference Include="..\DBExport\e_BaumbuttonList.pas"/>
+        <DCCReference Include="..\DBExport\e_ZweigpropList.pas"/>
+        <DCCReference Include="..\DBExport\e_BaumstrukList.pas"/>
+        <DCCReference Include="..\DBExport\e_SeiteverbindenList.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Seiteverbinden_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteverbindenList.pas"/>
+        <DCCReference Include="..\DBExport\e_SprachlistList.pas"/>
+        <DCCReference Include="..\DBExport\e_GuidList.pas"/>
+        <DCCReference Include="..\Allgemein\o_deletebaum.pas"/>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_seite.pas">
+            <Form>fra_Konf_Seite</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\of_konf_seite.pas"/>
+        <DCCReference Include="..\..\Allgemein\Units\u_Allgfunc.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_Propertyform_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Propertyform_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_Propertyform.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_Propertyform_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_PropertyformList.pas"/>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_ftp.pas">
+            <Form>fra_Konf_Ftp</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\of_konf_ftp.pas"/>
+        <DCCReference Include="..\Allgemein\o_EinstellungFTP.pas"/>
+        <DCCReference Include="fnt_Progress.pas">
+            <Form>frm_Progress</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="fnt_Link.pas">
+            <Form>frm_Link</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="of_Link.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_SeiteDokumentLink_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteDokumentLink_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteDokumentLink.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteDokumentLink_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteDokumentLinkList.pas"/>
+        <DCCReference Include="..\DBObj\Base\o_SeiteLink_Base.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteLink_BaseStruk.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteLink.pas"/>
+        <DCCReference Include="..\DBObj\BaseStruk\o_SeiteLink_BaseStrukList.pas"/>
+        <DCCReference Include="..\DBObj\o_SeiteLinkList.pas"/>
+        <DCCReference Include="fnt_Link_Entf.pas">
+            <Form>frm_Link_Entf</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_datenbank.pas">
+            <Form>fra_Konf_Datenbank</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\of_konf_datenbank.pas"/>
+        <DCCReference Include="fnt_login.pas">
+            <Form>frm_Login</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Allgemein\o_EinstellungGoogleDrive.pas"/>
+        <DCCReference Include="..\Frame\Konfig\fr_konf_googledrive.pas">
+            <Form>fra_Konf_GoogleDrive</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Frame\Konfig\of_konf_googledrive.pas"/>
+        <DCCReference Include="..\Komponenten\o_GoogleDrive.pas"/>
+        <DCCReference Include="..\Frame\fr_GDriveBaum.pas">
+            <Form>fra_GDriveBaum</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="fnt_GDriveBaum.pas">
+            <Form>frm_GDriveBaum</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Frame\fr_GDriveBaum2.pas">
+            <Form>fra_GDriveBaum2</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Allgemein\o_DragAndDropDataAdapter.pas"/>
+        <DCCReference Include="..\Allgemein\o_DokumentGridIcon.pas"/>
+        <DCCReference Include="..\Allgemein\o_DokumentGridIconList.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\fnt_SyntaxHighlighterConfig.pas">
+            <Form>frm_SyntaxHighlighterConfig</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_BereichList.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_BereichNode.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_FontNode.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_KommentarList.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_KommentarNode.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_StylenameList.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlsh_StylenameNode.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\XMLSyntaxHighlighter\o_xmlshobj.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\o_fontobj.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\o_styleobj.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\o_syntaxhighlighter.pas"/>
+        <DCCReference Include="..\SyntaxHighlighter\fnt_SyntaxHighlighterEdit.pas">
+            <Form>frm_SyntaxHighlighterEdit</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\SyntaxHighlighter\fnt_Kommentar.pas">
+            <Form>frm_Kommentar</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\SyntaxHighlighter\fnt_SyntaxHighlighter.pas">
+            <Form>frm_SyntaxHighlighter</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\SyntaxHighlighter\o_xmlHighlighter.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">DokuOrga.dpr</Source>
+                </Source>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1031</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Bachmann\Delphi XE 7\Komponenten\TMS\TMS-Component-Pack-7.5.3.0\bpl\TMSDeDXE7.bpl">TMS Component Pack design time support</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\tmssoftware\TMS VCL Cloud Pack RSXE7\TMSCloudPkgDEDXE7.bpl">TMS Cloud Pack design time support</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Beispiele für gekapselte Komponenten für Automatisierungsserver</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+            <Deployment>
+                <DeployFile LocalName="..\bin\DokuOrga.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>DokuOrga.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\x86</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="iOSDevice">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+            </Deployment>
+            <ModelSupport>False</ModelSupport>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

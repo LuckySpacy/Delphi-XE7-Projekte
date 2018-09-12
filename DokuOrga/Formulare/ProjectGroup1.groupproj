@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{9469B64C-7B71-4E2D-A2F2-AF06936A3587}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DokuOrga.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\..\..\Komponenten\MyComponents\tbStringGrid\Package\tbStringGrid.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="DokuOrga">
+			<MSBuild Projects="DokuOrga.dproj"/>
+		</Target>
+		<Target Name="DokuOrga:Clean">
+			<MSBuild Targets="Clean" Projects="DokuOrga.dproj"/>
+		</Target>
+		<Target Name="DokuOrga:Make">
+			<MSBuild Targets="Make" Projects="DokuOrga.dproj"/>
+		</Target>
+		<Target Name="tbStringGrid">
+			<MSBuild Projects="..\..\..\Komponenten\MyComponents\tbStringGrid\Package\tbStringGrid.dproj"/>
+		</Target>
+		<Target Name="tbStringGrid:Clean">
+			<MSBuild Targets="Clean" Projects="..\..\..\Komponenten\MyComponents\tbStringGrid\Package\tbStringGrid.dproj"/>
+		</Target>
+		<Target Name="tbStringGrid:Make">
+			<MSBuild Targets="Make" Projects="..\..\..\Komponenten\MyComponents\tbStringGrid\Package\tbStringGrid.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="DokuOrga;tbStringGrid"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="DokuOrga:Clean;tbStringGrid:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="DokuOrga:Make;tbStringGrid:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

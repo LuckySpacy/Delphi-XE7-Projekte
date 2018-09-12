@@ -1,0 +1,44 @@
+object frm_Zweig: Tfrm_Zweig
+  Left = 0
+  Top = 0
+  Caption = 'frm_Zweig'
+  ClientHeight = 314
+  ClientWidth = 199
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object vt: TVirtualStringTree
+    Left = -5
+    Top = 0
+    Width = 200
+    Height = 100
+    Header.AutoSizeIndex = 0
+    Header.Font.Charset = DEFAULT_CHARSET
+    Header.Font.Color = clWindowText
+    Header.Font.Height = -11
+    Header.Font.Name = 'Tahoma'
+    Header.Font.Style = []
+    Header.MainColumn = -1
+    TabOrder = 0
+    Visible = False
+    Columns = <>
+  end
+  object Edit1: TEdit
+    Left = 32
+    Top = 184
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+end

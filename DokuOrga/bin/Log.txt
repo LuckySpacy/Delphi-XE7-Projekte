@@ -1,0 +1,5 @@
+IniFilename = C:\Users\TomBa\AppData\Roaming\DokuOrga_Entw\DokuOrga.ini
+Username=dokuorga
+Passwort=agroukod
+Server=localhost
+Databasename=localhost:C:\bachmann\db\DOKUORGA.FDB
