@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.653,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.dfm=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Form.TSIServer.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.344,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Allgemein\Allgemein.SysFolderlocation.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.102,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI2\Einstellung\DBObj\DBObj.AkSt.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.273,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Kurse Laden\DBObj\DBObj.Aktie.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Kurse Laden\DBObj\DBObj.AktieKurse.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.455,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Kurse Laden\DBObj\DBObj.Aktie.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.577,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Kurse Laden\Objekt\Objekt.KursCsvList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.653,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Form.TSIServer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.556,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.328,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Allgemein\Allgemein.RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.382,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Allgemein\Allgemein.Types.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.064,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\DBObj\DBObj.AktieList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.034,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\DBObj\DBObj.AktieList.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\DBObj\DBObj.AktieKurseList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.796,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.TSIList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.905,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.MySqlTSI.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.314,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Allgemein\Allgemein.Funktionen.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.360,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Allgemein\Allgemein.System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.253,C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Project1.dproj=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\TSIServer.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.464,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.SchnittstelleList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.086,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.KursList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.127,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI2\Einstellung\DBObj\DBObj.AkStList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.MySqlKurs.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.776,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.AktieList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.861,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.066,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.Protokoll.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.768,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.061,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.684,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.478,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.642,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.058,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.TSIWerteLaden.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.154,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.MySqlTSIAnsicht.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.dfm=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Datamodul.TSIServer.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.334,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.Kursimport.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.100,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.Ini.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Datamodul.TSIServer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.247,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit1.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.Aktienimport.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.151,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.354,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.410,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.722,=C:\Users\Thomas\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.148,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.Aktie.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.178,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.967,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Form\Unit2.pas=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Server\Objekt\Objekt.MySqlAktie.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.999,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.TSILAST.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.863,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\Objekt\Objekt.Aktienimport.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.128,C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\Objekt\Objekt.Aktienimport.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.074,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.Kurs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.560,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\Kurse Laden\Objekt\Objekt.KursCsv.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.672,=C:\Bachmann\Delphi\Delphi XE7\projekte\TSI\TSI\DBObj\DBObj.TSI.pas</Transaction>
+  </Transactions>
+</BorlandProject>
