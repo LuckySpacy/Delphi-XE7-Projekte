@@ -182,6 +182,7 @@ begin
   try
     fQuery.SQL.Text := ' select * from aktie ' +
                        ' left outer join tsilast on aktie.AK_ID = tsilast.TL_AK_ID and tsilast.TL_WOCHEN = 27' +
+                      // ' where ak_id = 7' +
                        ' order by ak_aktie';
     fquery.Open;
     while not fQuery.Eof do

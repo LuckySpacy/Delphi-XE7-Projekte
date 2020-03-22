@@ -80,3 +80,32 @@ TSI2/Test/__history/
 TSI2/Test/Win32/
 TSI2/Einstellung/Einstellung.exe
 TSI2/Einstellung/Form/Einstellung.exe
+TSI2/Kurse Laden/DBObj/__history/
+TSI2/Kurse Laden/DBObj/Base/__history/
+*.~1~
+TSI2/Kurse Laden/Form/__history/
+TSI2/Kurse Laden/Form/Win32/Debug/
+TSI2/Kurse Laden/Frame/__history/
+TSI2/Kurse Laden/Objekt/__history/
+TSI2/Server/DBObj/__history/
+TSI2/Server/Form/__history/
+TSI2/Server/Form/Win32/Debug/
+TSI2/Server/Objekt/__history/
+TSI3/Allgemein/__history/
+TSI3/DBObj/__history/
+TSI3/DBObj/Base/__history/
+TSI3/TSI/Ansicht/Feld/__history/
+TSI3/TSI/Ansicht/Form/__history/
+TSI3/TSI/Ansicht/Frame/__history/
+TSI3/TSI/Ansicht/Objekt/__history/
+TSI3/TSI/Ansicht/Win32/Debug/
+TSI3/TSI/Einstellung/Form/__history/
+TSI3/TSI/Einstellung/Form/Win32/Debug/
+TSI3/TSI/Server/DBObj_/__history/
+TSI3/TSI/Server/Form/__history/
+TSI3/TSI/Server/Form/Win32/Debug/
+TSI3/TSI/Server/Objekt/__history/
+*.txt
+TSI3/TSI/Ansicht/TSIAnsicht_.exe
+TSI3/TSI/Ansicht/TSIAnsicht__.exe
+TSI3/TSI/Ansicht/TSIAnsicht___.exe

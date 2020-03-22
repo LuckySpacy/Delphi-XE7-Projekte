@@ -275,10 +275,12 @@ begin
       exit;
     end;
     pnl_Progress.Visible := true;
-    KurseLaden;
+
+    KurseLaden; //muss wieder aktiviert werden.
     Aktienimport;
     KurseImport;
     TSIWerteLaden;
+
     SyncMySql;
 
   finally
@@ -372,6 +374,7 @@ begin
       LadeUndSaveCSVFile(Filename);
       s := Aktie.WKN + ';' + Aktie.Aktie + ';' + Aktie.Symbol + ';' + Aktie.Boersenindexname;
       CsvAktieList.Add(s);
+      //break;
     end;
     CsvAktieList.SaveToFile(IncludeTrailingPathDelimiter(Ini.Zielpfad)+'Aktien.csv');
   finally
@@ -480,10 +483,12 @@ begin
     Protokoll.write('SyncMySql', 'Fehler beim Connect ' + dm.DBMySqlTSIConnectErrorMsg);
     exit;
   end;
+
   SyncMySqlBoersenindex;
   SyncMySqlAktie;
   SyncMySqlKurs;
   SyncMySqlTSI;
+
   SyncMySqlTSIAnsicht;
 end;
 
@@ -557,6 +562,8 @@ begin
   try
     MySqlTSIAnsicht.Trans := dm.IBTTSI;
     MySqlTSIAnsicht.DBMYSqlTSI := dm.DBMySqlTSI;
+    MySqlTSIAnsicht.ProgressBar := pgBar;
+    MySqlTSIAnsicht.ProgressLabel := lbl_pg;
     MySqlTSIAnsicht.Exec;
   finally
     FreeAndNil(MySqlTSIAnsicht);

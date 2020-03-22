@@ -1,0 +1,1796 @@
+/* VER280
+  Generiert vom Embarcadero Delphi Pascal Compiler,
+  weil -GD oder --drc an den Compiler übergeben wurde.
+
+  Diese Datei enthält vom Compiler erzeugte Ressourcen, die an die ausführbare Datei gebunden wurden. Wenn diese Datei leer ist, dann wurden keine vom Compiler generierten Ressourcen an die erzeugte ausführbare Datei gebunden.
+*/
+
+#define mySQLTypes_SDatabaseOpen 64640
+#define mySQLTypes_SDatabaseClosed 64641
+#define mySQLTypes_SEmptySQLStatement 64642
+#define mySQLTypes_SLoginError 64643
+#define mySQLTypes_SNoCachedUpdates 64644
+#define mySQLTypes_SNoFieldAccess 64645
+#define mySQLTypes_SUpdateWrongDB 64646
+#define MySQLExtMask_SInvalidMask 64647
+#define Allgemein_SysFolderlocation_rsE_S_FALSE 64656
+#define Allgemein_SysFolderlocation_rsE_InvalidArgument 64657
+#define mySQLTypes_SBLOBDatasizeOverflow 64658
+#define mySQLTypes_SMySQLErrorCode 64659
+#define mySQLTypes_SMySQLError 64660
+#define mySQLTypes_SDBIErrorCode 64661
+#define mySQLTypes_SInterfaceError 64662
+#define mySQLTypes_SEngineNotInitialized 64663
+#define mySQLTypes_SDatabaseProperty 64664
+#define mySQLTypes_SErrorLoadSSL 64665
+#define mySQLTypes_SMySQLVersionLess 64666
+#define mySQLTypes_SProcNotFound 64667
+#define mySQLTypes_SFieldNotFound 64668
+#define mySQLTypes_SNotCurrentIndexField 64669
+#define mySQLTypes_SNoResultSetError 64670
+#define mySQLTypes_SIncorrectRoutineType 64671
+#define IdResourceStringsSSPI_RSHTTPSSPIDeligationPolicy 64672
+#define IdResourceStringsSSPI_RSHTTPSSPIPolicyNTLMOnly 64673
+#define IdResourceStringsSSPI_RSHTTPSSPINoRenegotiation 64674
+#define IdResourceStringsSSPI_RSHTTPSSPINoContext 64675
+#define IdResourceStringsSSPI_RSHTTPSSPIPKU2UCertFailure 64676
+#define IdResourceStringsSSPI_RSHTTPSSPIMutualAuthFailed 64677
+#define IdResourceStringsSSPI_RSHTTPSSPIUnknwonError 64678
+#define IdResourceStringsSSPI_RSHTTPSSPIErrorMsg 64679
+#define IdResourceStringsSSPI_RSHTTPSSPIInterfaceInitFailed 64680
+#define IdResourceStringsSSPI_RSHTTPSSPINoPkgInfoSpecified 64681
+#define IdResourceStringsSSPI_RSHTTPSSPINoCredentialHandle 64682
+#define IdResourceStringsSSPI_RSHTTPSSPICanNotChangeCredentials 64683
+#define IdResourceStringsSSPI_RSHTTPSSPIUnknwonCredentialUse 64684
+#define IdResourceStringsSSPI_RSHTTPSSPIDoAuquireCredentialHandle 64685
+#define IdResourceStringsSSPI_RSHTTPSSPICompleteTokenNotSupported 64686
+#define Allgemein_SysFolderlocation_rsE_GetPathFromIDList 64687
+#define IdResourceStringsSSPI_RSHTTPSSPINoKerbKey 64688
+#define IdResourceStringsSSPI_RSHTTPSSPICertWrongUsage 64689
+#define IdResourceStringsSSPI_RSHTTPSSPIDowngradeDetected 64690
+#define IdResourceStringsSSPI_RSHTTPSSPISmartcardCertRevoked 64691
+#define IdResourceStringsSSPI_RSHTTPSSPIIssuingCAUntrusted 64692
+#define IdResourceStringsSSPI_RSHTTPSSPIRevocationOffline 64693
+#define IdResourceStringsSSPI_RSHTTPSSPIPKInitClientFailure 64694
+#define IdResourceStringsSSPI_RSHTTPSSPISmartcardExpired 64695
+#define IdResourceStringsSSPI_RSHTTPSSPINoS4UProtSupport 64696
+#define IdResourceStringsSSPI_RSHTTPSSPICrossRealmDeligationFailure 64697
+#define IdResourceStringsSSPI_RSHTTPSSPIRevocationOfflineKDC 64698
+#define IdResourceStringsSSPI_RSHTTPSSPICAUntrustedKDC 64699
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCCertExpired 64700
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCCertRevoked 64701
+#define IdResourceStringsSSPI_RSHTTPSSPISignatureNeeded 64702
+#define IdResourceStringsSSPI_RSHTTPSSPIInvalidParameter 64703
+#define IdResourceStringsSSPI_RSHTTPSSPICryptoSysInvalid 64704
+#define IdResourceStringsSSPI_RSHTTPSSPIMaxTicketRef 64705
+#define IdResourceStringsSSPI_RSHTTPSSPIMustBeKDC 64706
+#define IdResourceStringsSSPI_RSHTTPSSPIStrongCryptoNotSupported 64707
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCReplyTooManyPrincipals 64708
+#define IdResourceStringsSSPI_RSHTTPSSPINoPAData 64709
+#define IdResourceStringsSSPI_RSHTTPSSPIPKInitNameMismatch 64710
+#define IdResourceStringsSSPI_RSHTTPSSPISmartcardLogonReq 64711
+#define IdResourceStringsSSPI_RSHTTPSSPISysShutdownInProg 64712
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCInvalidRequest 64713
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCUnableToRefer 64714
+#define IdResourceStringsSSPI_RSHTTPSSPIKDCETypeUnknown 64715
+#define IdResourceStringsSSPI_RSHTTPSSPIUnsupPreauth 64716
+#define IdResourceStringsSSPI_RSHTTPSSPIDeligationReq 64717
+#define IdResourceStringsSSPI_RSHTTPSSPIBadBindings 64718
+#define IdResourceStringsSSPI_RSHTTPSSPIMultipleAccounts 64719
+#define IdResourceStringsSSPI_RSHTTPSSPIRengotiate 64720
+#define IdResourceStringsSSPI_RSHTTPSSPIWrongPrincipal 64721
+#define IdResourceStringsSSPI_RSHTTPSSPINoLSACode 64722
+#define IdResourceStringsSSPI_RSHTTPSSPITimeScew 64723
+#define IdResourceStringsSSPI_RSHTTPSSPIUntrustedRoot 64724
+#define IdResourceStringsSSPI_RSHTTPSSPIIllegalMessage 64725
+#define IdResourceStringsSSPI_RSHTTPSSPICertUnknown 64726
+#define IdResourceStringsSSPI_RSHTTPSSPICertExpired 64727
+#define IdResourceStringsSSPI_RSHTTPSSPIEncryptionFailure 64728
+#define IdResourceStringsSSPI_RSHTTPSSPIDecryptionFailure 64729
+#define IdResourceStringsSSPI_RSHTTPSSPIAlgorithmMismatch 64730
+#define IdResourceStringsSSPI_RSHTTPSSPISecurityQOSFailure 64731
+#define IdResourceStringsSSPI_RSHTTPSSPISecCtxWasDelBeforeUpdated 64732
+#define IdResourceStringsSSPI_RSHTTPSSPIClientNoTGTReply 64733
+#define IdResourceStringsSSPI_RSHTTPSSPILocalNoIPAddr 64734
+#define IdResourceStringsSSPI_RSHTTPSSPIWrongCredHandle 64735
+#define IdResourceStringsSSPI_RSHTTPSSPILoginDenied 64736
+#define IdResourceStringsSSPI_RSHTTPSSPIUnknownCredentials 64737
+#define IdResourceStringsSSPI_RSHTTPSSPINoCredentials 64738
+#define IdResourceStringsSSPI_RSHTTPSSPIMessageAltered 64739
+#define IdResourceStringsSSPI_RSHTTPSSPIOutOfSequence 64740
+#define IdResourceStringsSSPI_RSHTTPSSPINoAuthAuthority 64741
+#define IdResourceStringsSSPI_RSHTTPSSPIContinueNeeded 64742
+#define IdResourceStringsSSPI_RSHTTPSSPICompleteNeeded 64743
+#define IdResourceStringsSSPI_RSHTTPSSPICompleteContinueNeeded 64744
+#define IdResourceStringsSSPI_RSHTTPSSPILocalLogin 64745
+#define IdResourceStringsSSPI_RSHTTPSSPIBadPackageID 64746
+#define IdResourceStringsSSPI_RSHTTPSSPIContextExpired 64747
+#define IdResourceStringsSSPI_RSHTTPSSPIIncompleteMessage 64748
+#define IdResourceStringsSSPI_RSHTTPSSPIIncompleteCredentialNotInit 64749
+#define IdResourceStringsSSPI_RSHTTPSSPIBufferTooSmall 64750
+#define IdResourceStringsSSPI_RSHTTPSSPIIncompleteCredentialsInit 64751
+#define IdResourceStringsOpenSSL_RSOSSLConnectExit 64752
+#define IdResourceStringsOpenSSL_RSOSSLHandshakeStart 64753
+#define IdResourceStringsOpenSSL_RSOSSLHandshakeDone 64754
+#define IdResourceStringsSSPI_RSHTTPSSPISuccess 64755
+#define IdResourceStringsSSPI_RSHTTPSSPINotEnoughMem 64756
+#define IdResourceStringsSSPI_RSHTTPSSPIInvalidHandle 64757
+#define IdResourceStringsSSPI_RSHTTPSSPIFuncNotSupported 64758
+#define IdResourceStringsSSPI_RSHTTPSSPIUnknownTarget 64759
+#define IdResourceStringsSSPI_RSHTTPSSPIInternalError 64760
+#define IdResourceStringsSSPI_RSHTTPSSPISecPackageNotFound 64761
+#define IdResourceStringsSSPI_RSHTTPSSPINotOwner 64762
+#define IdResourceStringsSSPI_RSHTTPSSPIPackageCannotBeInstalled 64763
+#define IdResourceStringsSSPI_RSHTTPSSPIInvalidToken 64764
+#define IdResourceStringsSSPI_RSHTTPSSPICannotPack 64765
+#define IdResourceStringsSSPI_RSHTTPSSPIQOPNotSupported 64766
+#define IdResourceStringsSSPI_RSHTTPSSPINoImpersonation 64767
+#define IdResourceStringsProtocols_RSUnsupportedOperation 64768
+#define IdResourceStringsProtocols_RSHeaderEncodeError 64769
+#define IdResourceStringsOpenSSL_RSOSSFailedToLoad 64770
+#define IdResourceStringsOpenSSL_RSOSSLModeNotSet 64771
+#define IdResourceStringsOpenSSL_RSOSSLCouldNotLoadSSLLibrary 64772
+#define IdResourceStringsOpenSSL_RSOSSLStatusString 64773
+#define IdResourceStringsOpenSSL_RSOSSLAlert 64774
+#define IdResourceStringsOpenSSL_RSOSSLReadAlert 64775
+#define IdResourceStringsOpenSSL_RSOSSLWriteAlert 64776
+#define IdResourceStringsOpenSSL_RSOSSLAcceptLoop 64777
+#define IdResourceStringsOpenSSL_RSOSSLAcceptError 64778
+#define IdResourceStringsOpenSSL_RSOSSLAcceptFailed 64779
+#define IdResourceStringsOpenSSL_RSOSSLAcceptExit 64780
+#define IdResourceStringsOpenSSL_RSOSSLConnectLoop 64781
+#define IdResourceStringsOpenSSL_RSOSSLConnectError 64782
+#define IdResourceStringsOpenSSL_RSOSSLConnectFailed 64783
+#define IdResourceStringsProtocols_RSSSLSettingCipherError 64784
+#define IdResourceStringsProtocols_RSSSLCreatingSessionError 64785
+#define IdResourceStringsProtocols_RSSSLCreatingContextError 64786
+#define IdResourceStringsProtocols_RSSSLLoadingRootCertError 64787
+#define IdResourceStringsProtocols_RSSSLLoadingCertError 64788
+#define IdResourceStringsProtocols_RSSSLLoadingKeyError 64789
+#define IdResourceStringsProtocols_RSSSLLoadingDHParamsError 64790
+#define IdResourceStringsProtocols_RSSSLGetMethodError 64791
+#define IdResourceStringsProtocols_RSSSLFDSetError 64792
+#define IdResourceStringsProtocols_RSSSLDataBindingError 64793
+#define IdResourceStringsProtocols_RSSSLEOFViolation 64794
+#define IdResourceStringsProtocols_RSMFDInvalidObjectType 64795
+#define IdResourceStringsProtocols_RSMFDInvalidTransfer 64796
+#define IdResourceStringsProtocols_RSMFDInvalidEncoding 64797
+#define IdResourceStringsProtocols_RSURINoProto 64798
+#define IdResourceStringsProtocols_RSURINoHost 64799
+#define IdResourceStringsCore_RSIOHandlerCannotChange 64800
+#define IdResourceStringsCore_RSIOHandlerTypeNotInstalled 64801
+#define IdResourceStringsCore_RSReplyInvalidCode 64802
+#define IdResourceStringsCore_RSReplyCodeAlreadyExists 64803
+#define IdResourceStringsProtocols_RSIOHandlerPropInvalid 64804
+#define IdResourceStringsProtocols_RSFIPSAlgorithmNotAllowed 64805
+#define IdResourceStringsProtocols_RSMIMEExtensionEmpty 64806
+#define IdResourceStringsProtocols_RSMIMEMIMETypeEmpty 64807
+#define IdResourceStringsProtocols_RSMIMEMIMEExtAlreadyExists 64808
+#define IdResourceStringsProtocols_RSHTTPChunkStarted 64809
+#define IdResourceStringsProtocols_RSHTTPNotAcceptable 64810
+#define IdResourceStringsProtocols_RSHTTPUnknownProtocol 64811
+#define IdResourceStringsProtocols_RSHTTPMethodRequiresVersion 64812
+#define IdResourceStringsProtocols_RSHTTPAuthInvalidHash 64813
+#define IdResourceStringsProtocols_RSSSLAcceptError 64814
+#define IdResourceStringsProtocols_RSSSLConnectError 64815
+#define IdResourceStringsCore_RSObjectTypeNotSupported 64816
+#define IdResourceStringsCore_RSIdNoDataToRead 64817
+#define IdResourceStringsCore_RSReadTimeout 64818
+#define IdResourceStringsCore_RSReadLnWaitMaxAttemptsExceeded 64819
+#define IdResourceStringsCore_RSReadLnMaxLineLengthExceeded 64820
+#define IdResourceStringsCore_RSRequiresLargeStream 64821
+#define IdResourceStringsCore_RSDataTooLarge 64822
+#define IdResourceStringsCore_RSConnectTimeout 64823
+#define IdResourceStringsCore_RSThreadTerminateAndWaitFor 64824
+#define IdResourceStringsCore_RSAlreadyConnected 64825
+#define IdResourceStringsCore_RSMaximumNumberOfCaptureLineExceeded 64826
+#define IdResourceStringsCore_RSInterceptIsDifferent 64827
+#define IdResourceStringsCore_RSTransparentProxyCannotBind 64828
+#define IdResourceStringsCore_RSTransparentProxyCanNotSupportUDP 64829
+#define IdResourceStringsCore_RSBufferMissingTerminator 64830
+#define IdResourceStringsCore_RSBufferInvalidStartPos 64831
+#define IdResourceStringsCore_RSSocksServerRespondError 64832
+#define IdResourceStringsCore_RSSocksAuthMethodError 64833
+#define IdResourceStringsCore_RSSocksAuthError 64834
+#define IdResourceStringsCore_RSSocksServerGeneralError 64835
+#define IdResourceStringsCore_RSSocksServerPermissionError 64836
+#define IdResourceStringsCore_RSSocksServerNetUnreachableError 64837
+#define IdResourceStringsCore_RSSocksServerHostUnreachableError 64838
+#define IdResourceStringsCore_RSSocksServerConnectionRefusedError 64839
+#define IdResourceStringsCore_RSSocksServerTTLExpiredError 64840
+#define IdResourceStringsCore_RSSocksServerCommandError 64841
+#define IdResourceStringsCore_RSSocksServerAddressError 64842
+#define IdResourceStringsCore_RSInterceptCircularLink 64843
+#define IdResourceStringsCore_RSNotEnoughDataInBuffer 64844
+#define IdResourceStringsCore_RSTooMuchDataInBuffer 64845
+#define IdResourceStringsCore_RSFileNotFound 64846
+#define IdResourceStringsCore_RSNotConnected 64847
+#define IdResourceStrings_RSCannotBindRange 64848
+#define IdResourceStrings_RSConnectionClosedGracefully 64849
+#define IdResourceStrings_RSCouldNotBindSocket 64850
+#define IdResourceStrings_RSInvalidPortRange 64851
+#define IdResourceStrings_RSInvalidServiceName 64852
+#define IdResourceStrings_RSInvalidIPv6Address 64853
+#define IdResourceStrings_RSIPVersionUnsupported 64854
+#define IdResourceStrings_RSNotAllBytesSent 64855
+#define IdResourceStrings_RSPackageSizeTooBig 64856
+#define IdResourceStrings_RSSetSizeExceeded 64857
+#define IdResourceStrings_RSEndOfStream 64858
+#define IdResourceStringsCore_RSSocksUDPNotSupported 64859
+#define IdResourceStringsCore_RSSocksRequestFailed 64860
+#define IdResourceStringsCore_RSSocksRequestServerFailed 64861
+#define IdResourceStringsCore_RSSocksRequestIdentFailed 64862
+#define IdResourceStringsCore_RSSocksUnknownError 64863
+#define IdResourceStrings_RSStackEISCONN 64864
+#define IdResourceStrings_RSStackENOTCONN 64865
+#define IdResourceStrings_RSStackESHUTDOWN 64866
+#define IdResourceStrings_RSStackETOOMANYREFS 64867
+#define IdResourceStrings_RSStackETIMEDOUT 64868
+#define IdResourceStrings_RSStackECONNREFUSED 64869
+#define IdResourceStrings_RSStackELOOP 64870
+#define IdResourceStrings_RSStackENAMETOOLONG 64871
+#define IdResourceStrings_RSStackEHOSTDOWN 64872
+#define IdResourceStrings_RSStackEHOSTUNREACH 64873
+#define IdResourceStrings_RSStackENOTEMPTY 64874
+#define IdResourceStrings_RSStackHOST_NOT_FOUND 64875
+#define IdResourceStrings_RSStackClassUndefined 64876
+#define IdResourceStrings_RSStackAlreadyCreated 64877
+#define IdResourceStrings_RSAntiFreezeOnlyOne 64878
+#define IdResourceStrings_RSCannotSetIPVersionWhenConnected 64879
+#define IdResourceStrings_RSStackEMSGSIZE 64880
+#define IdResourceStrings_RSStackEPROTOTYPE 64881
+#define IdResourceStrings_RSStackENOPROTOOPT 64882
+#define IdResourceStrings_RSStackEPROTONOSUPPORT 64883
+#define IdResourceStrings_RSStackESOCKTNOSUPPORT 64884
+#define IdResourceStrings_RSStackEOPNOTSUPP 64885
+#define IdResourceStrings_RSStackEPFNOSUPPORT 64886
+#define IdResourceStrings_RSStackEAFNOSUPPORT 64887
+#define IdResourceStrings_RSStackEADDRINUSE 64888
+#define IdResourceStrings_RSStackEADDRNOTAVAIL 64889
+#define IdResourceStrings_RSStackENETDOWN 64890
+#define IdResourceStrings_RSStackENETUNREACH 64891
+#define IdResourceStrings_RSStackENETRESET 64892
+#define IdResourceStrings_RSStackECONNABORTED 64893
+#define IdResourceStrings_RSStackECONNRESET 64894
+#define IdResourceStrings_RSStackENOBUFS 64895
+#define IdResourceStrings_RSStatusConnected 64896
+#define IdResourceStrings_RSStatusDisconnecting 64897
+#define IdResourceStrings_RSStatusDisconnected 64898
+#define IdResourceStrings_RSStatusText 64899
+#define IdResourceStrings_RSStackError 64900
+#define IdResourceStrings_RSStackEINTR 64901
+#define IdResourceStrings_RSStackEBADF 64902
+#define IdResourceStrings_RSStackEACCES 64903
+#define IdResourceStrings_RSStackEFAULT 64904
+#define IdResourceStrings_RSStackEINVAL 64905
+#define IdResourceStrings_RSStackEMFILE 64906
+#define IdResourceStrings_RSStackEWOULDBLOCK 64907
+#define IdResourceStrings_RSStackEINPROGRESS 64908
+#define IdResourceStrings_RSStackEALREADY 64909
+#define IdResourceStrings_RSStackENOTSOCK 64910
+#define IdResourceStrings_RSStackEDESTADDRREQ 64911
+#define IBX_IBXConst_SInvalidLibraryType 64912
+#define IBX_IBXConst_SCannotChangeServerType 64913
+#define IBX_IBXConst_SColumnEncryptionError 64914
+#define IBX_IBXConst_SEncryptionError 64915
+#define IBX_IBXConst_SInvalidODSVersion 64916
+#define IdResourceStrings_RSInvalidSourceArray 64917
+#define IdResourceStrings_RSInvalidDestinationArray 64918
+#define IdResourceStrings_RSCharIndexOutOfBounds 64919
+#define IdResourceStrings_RSInvalidCharCount 64920
+#define IdResourceStrings_RSInvalidDestinationIndex 64921
+#define IdResourceStrings_RSInvalidCodePage 64922
+#define IdResourceStrings_RSFailedTimeZoneInfo 64923
+#define IdResourceStrings_RSWinsockCallError 64924
+#define IdResourceStrings_RSWinsockLoadError 64925
+#define IdResourceStrings_RSStatusResolving 64926
+#define IdResourceStrings_RSStatusConnecting 64927
+#define IBX_IBXConst_SDPBConstantUnknownEx 64928
+#define IBX_IBXConst_STPBConstantUnknownEx 64929
+#define IBX_IBXConst_SUnknownPlan 64930
+#define IBX_IBXConst_SFieldSizeMismatch 64931
+#define IBX_IBXConst_SEventAlreadyRegistered 64932
+#define IBX_IBXConst_SStringTooLarge 64933
+#define IBX_IBXConst_SNoTimers 64934
+#define IBX_IBXConst_SIB65feature 64935
+#define IBX_IBXConst_SLoginPromptFailure 64936
+#define IBX_IBXConst_SIBMemoryError 64937
+#define IBX_IBXConst_SIB70feature 64938
+#define IBX_IBXConst_SIB71feature 64939
+#define IBX_IBXConst_SIB80feature 64940
+#define IBX_IBXConst_SFileSizeDumpCountIncompatibility 64941
+#define IBX_IBXConst_SCannotPerformDumpOnActiveConnection 64942
+#define IBX_IBXConst_SIBUnknownServerType 64943
+#define IBX_IBXConst_SCantPrintValue 64944
+#define IBX_IBXConst_SEOFReached 64945
+#define IBX_IBXConst_SEOFInComment 64946
+#define IBX_IBXConst_SEOFInString 64947
+#define IBX_IBXConst_SParamNameExpected 64948
+#define IBX_IBXConst_SSuccess 64949
+#define IBX_IBXConst_SDelphiException 64950
+#define IBX_IBXConst_SNoOptionsSet 64951
+#define IBX_IBXConst_SNoDestinationDirectory 64952
+#define IBX_IBXConst_SNosourceDirectory 64953
+#define IBX_IBXConst_SNoUninstallFile 64954
+#define IBX_IBXConst_SOptionNeedsClient 64955
+#define IBX_IBXConst_SOptionNeedsServer 64956
+#define IBX_IBXConst_SInvalidOption 64957
+#define IBX_IBXConst_SInvalidOnErrorResult 64958
+#define IBX_IBXConst_SInvalidOnStatusResult 64959
+#define IBX_IBXConst_SMaximumEvents 64960
+#define IBX_IBXConst_SNoEventsRegistered 64961
+#define IBX_IBXConst_SInvalidQueueing 64962
+#define IBX_IBXConst_SInvalidRegistration 64963
+#define IBX_IBXConst_SInvalidBatchMove 64964
+#define IBX_IBXConst_SSQLDialectInvalid 64965
+#define IBX_IBXConst_SSPBConstantNotSupported 64966
+#define IBX_IBXConst_SSPBConstantUnknown 64967
+#define IBX_IBXConst_SServiceActive 64968
+#define IBX_IBXConst_SServiceInActive 64969
+#define IBX_IBXConst_SServerNameMissing 64970
+#define IBX_IBXConst_SQueryParamsError 64971
+#define IBX_IBXConst_SStartParamsError 64972
+#define IBX_IBXConst_SOutputParsingError 64973
+#define IBX_IBXConst_SUseSpecificProcedures 64974
+#define IBX_IBXConst_SSQLMonitorAlreadyPresent 64975
+#define IBX_IBXConst_SIsASelectStatement 64976
+#define IBX_IBXConst_SRequiredParamNotSet 64977
+#define IBX_IBXConst_SNoStoredProcName 64978
+#define IBX_IBXConst_SIsAExecuteProcedure 64979
+#define IBX_IBXConst_SUpdateFailed 64980
+#define IBX_IBXConst_SNotCachedUpdates 64981
+#define IBX_IBXConst_SNotLiveRequest 64982
+#define IBX_IBXConst_SNoProvider 64983
+#define IBX_IBXConst_SNoRecordsAffected 64984
+#define IBX_IBXConst_SNoTableName 64985
+#define IBX_IBXConst_SCannotCreatePrimaryIndex 64986
+#define IBX_IBXConst_SCannotDropSystemIndex 64987
+#define IBX_IBXConst_STableNameMismatch 64988
+#define IBX_IBXConst_SIndexFieldMissing 64989
+#define IBX_IBXConst_SInvalidCancellation 64990
+#define IBX_IBXConst_SInvalidEvent 64991
+#define IBX_IBXConst_SCannotUpdate 64992
+#define IBX_IBXConst_SCannotDelete 64993
+#define IBX_IBXConst_SCannotRefresh 64994
+#define IBX_IBXConst_SBufferNotSet 64995
+#define IBX_IBXConst_SCircularReference 64996
+#define IBX_IBXConst_SSQLParseError 64997
+#define IBX_IBXConst_SUserAbort 64998
+#define IBX_IBXConst_SDataSetUniDirectional 64999
+#define IBX_IBXConst_SCannotCreateSharedResource 65000
+#define IBX_IBXConst_SWindowsAPIError 65001
+#define IBX_IBXConst_SColumnListsDontMatch 65002
+#define IBX_IBXConst_SColumnTypesDontMatch 65003
+#define IBX_IBXConst_SCantEndSharedTransaction 65004
+#define IBX_IBXConst_SFieldUnsupportedType 65005
+#define IBX_IBXConst_SCircularDataLink 65006
+#define IBX_IBXConst_SEmptySQLStatement 65007
+#define IBX_IBXConst_SDatasetClosed 65008
+#define IBX_IBXConst_SUnknownSQLDataType 65009
+#define IBX_IBXConst_SInvalidColumnIndex 65010
+#define IBX_IBXConst_SInvalidParamColumnIndex 65011
+#define IBX_IBXConst_SInvalidDataConversion 65012
+#define IBX_IBXConst_SColumnIsNotNullable 65013
+#define IBX_IBXConst_SBlobCannotBeRead 65014
+#define IBX_IBXConst_SBlobCannotBeWritten 65015
+#define IBX_IBXConst_SEmptyQuery 65016
+#define IBX_IBXConst_SCannotOpenNonSQLSelect 65017
+#define IBX_IBXConst_SNoFieldAccess 65018
+#define IBX_IBXConst_SFieldReadOnly 65019
+#define IBX_IBXConst_SFieldNotFound 65020
+#define IBX_IBXConst_SNotEditing 65021
+#define IBX_IBXConst_SCannotInsert 65022
+#define IBX_IBXConst_SCannotPost 65023
+#define IBX_IBXConst_SNotInTransaction 65024
+#define IBX_IBXConst_SInTransaction 65025
+#define IBX_IBXConst_STimeoutNegative 65026
+#define IBX_IBXConst_SNoDatabasesInTransaction 65027
+#define IBX_IBXConst_SUpdateWrongDB 65028
+#define IBX_IBXConst_SUpdateWrongTR 65029
+#define IBX_IBXConst_SDatabaseNotAssigned 65030
+#define IBX_IBXConst_STransactionNotAssigned 65031
+#define IBX_IBXConst_SXSQLDAIndexOutOfRange 65032
+#define IBX_IBXConst_SXSQLDANameDoesNotExist 65033
+#define IBX_IBXConst_SEOF 65034
+#define IBX_IBXConst_SBOF 65035
+#define IBX_IBXConst_SInvalidStatementHandle 65036
+#define IBX_IBXConst_SSQLOpen 65037
+#define IBX_IBXConst_SSQLClosed 65038
+#define IBX_IBXConst_SDatasetOpen 65039
+#define IBX_IBXConst_SInterBaseInstallMissing 65040
+#define IBX_IBXConst_SIB60feature 65041
+#define IBX_IBXConst_SNotSupported 65042
+#define IBX_IBXConst_SNotPermitted 65043
+#define IBX_IBXConst_SFileAccessError 65044
+#define IBX_IBXConst_SConnectionTimeout 65045
+#define IBX_IBXConst_SCannotSetDatabase 65046
+#define IBX_IBXConst_SCannotSetTransaction 65047
+#define IBX_IBXConst_SOperationCancelled 65048
+#define IBX_IBXConst_SDPBConstantNotSupported 65049
+#define IBX_IBXConst_SDPBConstantUnknown 65050
+#define IBX_IBXConst_STPBConstantNotSupported 65051
+#define IBX_IBXConst_STPBConstantUnknown 65052
+#define IBX_IBXConst_SDatabaseClosed 65053
+#define IBX_IBXConst_SDatabaseOpen 65054
+#define IBX_IBXConst_SDatabaseNameMissing 65055
+#define IBX_IBXConst_StrStart 65056
+#define IBX_IBXConst_StrExecute 65057
+#define IBX_IBXConst_StrNULL 65058
+#define IBX_IBXConst_StrBLOB 65059
+#define IBX_IBXConst_StrFetch 65060
+#define IBX_IBXConst_StrPrepare 65061
+#define IBX_IBXConst_StrPlan 65062
+#define IBX_IBXConst_StrPlanCantRetrive 65063
+#define IBX_IBXConst_StrCommitHardComm 65064
+#define IBX_IBXConst_StrCommitRetaining 65065
+#define IBX_IBXConst_StrRollback 65066
+#define IBX_IBXConst_StrRollbackRetainin 65067
+#define IBX_IBXConst_StrStartTransaction 65068
+#define IBX_IBXConst_StrApplication 65069
+#define IBX_IBXConst_SUnknownError 65070
+#define IBX_IBXConst_SInterBaseMissing 65071
+#define Data_DBConsts_SBadFieldType 65072
+#define Data_DBConsts_SProviderSQLNotSupported 65073
+#define Data_DBConsts_SProviderExecuteNotSupported 65074
+#define Data_DBConsts_SExprNoAggOnCalcs 65075
+#define Data_DBConsts_SDataSetUnidirectional 65076
+#define Data_DBConsts_SUnassignedVar 65077
+#define Data_DBConsts_SRecordNotFound 65078
+#define Data_DBConsts_SBcdOverflow 65079
+#define Data_DBConsts_SInvalidBcdValue 65080
+#define Data_DBConsts_SCouldNotParseTimeStamp 65081
+#define Data_DBConsts_SInvalidSqlTimeStamp 65082
+#define IBX_IBXConst_StrMisc 65083
+#define IBX_IBXConst_StrError 65084
+#define IBX_IBXConst_StrAttach 65085
+#define IBX_IBXConst_StrDetach 65086
+#define IBX_IBXConst_StrQuery 65087
+#define Data_DBConsts_SExprBadNullTest 65088
+#define Data_DBConsts_SExprRangeError 65089
+#define Data_DBConsts_SExprIncorrect 65090
+#define Data_DBConsts_SExprNothing 65091
+#define Data_DBConsts_SExprTypeMis 65092
+#define Data_DBConsts_SExprBadScope 65093
+#define Data_DBConsts_SExprNoArith 65094
+#define Data_DBConsts_SExprNotAgg 65095
+#define Data_DBConsts_SExprBadConst 65096
+#define Data_DBConsts_SExprNoAggFilter 65097
+#define Data_DBConsts_SExprEmptyInList 65098
+#define Data_DBConsts_SInvalidKeywordUse 65099
+#define Data_DBConsts_STextFalse 65100
+#define Data_DBConsts_STextTrue 65101
+#define Data_DBConsts_SParameterNotFound 65102
+#define Data_DBConsts_SInvalidVersion 65103
+#define Data_DBConsts_SDataSourceChange 65104
+#define Data_DBConsts_SDataSetOpen 65105
+#define Data_DBConsts_SNotEditing 65106
+#define Data_DBConsts_SDataSetClosed 65107
+#define Data_DBConsts_SDataSetEmpty 65108
+#define Data_DBConsts_SDataSetReadOnly 65109
+#define Data_DBConsts_SNestedDataSetClass 65110
+#define Data_DBConsts_SExprTermination 65111
+#define Data_DBConsts_SExprNameError 65112
+#define Data_DBConsts_SExprStringError 65113
+#define Data_DBConsts_SExprInvalidChar 65114
+#define Data_DBConsts_SExprNoLParen 65115
+#define Data_DBConsts_SExprNoRParen 65116
+#define Data_DBConsts_SExprNoRParenOrComma 65117
+#define Data_DBConsts_SExprExpected 65118
+#define Data_DBConsts_SExprBadField 65119
+#define Data_DBConsts_SInvalidFloatValue 65120
+#define Data_DBConsts_SFieldTypeMismatch 65121
+#define Data_DBConsts_SFieldSizeMismatch 65122
+#define Data_DBConsts_SInvalidVarByteArray 65123
+#define Data_DBConsts_SFieldOutOfRange 65124
+#define Data_DBConsts_SFieldRequired 65125
+#define Data_DBConsts_SDataSetMissing 65126
+#define Data_DBConsts_SInvalidCalcType 65127
+#define Data_DBConsts_SFieldReadOnly 65128
+#define Data_DBConsts_SNotIndexField 65129
+#define Data_DBConsts_SDuplicateIndexName 65130
+#define Data_DBConsts_SNoIndexForFields 65131
+#define Data_DBConsts_SIndexNotFound 65132
+#define Data_DBConsts_SDBDuplicateName 65133
+#define Data_DBConsts_SCircularDataLink 65134
+#define Data_DBConsts_SLookupInfoError 65135
+#define Vcl_ComStrs_sFailSetCalDateTime 65136
+#define Vcl_ComStrs_sFailSetCalMaxSelRange 65137
+#define Vcl_ComStrs_sFailSetCalMinMaxRange 65138
+#define Vcl_ComStrs_sFailsetCalSelRange 65139
+#define Data_DBConsts_SInvalidFieldSize 65140
+#define Data_DBConsts_SInvalidFieldKind 65141
+#define Data_DBConsts_SUnknownFieldType 65142
+#define Data_DBConsts_SFieldNameMissing 65143
+#define Data_DBConsts_SDuplicateFieldName 65144
+#define Data_DBConsts_SFieldNotFound 65145
+#define Data_DBConsts_SFieldAccessError 65146
+#define Data_DBConsts_SFieldValueError 65147
+#define Data_DBConsts_SFieldRangeError 65148
+#define Data_DBConsts_SBcdFieldRangeError 65149
+#define Data_DBConsts_SInvalidIntegerValue 65150
+#define Data_DBConsts_SInvalidBoolValue 65151
+#define System_Win_ComConst_SOleError 65152
+#define System_Win_ComConst_SNoMethod 65153
+#define System_Win_ComConst_SVarNotObject 65154
+#define System_Win_ComConst_STooManyParams 65155
+#define Vcl_ComStrs_sTabFailClear 65156
+#define Vcl_ComStrs_sTabFailDelete 65157
+#define Vcl_ComStrs_sTabFailRetrieve 65158
+#define Vcl_ComStrs_sTabFailGetObject 65159
+#define Vcl_ComStrs_sTabFailSet 65160
+#define Vcl_ComStrs_sTabFailSetObject 65161
+#define Vcl_ComStrs_sTabMustBeMultiLine 65162
+#define Vcl_ComStrs_sPageIndexError 65163
+#define Vcl_ComStrs_sInvalidComCtl32 65164
+#define Vcl_ComStrs_sDateTimeMax 65165
+#define Vcl_ComStrs_sDateTimeMin 65166
+#define Vcl_ComStrs_sNeedAllowNone 65167
+#define Vcl_Consts_SInvalidTaskDlgButtonCaption 65168
+#define Vcl_Consts_SStyleLoadError 65169
+#define Vcl_Consts_SStyleLoadErrors 65170
+#define Vcl_Consts_SStyleRegisterError 65171
+#define Vcl_Consts_SStyleClassRegisterError 65172
+#define Vcl_Consts_SStyleNotFound 65173
+#define Vcl_Consts_SStyleClassNotFound 65174
+#define Vcl_Consts_SStyleInvalidHandle 65175
+#define Vcl_Consts_SStyleFormatError 65176
+#define Vcl_Consts_SStyleHookClassRegistered 65177
+#define Vcl_Consts_SStyleHookClassNotRegistered 65178
+#define Vcl_Consts_SStyleInvalidParameter 65179
+#define Vcl_Consts_SStyleFeatureNotSupported 65180
+#define Vcl_Consts_SStyleNotRegistered 65181
+#define Vcl_Consts_SStyleUnregisterError 65182
+#define Vcl_Consts_SStyleNotRegisteredNoName 65183
+#define Vcl_Consts_SDockZoneNotFound 65184
+#define Vcl_Consts_SDockZoneHasNoCtl 65185
+#define Vcl_Consts_SDockZoneVersionConflict 65186
+#define Vcl_Consts_SPromptArrayTooShort 65187
+#define Vcl_Consts_SPromptArrayEmpty 65188
+#define Vcl_Consts_SUsername 65189
+#define Vcl_Consts_SPassword 65190
+#define Vcl_Consts_SDomain 65191
+#define Vcl_Consts_SLogin 65192
+#define Vcl_Consts_SErrorSettingCount 65193
+#define Vcl_Consts_SListBoxMustBeVirtual 65194
+#define Vcl_Consts_STrayIconRemoveError 65195
+#define Vcl_Consts_SPageControlNotSet 65196
+#define Vcl_Consts_SWindowsVistaRequired 65197
+#define Vcl_Consts_STaskDlgButtonCaption 65198
+#define Vcl_Consts_STaskDlgRadioButtonCaption 65199
+#define Vcl_Consts_SmkcDel 65200
+#define Vcl_Consts_SmkcShift 65201
+#define Vcl_Consts_SmkcCtrl 65202
+#define Vcl_Consts_SmkcAlt 65203
+#define Vcl_Consts_SOutOfRange 65204
+#define Vcl_Consts_sAllFilter 65205
+#define Vcl_Consts_SInsertLineError 65206
+#define Vcl_Consts_SInvalidClipFmt 65207
+#define Vcl_Consts_SIconToClipboard 65208
+#define Vcl_Consts_SCannotOpenClipboard 65209
+#define Vcl_Consts_SInvalidMemoSize 65210
+#define Vcl_Consts_SInvalidPrinterOp 65211
+#define Vcl_Consts_SNoDefaultPrinter 65212
+#define Vcl_Consts_SDuplicateMenus 65213
+#define Vcl_Consts_SDockedCtlNeedsName 65214
+#define Vcl_Consts_SDockTreeRemoveError 65215
+#define Vcl_Consts_SMsgDlgYesToAll 65216
+#define Vcl_Consts_SMsgDlgClose 65217
+#define Vcl_Consts_SmkcBkSp 65218
+#define Vcl_Consts_SmkcTab 65219
+#define Vcl_Consts_SmkcEsc 65220
+#define Vcl_Consts_SmkcEnter 65221
+#define Vcl_Consts_SmkcSpace 65222
+#define Vcl_Consts_SmkcPgUp 65223
+#define Vcl_Consts_SmkcPgDn 65224
+#define Vcl_Consts_SmkcEnd 65225
+#define Vcl_Consts_SmkcHome 65226
+#define Vcl_Consts_SmkcLeft 65227
+#define Vcl_Consts_SmkcUp 65228
+#define Vcl_Consts_SmkcRight 65229
+#define Vcl_Consts_SmkcDown 65230
+#define Vcl_Consts_SmkcIns 65231
+#define Vcl_Consts_SVBitmaps 65232
+#define Vcl_Consts_SVTIFFImages 65233
+#define Vcl_Consts_SMsgDlgWarning 65234
+#define Vcl_Consts_SMsgDlgError 65235
+#define Vcl_Consts_SMsgDlgInformation 65236
+#define Vcl_Consts_SMsgDlgConfirm 65237
+#define Vcl_Consts_SMsgDlgYes 65238
+#define Vcl_Consts_SMsgDlgNo 65239
+#define Vcl_Consts_SMsgDlgOK 65240
+#define Vcl_Consts_SMsgDlgCancel 65241
+#define Vcl_Consts_SMsgDlgHelp 65242
+#define Vcl_Consts_SMsgDlgAbort 65243
+#define Vcl_Consts_SMsgDlgRetry 65244
+#define Vcl_Consts_SMsgDlgIgnore 65245
+#define Vcl_Consts_SMsgDlgAll 65246
+#define Vcl_Consts_SMsgDlgNoToAll 65247
+#define Vcl_Consts_SImageCanvasNeedsBitmap 65248
+#define Vcl_Consts_SControlParentSetToSelf 65249
+#define Vcl_Consts_SOKButton 65250
+#define Vcl_Consts_SCancelButton 65251
+#define Vcl_Consts_SYesButton 65252
+#define Vcl_Consts_SNoButton 65253
+#define Vcl_Consts_SHelpButton 65254
+#define Vcl_Consts_SCloseButton 65255
+#define Vcl_Consts_SIgnoreButton 65256
+#define Vcl_Consts_SRetryButton 65257
+#define Vcl_Consts_SAbortButton 65258
+#define Vcl_Consts_SAllButton 65259
+#define Vcl_Consts_SCannotDragForm 65260
+#define Vcl_Consts_SVMetafiles 65261
+#define Vcl_Consts_SVEnhMetafiles 65262
+#define Vcl_Consts_SVIcons 65263
+#define Vcl_Consts_SMDIChildNotVisible 65264
+#define Vcl_Consts_SVisibleChanged 65265
+#define Vcl_Consts_SCannotShowModal 65266
+#define Vcl_Consts_SScrollBarRange 65267
+#define Vcl_Consts_SPropertyOutOfRange 65268
+#define Vcl_Consts_SMenuIndexError 65269
+#define Vcl_Consts_SMenuReinserted 65270
+#define Vcl_Consts_SMenuNotFound 65271
+#define Vcl_Consts_SNoTimers 65272
+#define Vcl_Consts_SNotPrinting 65273
+#define Vcl_Consts_SPrinting 65274
+#define Vcl_Consts_SPrinterIndexError 65275
+#define Vcl_Consts_SInvalidPrinter 65276
+#define Vcl_Consts_SDeviceOnPort 65277
+#define Vcl_Consts_SGroupIndexTooLow 65278
+#define Vcl_Consts_SNoMDIForm 65279
+#define Vcl_Consts_SUnknownExtension 65280
+#define Vcl_Consts_SUnknownClipboardFormat 65281
+#define Vcl_Consts_SOutOfResources 65282
+#define Vcl_Consts_SNoCanvasHandle 65283
+#define Vcl_Consts_SInvalidTextFormatFlag 65284
+#define Vcl_Consts_SInvalidImageSize 65285
+#define Vcl_Consts_SInvalidImageList 65286
+#define Vcl_Consts_SReplaceImage 65287
+#define Vcl_Consts_SImageIndexError 65288
+#define Vcl_Consts_SImageReadFail 65289
+#define Vcl_Consts_SImageWriteFail 65290
+#define Vcl_Consts_SWindowDCError 65291
+#define Vcl_Consts_SWindowClass 65292
+#define Vcl_Consts_SCannotFocus 65293
+#define Vcl_Consts_SParentRequired 65294
+#define Vcl_Consts_SParentGivenNotAParent 65295
+#define System_RTLConsts_sObserverNoSinglecastFound 65296
+#define System_RTLConsts_sObserverNoMulticastFound 65297
+#define System_RTLConsts_sObserverNotAvailable 65298
+#define System_RTLConsts_SInvalidDateString 65299
+#define System_RTLConsts_SInvalidTimeString 65300
+#define System_RTLConsts_SInvalidOffsetString 65301
+#define Vcl_Consts_SInvalidTabPosition 65302
+#define Vcl_Consts_SInvalidTabStyle 65303
+#define Vcl_Consts_SInvalidBitmap 65304
+#define Vcl_Consts_SInvalidIcon 65305
+#define Vcl_Consts_SInvalidMetafile 65306
+#define Vcl_Consts_SInvalidPixelFormat 65307
+#define Vcl_Consts_SInvalidImage 65308
+#define Vcl_Consts_SScanLine 65309
+#define Vcl_Consts_SChangeIconSize 65310
+#define Vcl_Consts_SChangeWicSize 65311
+#define System_RTLConsts_SWindows 65312
+#define System_RTLConsts_SWindowsVista 65313
+#define System_RTLConsts_SWindowsServer2008 65314
+#define System_RTLConsts_SWindows7 65315
+#define System_RTLConsts_SWindowsServer2008R2 65316
+#define System_RTLConsts_SWindows2000 65317
+#define System_RTLConsts_SWindowsXP 65318
+#define System_RTLConsts_SWindowsServer2003 65319
+#define System_RTLConsts_SWindowsServer2003R2 65320
+#define System_RTLConsts_SWindowsServer2012 65321
+#define System_RTLConsts_SWindowsServer2012R2 65322
+#define System_RTLConsts_SWindows8 65323
+#define System_RTLConsts_SWindows8Point1 65324
+#define System_RTLConsts_sObserverUnsupported 65325
+#define System_RTLConsts_sObserverMultipleSingleCast 65326
+#define System_RTLConsts_sObserverNoInterface 65327
+#define System_RTLConsts_SNoSearch 65328
+#define System_RTLConsts_SNoTableOfContents 65329
+#define System_RTLConsts_SNoTopics 65330
+#define System_RTLConsts_SNothingFound 65331
+#define System_RTLConsts_SArgumentOutOfRange 65332
+#define System_RTLConsts_SGenericItemNotFound 65333
+#define System_RTLConsts_SGenericDuplicateItem 65334
+#define System_RTLConsts_SInsufficientRtti 65335
+#define System_RTLConsts_SParameterCountMismatch 65336
+#define System_RTLConsts_SNonPublicType 65337
+#define System_RTLConsts_SByRefArgMismatch 65338
+#define System_RTLConsts_SServiceNotFound 65339
+#define System_RTLConsts_SVersionStr 65340
+#define System_RTLConsts_SSPVersionStr 65341
+#define System_RTLConsts_SVersion32 65342
+#define System_RTLConsts_SVersion64 65343
+#define System_RTLConsts_SLocalTimeInvalid 65344
+#define System_RTLConsts_hNoFilterViewer 65345
+#define System_RTLConsts_sArgumentOutOfRange_StringIndex 65346
+#define System_RTLConsts_sArgument_InvalidHighSurrogate 65347
+#define System_RTLConsts_sArgument_InvalidLowSurrogate 65348
+#define System_RTLConsts_sInvalidStringAndObjectArrays 65349
+#define System_RTLConsts_sInvalidTimeoutValue 65350
+#define System_RTLConsts_sTimespanTooLong 65351
+#define System_RTLConsts_sInvalidTimespanDuration 65352
+#define System_RTLConsts_sTimespanValueCannotBeNan 65353
+#define System_RTLConsts_sCannotNegateTimespan 65354
+#define System_RTLConsts_sInvalidTimespanFormat 65355
+#define System_RTLConsts_sTimespanElementTooLong 65356
+#define System_RTLConsts_SNoContext 65357
+#define System_RTLConsts_SNoContextFound 65358
+#define System_RTLConsts_SNoIndex 65359
+#define System_RTLConsts_SThreadCreateError 65360
+#define System_RTLConsts_SThreadError 65361
+#define System_RTLConsts_SThreadExternalTerminate 65362
+#define System_RTLConsts_SThreadExternalWait 65363
+#define System_RTLConsts_SThreadStartError 65364
+#define System_RTLConsts_SThreadExternalCheckTerminated 65365
+#define System_RTLConsts_SThreadExternalSetReturnValue 65366
+#define System_RTLConsts_SParamIsNil 65367
+#define System_RTLConsts_SParamIsNegative 65368
+#define System_RTLConsts_SInputBufferExceed 65369
+#define System_RTLConsts_SInvalidCharsInPath 65370
+#define System_RTLConsts_SPathTooLong 65371
+#define System_RTLConsts_SPathNotFound 65372
+#define System_RTLConsts_SPathFormatNotSupported 65373
+#define System_RTLConsts_SFileNotFound 65374
+#define System_RTLConsts_SMissingDateTimeField 65375
+#define System_RTLConsts_SListCountError 65376
+#define System_RTLConsts_SListIndexError 65377
+#define System_RTLConsts_SMemoryStreamError 65378
+#define System_RTLConsts_SNoComSupport 65379
+#define System_RTLConsts_SPropertyException 65380
+#define System_RTLConsts_SReadError 65381
+#define System_RTLConsts_SReadOnlyProperty 65382
+#define System_RTLConsts_SRegCreateFailed 65383
+#define System_RTLConsts_SRegGetDataFailed 65384
+#define System_RTLConsts_SRegSetDataFailed 65385
+#define System_RTLConsts_SResNotFound 65386
+#define System_RTLConsts_SSeekNotImplemented 65387
+#define System_RTLConsts_SSortedListError 65388
+#define System_RTLConsts_SUnknownGroup 65389
+#define System_RTLConsts_SUnknownProperty 65390
+#define System_RTLConsts_SWriteError 65391
+#define System_RTLConsts_SDuplicateItem 65392
+#define System_RTLConsts_SDuplicateName 65393
+#define System_RTLConsts_SDuplicateString 65394
+#define System_RTLConsts_SFCreateErrorEx 65395
+#define System_RTLConsts_SFOpenErrorEx 65396
+#define System_RTLConsts_SIniFileWriteError 65397
+#define System_RTLConsts_SInvalidFileName 65398
+#define System_RTLConsts_SInvalidImage 65399
+#define System_RTLConsts_SInvalidName 65400
+#define System_RTLConsts_SInvalidProperty 65401
+#define System_RTLConsts_SInvalidPropertyElement 65402
+#define System_RTLConsts_SInvalidPropertyPath 65403
+#define System_RTLConsts_SInvalidPropertyType 65404
+#define System_RTLConsts_SInvalidPropertyValue 65405
+#define System_RTLConsts_SInvalidRegType 65406
+#define System_RTLConsts_SListCapacityError 65407
+#define System_SysConst_SInvalidSourceArray 65408
+#define System_SysConst_SInvalidDestinationArray 65409
+#define System_SysConst_SCharIndexOutOfBounds 65410
+#define System_SysConst_SByteIndexOutOfBounds 65411
+#define System_SysConst_SInvalidCharCount 65412
+#define System_SysConst_SInvalidDestinationIndex 65413
+#define System_SysConst_SInvalidCodePage 65414
+#define System_SysConst_SInvalidEncodingName 65415
+#define System_SysConst_SNoMappingForUnicodeCharacter 65416
+#define System_RTLConsts_SAncestorNotFound 65417
+#define System_RTLConsts_SAssignError 65418
+#define System_RTLConsts_SBitsIndexError 65419
+#define System_RTLConsts_SCantWriteResourceStreamError 65420
+#define System_RTLConsts_SCheckSynchronizeError 65421
+#define System_RTLConsts_SClassNotFound 65422
+#define System_RTLConsts_SDuplicateClass 65423
+#define System_SysConst_SLongMonthNameDec 65424
+#define System_SysConst_SShortDayNameSun 65425
+#define System_SysConst_SShortDayNameMon 65426
+#define System_SysConst_SShortDayNameTue 65427
+#define System_SysConst_SShortDayNameWed 65428
+#define System_SysConst_SShortDayNameThu 65429
+#define System_SysConst_SShortDayNameFri 65430
+#define System_SysConst_SShortDayNameSat 65431
+#define System_SysConst_SLongDayNameSun 65432
+#define System_SysConst_SLongDayNameMon 65433
+#define System_SysConst_SLongDayNameTue 65434
+#define System_SysConst_SLongDayNameWed 65435
+#define System_SysConst_SLongDayNameThu 65436
+#define System_SysConst_SLongDayNameFri 65437
+#define System_SysConst_SLongDayNameSat 65438
+#define System_SysConst_SCannotCreateDir 65439
+#define System_SysConst_SShortMonthNameAug 65440
+#define System_SysConst_SShortMonthNameSep 65441
+#define System_SysConst_SShortMonthNameOct 65442
+#define System_SysConst_SShortMonthNameNov 65443
+#define System_SysConst_SShortMonthNameDec 65444
+#define System_SysConst_SLongMonthNameJan 65445
+#define System_SysConst_SLongMonthNameFeb 65446
+#define System_SysConst_SLongMonthNameMar 65447
+#define System_SysConst_SLongMonthNameApr 65448
+#define System_SysConst_SLongMonthNameMay 65449
+#define System_SysConst_SLongMonthNameJun 65450
+#define System_SysConst_SLongMonthNameJul 65451
+#define System_SysConst_SLongMonthNameAug 65452
+#define System_SysConst_SLongMonthNameSep 65453
+#define System_SysConst_SLongMonthNameOct 65454
+#define System_SysConst_SLongMonthNameNov 65455
+#define System_SysConst_SMonitorLockException 65456
+#define System_SysConst_SNoMonitorSupportException 65457
+#define System_SysConst_SNotImplemented 65458
+#define System_SysConst_SObjectDisposed 65459
+#define System_SysConst_SAssertError 65460
+#define System_SysConst_SAbstractError 65461
+#define System_SysConst_SModuleAccessViolation 65462
+#define System_SysConst_SOSError 65463
+#define System_SysConst_SUnkOSError 65464
+#define System_SysConst_SShortMonthNameJan 65465
+#define System_SysConst_SShortMonthNameFeb 65466
+#define System_SysConst_SShortMonthNameMar 65467
+#define System_SysConst_SShortMonthNameApr 65468
+#define System_SysConst_SShortMonthNameMay 65469
+#define System_SysConst_SShortMonthNameJun 65470
+#define System_SysConst_SShortMonthNameJul 65471
+#define System_SysConst_SInvalidVarOpWithHResultWithPrefix 65472
+#define System_SysConst_SVarTypeOutOfRangeWithPrefix 65473
+#define System_SysConst_SVarTypeAlreadyUsedWithPrefix 65474
+#define System_SysConst_SVarTypeNotUsableWithPrefix 65475
+#define System_SysConst_SVarTypeTooManyCustom 65476
+#define System_SysConst_SVarTypeCouldNotConvert 65477
+#define System_SysConst_SVarTypeConvertOverflow 65478
+#define System_SysConst_SVarOverflow 65479
+#define System_SysConst_SVarInvalid 65480
+#define System_SysConst_SVarBadType 65481
+#define System_SysConst_SVarNotImplemented 65482
+#define System_SysConst_SVarUnexpected 65483
+#define System_SysConst_SExternalException 65484
+#define System_SysConst_SAssertionFailed 65485
+#define System_SysConst_SIntfCastError 65486
+#define System_SysConst_SSafecallException 65487
+#define System_SysConst_SException 65488
+#define System_SysConst_SExceptTitle 65489
+#define System_SysConst_SInvalidFormat 65490
+#define System_SysConst_SArgumentMissing 65491
+#define System_SysConst_SDispatchError 65492
+#define System_SysConst_SReadAccess 65493
+#define System_SysConst_SWriteAccess 65494
+#define System_SysConst_SExecuteAccess 65495
+#define System_SysConst_SInvalidAccess 65496
+#define System_SysConst_SFormatTooLong 65497
+#define System_SysConst_SVarArrayCreate 65498
+#define System_SysConst_SVarArrayBounds 65499
+#define System_SysConst_SVarArrayLocked 65500
+#define System_SysConst_SInvalidVarCast 65501
+#define System_SysConst_SInvalidVarOp 65502
+#define System_SysConst_SInvalidVarNullOp 65503
+#define System_SysConst_SInvalidInput 65504
+#define System_SysConst_SDivByZero 65505
+#define System_SysConst_SRangeError 65506
+#define System_SysConst_SIntOverflow 65507
+#define System_SysConst_SInvalidOp 65508
+#define System_SysConst_SZeroDivide 65509
+#define System_SysConst_SOverflow 65510
+#define System_SysConst_SUnderflow 65511
+#define System_SysConst_SInvalidPointer 65512
+#define System_SysConst_SInvalidCast 65513
+#define System_SysConst_SAccessViolationArg3 65514
+#define System_SysConst_SAccessViolationNoArg 65515
+#define System_SysConst_SStackOverflow 65516
+#define System_SysConst_SControlC 65517
+#define System_SysConst_SPrivilege 65518
+#define System_SysConst_SOperationAborted 65519
+#define System_SysConst_SUnknown 65520
+#define System_SysConst_SInvalidInteger 65521
+#define System_SysConst_SInvalidFloat 65522
+#define System_SysConst_SInvalidDate 65523
+#define System_SysConst_SInvalidTime 65524
+#define System_SysConst_SInvalidDateTime 65525
+#define System_SysConst_SInvalidTimeStamp 65526
+#define System_SysConst_SInvalidGUID 65527
+#define System_SysConst_STimeEncodeError 65528
+#define System_SysConst_SDateEncodeError 65529
+#define System_SysConst_SOutOfMemory 65530
+#define System_SysConst_SInOutError 65531
+#define System_SysConst_STooManyOpenFiles 65532
+#define System_SysConst_SAccessDenied 65533
+#define System_SysConst_SEndOfFile 65534
+#define System_SysConst_SDiskFull 65535
+STRINGTABLE
+BEGIN
+	mySQLTypes_SDatabaseOpen,	L"Cannot perform this operation on an open database"
+	mySQLTypes_SDatabaseClosed,	L"Cannot perform this operation on a closed database"
+	mySQLTypes_SEmptySQLStatement,	L"No SQL statement available"
+	mySQLTypes_SLoginError,	L"Cannot connect to database '%s'"
+	mySQLTypes_SNoCachedUpdates,	L"Not in cached update mode"
+	mySQLTypes_SNoFieldAccess,	L"Cannot access field '%s' in a filter"
+	mySQLTypes_SUpdateWrongDB,	L"Cannot update, %s is not owned by %s"
+	MySQLExtMask_SInvalidMask,	L"'%s' is an invalid mask at (%d)"
+	Allgemein_SysFolderlocation_rsE_S_FALSE,	L"Ordner existiert nicht"
+	Allgemein_SysFolderlocation_rsE_InvalidArgument,	L"Argument ung\x00fcltig"
+	mySQLTypes_SBLOBDatasizeOverflow,	L"Data size exceeds maximum blob field size"
+	mySQLTypes_SMySQLErrorCode,	L"MySQL Error Code: (%s)"
+	mySQLTypes_SMySQLError,	L"MySQL Error(%d): %s"
+	mySQLTypes_SDBIErrorCode,	L"DBI Error Code: (%s)"
+	mySQLTypes_SInterfaceError,	L"mySQLDAC Interface Error: (%d)"
+	mySQLTypes_SEngineNotInitialized,	L"Engine not initialized"
+	mySQLTypes_SDatabaseProperty,	L"(%s) property Database is not set!"
+	mySQLTypes_SErrorLoadSSL,	L"Error load SSL Library"
+	mySQLTypes_SMySQLVersionLess,	L"MySQL server version is less then %s!"
+	mySQLTypes_SProcNotFound,	L"Procedure \"%s\" not found in database \"%s\"!"
+	mySQLTypes_SFieldNotFound,	L"Field \"%s\" is not found in current dataset"
+	mySQLTypes_SNotCurrentIndexField,	L"Field \"%s\" is not indexed by current index and cannot be modified"
+	mySQLTypes_SNoResultSetError,	L"Error creating cursor handle (MultiResultsetNo=%d)"
+	mySQLTypes_SIncorrectRoutineType,	L"Incorrect routine type"
+	IdResourceStringsSSPI_RSHTTPSSPIDeligationPolicy,	L"Die Client-Policy erlaubt kein Delegieren von Anmeldeinformationen an den Zielserver."
+	IdResourceStringsSSPI_RSHTTPSSPIPolicyNTLMOnly,	L"Die Client-Policy erlaubt kein Delegieren von Anmeldeinformationen an den Zielserver mit nur NLTM-Authentifizierung."
+	IdResourceStringsSSPI_RSHTTPSSPINoRenegotiation,	L"Der Empf\x00e4nger hat die Anforderung auf Neuaushandlung zur\x00fcckgewiesen."
+	IdResourceStringsSSPI_RSHTTPSSPINoContext,	L"Der erforderliche Sicherheitskontext ist nicht vorhanden."
+	IdResourceStringsSSPI_RSHTTPSSPIPKU2UCertFailure,	L"Das PKU2U-Protokoll hat beim Versuch, die zugeordneten Zertifikate zu verwenden, einen Fehler festgestellt."
+	IdResourceStringsSSPI_RSHTTPSSPIMutualAuthFailed,	L"Die Identit\x00e4t des Server-Computers konnte nicht verifiziert werden."
+	IdResourceStringsSSPI_RSHTTPSSPIUnknwonError,	L"Unbekannter Fehler"
+	IdResourceStringsSSPI_RSHTTPSSPIErrorMsg,	L"SSPI %s gibt Fehler #%d(0x%x) zur\x00fcck: %s"
+	IdResourceStringsSSPI_RSHTTPSSPIInterfaceInitFailed,	L"SSPI-Interface hat sich nicht richtig initialisiert"
+	IdResourceStringsSSPI_RSHTTPSSPINoPkgInfoSpecified,	L"Es wurde kein PSecPkgInfo angegeben"
+	IdResourceStringsSSPI_RSHTTPSSPINoCredentialHandle,	L"Es wurde kein Beglaubigungs-Handle geholt"
+	IdResourceStringsSSPI_RSHTTPSSPICanNotChangeCredentials,	L"Beglaubigung kann nicht nach Holen des Handle ge\x00e4ndert werden. Zuerst Release benutzen"
+	IdResourceStringsSSPI_RSHTTPSSPIUnknwonCredentialUse,	L"Verwendung unbekannter Beglaubigung"
+	IdResourceStringsSSPI_RSHTTPSSPIDoAuquireCredentialHandle,	L"Erst AcquireCredentialsHandle"
+	IdResourceStringsSSPI_RSHTTPSSPICompleteTokenNotSupported,	L"CompleteAuthToken nicht unterst\x00fctzt"
+	Allgemein_SysFolderlocation_rsE_GetPathFromIDList,	L"Ordner kann nicht ermittelt werden"
+	IdResourceStringsSSPI_RSHTTPSSPINoKerbKey,	L"SEC_E_NO_KERB_KEY"
+	IdResourceStringsSSPI_RSHTTPSSPICertWrongUsage,	L"Das Zertifikat ist f\x00fcr die angeforderte Verwendung nicht g\x00fcltig."
+	IdResourceStringsSSPI_RSHTTPSSPIDowngradeDetected,	L"Das System hat einen m\x00f6glichen Versuch der Beeintr\x00e4chtigung der Sicherheit festgestellt. Bitte stellen Sie sicher, dass Sie eine Verbindung zu dem Server herstellen k\x00f6nnen, der Sie authentifiziert hat."
+	IdResourceStringsSSPI_RSHTTPSSPISmartcardCertRevoked,	L"Das f\x00fcr die Authentifizierung verwendete Smartcard-Zertifikat wurde widerrufen. Bitte wenden Sie sich an Ihren Systemadministrator. Im Ereignisprotokoll finden Sie ggf. weitere Informationen."
+	IdResourceStringsSSPI_RSHTTPSSPIIssuingCAUntrusted,	L"Beim Verarbeiten des f\x00fcr die Authentifizierung verwendeten Smartcard-Zertifikats wurde eine nicht vertrauensw\x00fcrdige Zertifizierungsstelle gefunden. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPIRevocationOffline,	L"Der f\x00fcr die Authentifizierung verwendete Widerrufsstatus des Smartcard-Zertifikats konnte nicht festgestellt werden. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPIPKInitClientFailure,	L"Das f\x00fcr die Authentifizierung verwendete Smartcard-Zertifikat ist nicht vertrauensw\x00fcrdig. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPISmartcardExpired,	L"Das f\x00fcr die Authentifizierung verwendete Smartcard-Zertifikat ist abgelaufen. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPINoS4UProtSupport,	L"Das Kerberos-Subsystem hat einen Fehler festgestellt. Ein Dienst f\x00fcr eine Benutzerprotokollanforderung wurde f\x00fcr einen Dom\x00e4nencontroller ausgef\x00fchrt, der keine Dienste f\x00fcr Benutzer unterst\x00fctzt. "
+	IdResourceStringsSSPI_RSHTTPSSPICrossRealmDeligationFailure,	L"Dieser Server hat versucht, eine eingeschr\x00e4nkte Kerberos-Delegierung f\x00fcr ein Ziel au\x00dferhalb des Serverbereichs anzufordern. Dies wird nicht unterst\x00fctzt und gibt eine fehlerhafte Konfiguration dieses Servers bez\x00fcglich der Zul\x00e4ssigkeit von Delegierungen an Listen an. Bitte wenden Sie sich an Ihren Administrator."
+	IdResourceStringsSSPI_RSHTTPSSPIRevocationOfflineKDC,	L"Der f\x00fcr die Smartcard-Authentifizierung verwendete Widerrufsstatus des Dom\x00e4nencontroller-Zertifikats konnte nicht festgestellt werden. Im Systemereignisprotokoll finden Sie weitere Informationen. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPICAUntrustedKDC,	L"Beim Verarbeiten des f\x00fcr die Authentifizierung verwendeten Dom\x00e4nencontroller-Zertifikats wurde eine nicht vertrauensw\x00fcrdige Zertifizierungsstelle gefunden. Im Systemereignisprotokoll finden Sie weitere Informationen. Bitte wenden Sie sich an Ihren Systemadministrator."
+	IdResourceStringsSSPI_RSHTTPSSPIKDCCertExpired,	L"Das f\x00fcr die Smartcard-Anmeldung verwendete Dom\x00e4nencontroller-Zertifikat ist abgelaufen. Bitte wenden Sie sich mit dem Systemereignisprotokoll an Ihren Systemadministrator. "
+	IdResourceStringsSSPI_RSHTTPSSPIKDCCertRevoked,	L"Das f\x00fcr die Smartcard-Anmeldung verwendete Dom\x00e4nencontroller-Zertifikat wurde widerrufen. Bitte wenden Sie sich mit dem Systemereignisprotokoll an Ihren Systemadministrator. "
+	IdResourceStringsSSPI_RSHTTPSSPISignatureNeeded,	L"Eine Signaturoperation muss vor der Benutzerauthentifizierung ausgef\x00fchrt werden."
+	IdResourceStringsSSPI_RSHTTPSSPIInvalidParameter,	L"Ein oder mehrere an die Funktion \x00fcbergebene Parameter sind ung\x00fcltig."
+	IdResourceStringsSSPI_RSHTTPSSPICryptoSysInvalid,	L"Das Kryptosystem oder die Pr\x00fcfsummenfunktion ist ung\x00fcltig, weil eine erforderliche Funktion nicht verf\x00fcgbar ist."
+	IdResourceStringsSSPI_RSHTTPSSPIMaxTicketRef,	L"Die Anzahl der maximalen Ticket-Empfehlungen wurde \x00fcberschritten."
+	IdResourceStringsSSPI_RSHTTPSSPIMustBeKDC,	L"Der lokale Computer muss ein Kerberos KDC (Dom\x00e4nencontroller) sein, ist er aber nicht."
+	IdResourceStringsSSPI_RSHTTPSSPIStrongCryptoNotSupported,	L"Das andere Ende der Sicherheitsaushandlung erfordert eine starke Verschl\x00fcsselung, was auf dem lokalen Computer aber nicht unterst\x00fctzt wird."
+	IdResourceStringsSSPI_RSHTTPSSPIKDCReplyTooManyPrincipals,	L"Die Antwort vom KDC enthielt mehr als einen Prinzipalnamen."
+	IdResourceStringsSSPI_RSHTTPSSPINoPAData,	L"Es wurde erwartet, PA-Daten f\x00fcr einen Hinweis darauf zu finden, welcher etype verwendet werden soll; solche Daten wurden aber nicht gefunden."
+	IdResourceStringsSSPI_RSHTTPSSPIPKInitNameMismatch,	L"Das Client-Zertifikat enth\x00e4lt keinen g\x00fcltigen UPN oder stimmt nicht mit dem Clientnamen in der Anmeldeanforderung \x00fcberein. Bitte wenden Sie sich an Ihren Administrator."
+	IdResourceStringsSSPI_RSHTTPSSPISmartcardLogonReq,	L"Smartcard-Anmeldung ist erforderlich, wurde aber nicht verwendet."
+	IdResourceStringsSSPI_RSHTTPSSPISysShutdownInProg,	L"Das System wird gerade heruntergefahren."
+	IdResourceStringsSSPI_RSHTTPSSPIKDCInvalidRequest,	L"An den KDC wurde eine ung\x00fcltige Anforderung gesendet."
+	IdResourceStringsSSPI_RSHTTPSSPIKDCUnableToRefer,	L"Der KDC konnte f\x00fcr den angeforderten Dienst keine Empfehlung generieren."
+	IdResourceStringsSSPI_RSHTTPSSPIKDCETypeUnknown,	L"Der angeforderte Verschl\x00fcsselungstyp wird vom KDC nicht unterst\x00fctzt."
+	IdResourceStringsSSPI_RSHTTPSSPIUnsupPreauth,	L"Dem Kerberos-Package wurde ein nicht unterst\x00fctzter Vor-Authentifizierungsmechanismus pr\x00e4sentiert."
+	IdResourceStringsSSPI_RSHTTPSSPIDeligationReq,	L"Die angeforderte Operation kann nicht ausgef\x00fchrt werden. Der Computer muss f\x00fcr Delegierungen vertrauensw\x00fcrdig sein, und das aktuelle Benutzerkonto muss f\x00fcr das Zulassen von Delegierungen konfiguriert sein."
+	IdResourceStringsSSPI_RSHTTPSSPIBadBindings,	L"Vom Client bereitgestellte SSPI-Kanalbindungen waren inkorrekt."
+	IdResourceStringsSSPI_RSHTTPSSPIMultipleAccounts,	L"Das erhaltene Zertifikat wurde mehreren Konten zugeordnet."
+	IdResourceStringsSSPI_RSHTTPSSPIRengotiate,	L"Die Kontextdaten m\x00fcssen mit dem Peer neu ausgehandelt werden."
+	IdResourceStringsSSPI_RSHTTPSSPIWrongPrincipal,	L"Der Ziel-Prinzipalname ist nicht korrekt."
+	IdResourceStringsSSPI_RSHTTPSSPINoLSACode,	L"Mit diesem Kontext ist kein LSA-Modus-Kontext verkn\x00fcpft."
+	IdResourceStringsSSPI_RSHTTPSSPITimeScew,	L"Die Uhrzeit auf Client und Server ist unterschiedlich."
+	IdResourceStringsSSPI_RSHTTPSSPIUntrustedRoot,	L"Die Zertifikatskette wurde von einer nicht vertrauensw\x00fcrdigen Autorit\x00e4t ausgegeben."
+	IdResourceStringsSSPI_RSHTTPSSPIIllegalMessage,	L"Die empfangene Botschaft war nicht erwartet oder falsch formatiert."
+	IdResourceStringsSSPI_RSHTTPSSPICertUnknown,	L"Beim Bearbeiten des Zertifikats ist ein Fehler aufgetreten."
+	IdResourceStringsSSPI_RSHTTPSSPICertExpired,	L"Das empfangene Zertifikat ist abgelaufen."
+	IdResourceStringsSSPI_RSHTTPSSPIEncryptionFailure,	L"Die angegebenen Daten konnten nicht verschl\x00fcsselt werden."
+	IdResourceStringsSSPI_RSHTTPSSPIDecryptionFailure,	L"Die angegebenen Daten konnten nicht entschl\x00fcsselt werden."
+	IdResourceStringsSSPI_RSHTTPSSPIAlgorithmMismatch,	L"Client und Server k\x00f6nnen nicht kommunizieren, da sie keinen gemeinsamen Algorithmus besitzen."
+	IdResourceStringsSSPI_RSHTTPSSPISecurityQOSFailure,	L"Der Sicherheitskontext konnte nicht eingerichtet werden, da Qualit\x00e4t des Service fehlt (z.B. gegenseitige Authentifizierung oder Delegation)."
+	IdResourceStringsSSPI_RSHTTPSSPISecCtxWasDelBeforeUpdated,	L"Ein Sicherheitskontext wurde vor Ausf\x00fchrung des Kontextes gel\x00f6scht. Dies wird als Anmeldefehler eingestuft."
+	IdResourceStringsSSPI_RSHTTPSSPIClientNoTGTReply,	L"Der Client versucht, einen Kontext auszuhandeln, und der Server erfordert Benutzer-zu-Benutzer, hat aber keine TGT-Antwort gesendet."
+	IdResourceStringsSSPI_RSHTTPSSPILocalNoIPAddr,	L"Die angeforderte Aufgabe konnte nicht ausgef\x00fchrt werden, weil der lokale Computer keine IP-Adresse hat."
+	IdResourceStringsSSPI_RSHTTPSSPIWrongCredHandle,	L"Das bereitgestellte Anmeldeinformations-Handle stimmt nicht mit den dem Sicherheitskontext zugeordneten Anmeldeinformationen \x00fcberein."
+	IdResourceStringsSSPI_RSHTTPSSPILoginDenied,	L"Der Versuch der Anmeldung ist fehlgeschlagen"
+	IdResourceStringsSSPI_RSHTTPSSPIUnknownCredentials,	L"Die Beglaubigungen aus dem Package wurden nicht erkannt"
+	IdResourceStringsSSPI_RSHTTPSSPINoCredentials,	L"Im Sicherheits-Package sind keine Beglaubigungen verf\x00fcgbar"
+	IdResourceStringsSSPI_RSHTTPSSPIMessageAltered,	L"Die zur Verifizierung \x00fcbermittelte Botschaft oder Signatur wurde ver\x00e4ndert"
+	IdResourceStringsSSPI_RSHTTPSSPIOutOfSequence,	L"Die zur Verifizierung \x00fcbermittelte Botschaft ist au\x00dferhalb der Sequenz"
+	IdResourceStringsSSPI_RSHTTPSSPINoAuthAuthority,	L"F\x00fcr die Authentifizierung konnte keine geeignete Stelle kontaktiert werden."
+	IdResourceStringsSSPI_RSHTTPSSPIContinueNeeded,	L"Die Funktion wurde erfolgreich ausgef\x00fchrt, muss aber zur Vervollst\x00e4ndigung des Kontexts wieder aufgerufen werden"
+	IdResourceStringsSSPI_RSHTTPSSPICompleteNeeded,	L"Die Funktion wurde erfolgreich ausgef\x00fchrt, aber CompleteToken muss aufgerufen werden"
+	IdResourceStringsSSPI_RSHTTPSSPICompleteContinueNeeded,	L"Die Funktion wurde erfolgreich ausgef\x00fchrt, aber CompleteToken als auch diese Funktion m\x00fcssen aufgerufen werden, um den Kontext zu vervollst\x00e4ndigen"
+	IdResourceStringsSSPI_RSHTTPSSPILocalLogin,	L"Die Anmeldung wurde durchgef\x00fchrt, aber es war keine Netzwerk-Autorit\x00e4t verf\x00fcgbar. Die Anmeldung wurde unter Verwendung lokal bekannter Informationen durchgef\x00fchrt"
+	IdResourceStringsSSPI_RSHTTPSSPIBadPackageID,	L"Das angeforderte Sicherheits-Package existiert nicht"
+	IdResourceStringsSSPI_RSHTTPSSPIContextExpired,	L"Der Kontext ist abgelaufen und kann nicht mehr verwendet werden."
+	IdResourceStringsSSPI_RSHTTPSSPIIncompleteMessage,	L"Die \x00fcbermittelte Botschaft ist unvollst\x00e4ndig. Die Signatur wurde nicht verifiziert."
+	IdResourceStringsSSPI_RSHTTPSSPIIncompleteCredentialNotInit,	L"Die aufgef\x00fchrten Beglaubigungen waren unvollst\x00e4ndig und konnten nicht verifiziert werden. Der Kontext konnte nicht initialisiert werden."
+	IdResourceStringsSSPI_RSHTTPSSPIBufferTooSmall,	L"Die der Funktion mitgegebenen Puffer sind zu klein."
+	IdResourceStringsSSPI_RSHTTPSSPIIncompleteCredentialsInit,	L"Die aufgef\x00fchrten Beglaubigungen waren unvollst\x00e4ndig und konnten nicht verifiziert werden. Zusatzinformationen k\x00f6nnen aus dem Kontext zur\x00fcckgegeben werden."
+	IdResourceStringsOpenSSL_RSOSSLConnectExit,	L"Verbindungsende"
+	IdResourceStringsOpenSSL_RSOSSLHandshakeStart,	L"Handshake-Start"
+	IdResourceStringsOpenSSL_RSOSSLHandshakeDone,	L"Handshake ausgef\x00fchrt"
+	IdResourceStringsSSPI_RSHTTPSSPISuccess,	L"Erfolgreicher API-Aufruf"
+	IdResourceStringsSSPI_RSHTTPSSPINotEnoughMem,	L"F\x00fcr diese Anforderung steht nicht gen\x00fcgend Speicher zur Verf\x00fcgung"
+	IdResourceStringsSSPI_RSHTTPSSPIInvalidHandle,	L"Das angegebene Handle ist ung\x00fcltig"
+	IdResourceStringsSSPI_RSHTTPSSPIFuncNotSupported,	L"Die angeforderte Funktion wird nicht unterst\x00fctzt"
+	IdResourceStringsSSPI_RSHTTPSSPIUnknownTarget,	L"Das angegebene Ziel ist unbekannt oder nicht erreichbar"
+	IdResourceStringsSSPI_RSHTTPSSPIInternalError,	L"Die lokale Sicherheitsautorit\x00e4t kann nicht kontaktiert werden"
+	IdResourceStringsSSPI_RSHTTPSSPISecPackageNotFound,	L"Das angeforderte Sicherheits-Package existiert nicht"
+	IdResourceStringsSSPI_RSHTTPSSPINotOwner,	L"Der Aufrufer ist nicht der Besitzer der gew\x00fcnschten Beglaubigung"
+	IdResourceStringsSSPI_RSHTTPSSPIPackageCannotBeInstalled,	L"Das Sicherheits-Package konnte nicht initialisiert werden und kann nicht installiert werden"
+	IdResourceStringsSSPI_RSHTTPSSPIInvalidToken,	L"Das der Funktion \x00fcbermittelte Token ist ung\x00fcltig"
+	IdResourceStringsSSPI_RSHTTPSSPICannotPack,	L"Das Sicherheits-Package kann den Anmelde-Puffer nicht einrichten, deswegen ist der Versuch der Anmeldung fehlgeschlagen"
+	IdResourceStringsSSPI_RSHTTPSSPIQOPNotSupported,	L"Der Qualit\x00e4tsschutz pro Botschaft wird vom Sicherheits-Package nicht unterst\x00fctzt"
+	IdResourceStringsSSPI_RSHTTPSSPINoImpersonation,	L"Der Sicherheitskontext erlaubt keine Darstellung des Client"
+	IdResourceStringsProtocols_RSUnsupportedOperation,	L"Nicht unterst\x00fctzte Operation."
+	IdResourceStringsProtocols_RSHeaderEncodeError,	L"Header-Daten konnten nicht mit Zeichensatz \"%s\" codiert werden"
+	IdResourceStringsOpenSSL_RSOSSFailedToLoad,	L"Fehler beim Laden von %s."
+	IdResourceStringsOpenSSL_RSOSSLModeNotSet,	L"Der Modus wurde nicht gesetzt."
+	IdResourceStringsOpenSSL_RSOSSLCouldNotLoadSSLLibrary,	L"SSL.-Bibliothek konnte nicht geladen werden."
+	IdResourceStringsOpenSSL_RSOSSLStatusString,	L"SSL-Status: \"%s\""
+	IdResourceStringsOpenSSL_RSOSSLAlert,	L"%s Meldung"
+	IdResourceStringsOpenSSL_RSOSSLReadAlert,	L"%s Lesemeldung"
+	IdResourceStringsOpenSSL_RSOSSLWriteAlert,	L"%s Schreibmeldung"
+	IdResourceStringsOpenSSL_RSOSSLAcceptLoop,	L"Annahme-Schleife"
+	IdResourceStringsOpenSSL_RSOSSLAcceptError,	L"Fehler bei der Annahme"
+	IdResourceStringsOpenSSL_RSOSSLAcceptFailed,	L"Annahme fehlgeschlagen"
+	IdResourceStringsOpenSSL_RSOSSLAcceptExit,	L"Annahme-Ende"
+	IdResourceStringsOpenSSL_RSOSSLConnectLoop,	L"Verbindungsschleife"
+	IdResourceStringsOpenSSL_RSOSSLConnectError,	L"Fehler bei der Verbindung"
+	IdResourceStringsOpenSSL_RSOSSLConnectFailed,	L"Verbindung fehlgeschlagen"
+	IdResourceStringsProtocols_RSSSLSettingCipherError,	L"SetCipher fehlgeschlagen."
+	IdResourceStringsProtocols_RSSSLCreatingSessionError,	L"Fehler beim Anlegen einer SSL-Sitzung."
+	IdResourceStringsProtocols_RSSSLCreatingContextError,	L"Fehler beim Anlegen eines SSL-Kontexts."
+	IdResourceStringsProtocols_RSSSLLoadingRootCertError,	L"Stammzertifikat konnte nicht geladen werden."
+	IdResourceStringsProtocols_RSSSLLoadingCertError,	L"Zertifikat konnte nicht geladen werden."
+	IdResourceStringsProtocols_RSSSLLoadingKeyError,	L"Der Schl\x00fcssel konnte nicht geladen werden; \x00fcberpr\x00fcfen Sie das Passwort."
+	IdResourceStringsProtocols_RSSSLLoadingDHParamsError,	L"DH-Parameter konnten nicht geladen werden."
+	IdResourceStringsProtocols_RSSSLGetMethodError,	L"Fehler beim Abrufen einer SSL-Methode."
+	IdResourceStringsProtocols_RSSSLFDSetError,	L"Fehler beim Setzen des Dateideskriptors f\x00fcr SSL"
+	IdResourceStringsProtocols_RSSSLDataBindingError,	L"Fehler beim Binden der Daten an den SSL-Socket."
+	IdResourceStringsProtocols_RSSSLEOFViolation,	L"EOF festgestellt, das gegen das Protokoll verst\x00f6\x00dft"
+	IdResourceStringsProtocols_RSMFDInvalidObjectType,	L"Nicht unterst\x00fctzter Objekttyp. Sie k\x00f6nnen nur einen der folgenden Typen oder deren Nachkommen zuweisen: TStrings, TStream."
+	IdResourceStringsProtocols_RSMFDInvalidTransfer,	L"Nicht unterst\x00fctzter Transfertyp. Es kann nur ein leerer String oder einer der folgenden Werte zugewiesen werden: 7bit, 8bit, binary, quoted-printable, base64."
+	IdResourceStringsProtocols_RSMFDInvalidEncoding,	L"Nicht unterst\x00fctzte Codierung. Es kann nur einer der folgenden Werte zugewiesen werden: Q, B, 8."
+	IdResourceStringsProtocols_RSURINoProto,	L"Protokollfeld ist leer"
+	IdResourceStringsProtocols_RSURINoHost,	L"Host-Feld ist leer"
+	IdResourceStringsCore_RSIOHandlerCannotChange,	L"Verbundener IOHandler kann nicht ge\x00e4ndert werden."
+	IdResourceStringsCore_RSIOHandlerTypeNotInstalled,	L"Kein IOHandler des Typs %s installiert."
+	IdResourceStringsCore_RSReplyInvalidCode,	L"Antwortcode ist ung\x00fcltig: %s"
+	IdResourceStringsCore_RSReplyCodeAlreadyExists,	L"Antwortcode bereits vorhanden: %s"
+	IdResourceStringsProtocols_RSIOHandlerPropInvalid,	L"Wert f\x00fcr IOHandler ist ung\x00fcltig"
+	IdResourceStringsProtocols_RSFIPSAlgorithmNotAllowed,	L"Algorithmus %s im FIPS-Modus nicht zul\x00e4ssig"
+	IdResourceStringsProtocols_RSMIMEExtensionEmpty,	L"Erweiterung ist leer"
+	IdResourceStringsProtocols_RSMIMEMIMETypeEmpty,	L"Mimetype ist leer"
+	IdResourceStringsProtocols_RSMIMEMIMEExtAlreadyExists,	L"Erweiterung existiert bereits"
+	IdResourceStringsProtocols_RSHTTPChunkStarted,	L"Chunk gestartet"
+	IdResourceStringsProtocols_RSHTTPNotAcceptable,	L"Nicht akzeptabel"
+	IdResourceStringsProtocols_RSHTTPUnknownProtocol,	L"Unbekanntes Protokoll"
+	IdResourceStringsProtocols_RSHTTPMethodRequiresVersion,	L"Anforderungsmethode erfordert HTTP Version 1.1"
+	IdResourceStringsProtocols_RSHTTPAuthInvalidHash,	L"Nicht unterst\x00fctzter Hash-Algorithmus. Die Implementierung unterst\x00fctzt nur MD5-Codierung."
+	IdResourceStringsProtocols_RSSSLAcceptError,	L"Fehler beim Annehmen der Verbindung mit SSL."
+	IdResourceStringsProtocols_RSSSLConnectError,	L"Fehler beim Verbinden mit SSL."
+	IdResourceStringsCore_RSObjectTypeNotSupported,	L"Objekttyp nicht unterst\x00fctzt."
+	IdResourceStringsCore_RSIdNoDataToRead,	L"Keine Daten f\x00fcr den Lesezugriff."
+	IdResourceStringsCore_RSReadTimeout,	L"Zeit\x00fcberschreitung beim Lesen."
+	IdResourceStringsCore_RSReadLnWaitMaxAttemptsExceeded,	L"Max. Zeilenleseversuche \x00fcberschritten."
+	IdResourceStringsCore_RSReadLnMaxLineLengthExceeded,	L"Max. Zeilenl\x00e4nge \x00fcberschritten."
+	IdResourceStringsCore_RSRequiresLargeStream,	L"Setzen Sie LargeStream auf True, um Streams, die gr\x00f6\x00dfer als 2 GB sind, zu senden"
+	IdResourceStringsCore_RSDataTooLarge,	L"Daten sind f\x00fcr den Stream zu gro\x00df"
+	IdResourceStringsCore_RSConnectTimeout,	L"Zeit\x00fcberschreitung der Verbindung."
+	IdResourceStringsCore_RSThreadTerminateAndWaitFor,	L"Aufruf von TerminateAndWaitFor f\x00fcr FreeAndTerminate-Threads nicht m\x00f6glich"
+	IdResourceStringsCore_RSAlreadyConnected,	L"Verbindung besteht bereits."
+	IdResourceStringsCore_RSMaximumNumberOfCaptureLineExceeded,	L"Maximal zul\x00e4ssige Zeilenanzahl \x00fcberschritten"
+	IdResourceStringsCore_RSInterceptIsDifferent,	L"Dem IOHandler wurde bereits ein anderes Intercept zugewiesen"
+	IdResourceStringsCore_RSTransparentProxyCannotBind,	L"Transparenter Proxy kann nicht binden."
+	IdResourceStringsCore_RSTransparentProxyCanNotSupportUDP,	L"UDP wird von diesem Proxy nicht unterst\x00fctzt."
+	IdResourceStringsCore_RSBufferMissingTerminator,	L"Pufferbegrenzer muss angegeben werden."
+	IdResourceStringsCore_RSBufferInvalidStartPos,	L"Pufferstartposition ist ung\x00fcltig."
+	IdResourceStringsCore_RSSocksServerRespondError,	L"Socks-Server hat nicht geantwortet."
+	IdResourceStringsCore_RSSocksAuthMethodError,	L"Ung\x00fcltige Authentifizierungsmethode f\x00fcr Socks."
+	IdResourceStringsCore_RSSocksAuthError,	L"Authentifizierungsfehler beim Socks-Server."
+	IdResourceStringsCore_RSSocksServerGeneralError,	L"Allgemeiner SOCKS-Server-Fehler."
+	IdResourceStringsCore_RSSocksServerPermissionError,	L"Verbindung von Regelmenge nicht zugelassen."
+	IdResourceStringsCore_RSSocksServerNetUnreachableError,	L"Netzwerk nicht erreichbar."
+	IdResourceStringsCore_RSSocksServerHostUnreachableError,	L"Host nicht erreichbar."
+	IdResourceStringsCore_RSSocksServerConnectionRefusedError,	L"Verbindung abgelehnt."
+	IdResourceStringsCore_RSSocksServerTTLExpiredError,	L"TTL abgelaufen."
+	IdResourceStringsCore_RSSocksServerCommandError,	L"Anweisung nicht unterst\x00fctzt."
+	IdResourceStringsCore_RSSocksServerAddressError,	L"Adresstyp nicht unterst\x00fctzt."
+	IdResourceStringsCore_RSInterceptCircularLink,	L"%s: Zirkul\x00e4re Verkn\x00fcpfungen sind nicht zul\x00e4ssig"
+	IdResourceStringsCore_RSNotEnoughDataInBuffer,	L"Nicht gen\x00fcgend Daten im Puffer. (%d/%d)"
+	IdResourceStringsCore_RSTooMuchDataInBuffer,	L"Zu viele Daten im Puffer."
+	IdResourceStringsCore_RSFileNotFound,	L"Datei \"%s\" nicht gefunden"
+	IdResourceStringsCore_RSNotConnected,	L"Nicht verbunden"
+	IdResourceStrings_RSCannotBindRange,	L"Port-Bereich (%d - %d) kann nicht eingebunden werden"
+	IdResourceStrings_RSConnectionClosedGracefully,	L"Die Verbindung wurde erfolgreich geschlossen."
+	IdResourceStrings_RSCouldNotBindSocket,	L"Socket konnte nicht gebunden werden. Adresse und Port werden bereits verwendet."
+	IdResourceStrings_RSInvalidPortRange,	L"Ung\x00fcltiger Port-Bereich (%d - %d)"
+	IdResourceStrings_RSInvalidServiceName,	L"%s ist kein g\x00fcltiger Service."
+	IdResourceStrings_RSInvalidIPv6Address,	L"%s ist keine g\x00fcltige IPv6-Adresse"
+	IdResourceStrings_RSIPVersionUnsupported,	L"Die angeforderte IPVersion-/Adress-Familie wird nicht unterst\x00fctzt."
+	IdResourceStrings_RSNotAllBytesSent,	L"Es wurden nicht alle Bytes gesendet."
+	IdResourceStrings_RSPackageSizeTooBig,	L"Package zu gro\x00df."
+	IdResourceStrings_RSSetSizeExceeded,	L"Festgelegte Gr\x00f6\x00dfe \x00fcberschritten."
+	IdResourceStrings_RSEndOfStream,	L"Ende des Streams: Klasse %s bei %d"
+	IdResourceStringsCore_RSSocksUDPNotSupported,	L"UDP wird in dieser SOCKS-Version nicht unterst\x00fctzt."
+	IdResourceStringsCore_RSSocksRequestFailed,	L"Anforderung zur\x00fcckgewiesen oder fehlgeschlagen."
+	IdResourceStringsCore_RSSocksRequestServerFailed,	L"Anforderung zur\x00fcckgewiesen, weil der SOCKS-Server keine Verbindung herstellen kann."
+	IdResourceStringsCore_RSSocksRequestIdentFailed,	L"Anforderung zur\x00fcckgewiesen, weil das Client-Programm und der Identd verschiedene Benutzer-IDs melden."
+	IdResourceStringsCore_RSSocksUnknownError,	L"Unbekannter Socks-Fehler."
+	IdResourceStrings_RSStackEISCONN,	L"Socket ist bereits verbunden."
+	IdResourceStrings_RSStackENOTCONN,	L"Socket ist nicht verbunden."
+	IdResourceStrings_RSStackESHUTDOWN,	L"Nach Schlie\x00dfen des Socket kann weder gesendet noch empfangen werden."
+	IdResourceStrings_RSStackETOOMANYREFS,	L"Zu viele Referenzen; keine Verbindungen m\x00f6glich."
+	IdResourceStrings_RSStackETIMEDOUT,	L"Zeit\x00fcberschreitung bei Verbindung."
+	IdResourceStrings_RSStackECONNREFUSED,	L"Verbindung abgelehnt."
+	IdResourceStrings_RSStackELOOP,	L"Zu viele Ebenen symbolischer Verkn\x00fcpfungen."
+	IdResourceStrings_RSStackENAMETOOLONG,	L"Dateiname zu lang."
+	IdResourceStrings_RSStackEHOSTDOWN,	L"Host ist heruntergefahren."
+	IdResourceStrings_RSStackEHOSTUNREACH,	L"Keine Route zum Host."
+	IdResourceStrings_RSStackENOTEMPTY,	L"Verzeichnis ist nicht leer"
+	IdResourceStrings_RSStackHOST_NOT_FOUND,	L"Host nicht gefunden."
+	IdResourceStrings_RSStackClassUndefined,	L"Stack-Klasse ist nicht definiert."
+	IdResourceStrings_RSStackAlreadyCreated,	L"Stack bereits erstellt."
+	IdResourceStrings_RSAntiFreezeOnlyOne,	L"Pro Anwendung darf nur ein TIdAntiFreeze vorhanden sein."
+	IdResourceStrings_RSCannotSetIPVersionWhenConnected,	L"Wenn verbunden, kann IPVersion nicht ver\x00e4ndert werden"
+	IdResourceStrings_RSStackEMSGSIZE,	L"Nachricht zu lang."
+	IdResourceStrings_RSStackEPROTOTYPE,	L"Falscher Protokolltyp f\x00fcr Socket."
+	IdResourceStrings_RSStackENOPROTOOPT,	L"Falsche Protokolloption."
+	IdResourceStrings_RSStackEPROTONOSUPPORT,	L"Protokoll nicht unterst\x00fctzt."
+	IdResourceStrings_RSStackESOCKTNOSUPPORT,	L"Socket-Typ wird nicht unterst\x00fctzt."
+	IdResourceStrings_RSStackEOPNOTSUPP,	L"Operation f\x00fcr Socket nicht unterst\x00fctzt."
+	IdResourceStrings_RSStackEPFNOSUPPORT,	L"Protokollfamilie nicht unterst\x00fctzt."
+	IdResourceStrings_RSStackEAFNOSUPPORT,	L"Die Adressfamilie wird von der Protokollfamilie nicht unterst\x00fctzt."
+	IdResourceStrings_RSStackEADDRINUSE,	L"Adresse wird bereits verwendet."
+	IdResourceStrings_RSStackEADDRNOTAVAIL,	L"Angeforderte Adresse kann nicht zugewiesen werden."
+	IdResourceStrings_RSStackENETDOWN,	L"Netzwerk ist heruntergefahren."
+	IdResourceStrings_RSStackENETUNREACH,	L"Netzwerk ist nicht erreichbar."
+	IdResourceStrings_RSStackENETRESET,	L"Netz hat die Verbindung verloren oder zur\x00fcckgesetzt."
+	IdResourceStrings_RSStackECONNABORTED,	L"Software verursachte einen Verbindungsabbruch."
+	IdResourceStrings_RSStackECONNRESET,	L"Die Verbindung wurde von Peer zur\x00fcckgesetzt."
+	IdResourceStrings_RSStackENOBUFS,	L"Kein Pufferplatz verf\x00fcgbar."
+	IdResourceStrings_RSStatusConnected,	L"Verbunden."
+	IdResourceStrings_RSStatusDisconnecting,	L"Verbindung wird getrennt."
+	IdResourceStrings_RSStatusDisconnected,	L"Verbindung getrennt."
+	IdResourceStrings_RSStatusText,	L"%s"
+	IdResourceStrings_RSStackError,	L"Socket-Fehler # %d%s\r\n"
+	IdResourceStrings_RSStackEINTR,	L"Unterbrochener Systemaufruf."
+	IdResourceStrings_RSStackEBADF,	L"Falsche Dateinummer."
+	IdResourceStrings_RSStackEACCES,	L"Zugriff verweigert."
+	IdResourceStrings_RSStackEFAULT,	L"Pufferfehler."
+	IdResourceStrings_RSStackEINVAL,	L"Ung\x00fcltiges Argument."
+	IdResourceStrings_RSStackEMFILE,	L"Zu viele ge\x00f6ffnete Dateien."
+	IdResourceStrings_RSStackEWOULDBLOCK,	L"Operation w\x00fcrde blockieren."
+	IdResourceStrings_RSStackEINPROGRESS,	L"Die Operation wird gerade durchgef\x00fchrt."
+	IdResourceStrings_RSStackEALREADY,	L"Operation wird bereits verarbeitet."
+	IdResourceStrings_RSStackENOTSOCK,	L"Socket-Operation f\x00fcr Nicht-Socket."
+	IdResourceStrings_RSStackEDESTADDRREQ,	L"Zieladresse erforderlich."
+	IBX_IBXConst_SInvalidLibraryType,	L"Ung\x00fcltiger Bibliothekstyp zugewiesen.  G\x00fcltige Strings sind %s"
+	IBX_IBXConst_SCannotChangeServerType,	L"ServerType kann f\x00fcr eine aktive Verbindung nicht ge\x00e4ndert werden"
+	IBX_IBXConst_SColumnEncryptionError,	L"Tabellenname und Spaltenname sind zum Festlegen von Passw\x00f6rtern f\x00fcr die Spaltenverschl\x00fcsselung erforderlich"
+	IBX_IBXConst_SEncryptionError,	L"Verbindung muss zum Festlegen von Verschl\x00fcsselungspassw\x00f6rtern aktiv sein"
+	IBX_IBXConst_SInvalidODSVersion,	L"Ung\x00fcltige Version von ODS Major Restore. G\x00fcltige Optionen sind 0 (keine \x00c4nderung) und >= ODS 13"
+	IdResourceStrings_RSInvalidSourceArray,	L"Ung\x00fcltiges Quell-Array"
+	IdResourceStrings_RSInvalidDestinationArray,	L"Ung\x00fcltiges Ziel-Array"
+	IdResourceStrings_RSCharIndexOutOfBounds,	L"Zeichenindex au\x00dferhalb des g\x00fcltigen Bereichs (%d)"
+	IdResourceStrings_RSInvalidCharCount,	L"Ung\x00fcltige Anzahl (%d)"
+	IdResourceStrings_RSInvalidDestinationIndex,	L"Ung\x00fcltiger Zielindex (%d)"
+	IdResourceStrings_RSInvalidCodePage,	L"Ung\x00fcltige Codeseite (%d)"
+	IdResourceStrings_RSFailedTimeZoneInfo,	L"Das Einlesen der Informationen \x00fcber die Zeitzone ist fehlgeschlagen."
+	IdResourceStrings_RSWinsockCallError,	L"Fehler beim Aufruf der Winsock2-Bibliotheksfunktion %s"
+	IdResourceStrings_RSWinsockLoadError,	L"Fehler beim Laden der Winsock2-Bibliothek (%s)"
+	IdResourceStrings_RSStatusResolving,	L"Host-Name %s wird aufgel\x00f6st."
+	IdResourceStrings_RSStatusConnecting,	L"Verbinden mit %s."
+	IBX_IBXConst_SDPBConstantUnknownEx,	L"DPB-Konstante (%s) ist unbekannt"
+	IBX_IBXConst_STPBConstantUnknownEx,	L"TPB-Konstante (%s) ist unbekannt"
+	IBX_IBXConst_SUnknownPlan,	L"Unbekannter Fehler - Plan kann nicht abgerufen werden"
+	IBX_IBXConst_SFieldSizeMismatch,	L"Gr\x00f6\x00dfenfehler - Feld %s ist zu klein f\x00fcr die Daten"
+	IBX_IBXConst_SEventAlreadyRegistered,	L"Ereignisse bereits registriert"
+	IBX_IBXConst_SStringTooLarge,	L"Versuch, String mit der L\x00e4nge %d in einem Feld zu speichern, das nur %d aufnehmen kann"
+	IBX_IBXConst_SNoTimers,	L"Nicht gen\x00fcgend Timer verf\x00fcgbar"
+	IBX_IBXConst_SIB65feature,	L"%s ist ein Funktion von InterBase 6.5. Upgraden Sie auf InterBase 6.5, um diese Funktion zu nutzen"
+	IBX_IBXConst_SLoginPromptFailure,	L"Standardanmelde-Dialogfeld nicht gefunden. F\x00fcgen Sie dem uses-Abschnitt der Main-Datei DBLogDlg hinzu."
+	IBX_IBXConst_SIBMemoryError,	L"Zu wenig Arbeitsspeicher"
+	IBX_IBXConst_SIB70feature,	L"%s ist ein Funktion von InterBase 7.0. Upgraden Sie auf InterBase 7.0, um diese Funktion zu nutzen"
+	IBX_IBXConst_SIB71feature,	L"%s ist ein Funktion von InterBase 7.1. Upgraden Sie auf InterBase 7.1, um diese Funktion zu nutzen"
+	IBX_IBXConst_SIB80feature,	L"%s ist ein Funktion von InterBase 2007. Upgraden Sie auf InterBase 2007, um diese Funktion zu nutzen"
+	IBX_IBXConst_SFileSizeDumpCountIncompatibility,	L"Wenn Sie Gr\x00f6\x00dfen bereitstellen, dann m\x00fcssen Sie eine Gr\x00f6\x00dfe f\x00fcr alle Dateien in der Dateiliste angeben (letzte Gr\x00f6\x00dfe optional)"
+	IBX_IBXConst_SCannotPerformDumpOnActiveConnection,	L"Datenbank kann bei Durchf\x00fchrung eines Online-Dump nicht verbunden werden"
+	IBX_IBXConst_SIBUnknownServerType,	L"%s ist kein registrierter Servertyp"
+	IBX_IBXConst_SCantPrintValue,	L"Wert kann nicht gedruckt werden"
+	IBX_IBXConst_SEOFReached,	L"SEOFReached"
+	IBX_IBXConst_SEOFInComment,	L"EOF im Kommentar gefunden"
+	IBX_IBXConst_SEOFInString,	L"EOF im String gefunden"
+	IBX_IBXConst_SParamNameExpected,	L"Parametername erwartet"
+	IBX_IBXConst_SSuccess,	L"Ausf\x00fchrung erfolgreich"
+	IBX_IBXConst_SDelphiException,	L"DelphiException %s"
+	IBX_IBXConst_SNoOptionsSet,	L"Es sind keine Installationsoptionen ausgew\x00e4hlt"
+	IBX_IBXConst_SNoDestinationDirectory,	L"DestinationDirectory nicht festgelegt"
+	IBX_IBXConst_SNosourceDirectory,	L"SourceDirectory nicht festgelegt"
+	IBX_IBXConst_SNoUninstallFile,	L"Dateiname f\x00fcr die Deinstallation ist nicht festgelegt"
+	IBX_IBXConst_SOptionNeedsClient,	L"Komponente %s setzt voraus, dass der Client richtig funktioniert"
+	IBX_IBXConst_SOptionNeedsServer,	L"Komponente %s setzt voraus, dass der Server richtig funktioniert"
+	IBX_IBXConst_SInvalidOption,	L"Ung\x00fcltige Option angegeben"
+	IBX_IBXConst_SInvalidOnErrorResult,	L"Unerwarteter R\x00fcckgabewert von onError"
+	IBX_IBXConst_SInvalidOnStatusResult,	L"Unerwarteter R\x00fcckgabewert von onStatus"
+	IBX_IBXConst_SMaximumEvents,	L"Das Maximum an Ereignissen wurde \x00fcberschritten"
+	IBX_IBXConst_SNoEventsRegistered,	L"Es sind keine Ereignisse registriert"
+	IBX_IBXConst_SInvalidQueueing,	L"Ung\x00fcltiges Queueing"
+	IBX_IBXConst_SInvalidRegistration,	L"Ung\x00fcltige Registrierung"
+	IBX_IBXConst_SInvalidBatchMove,	L"Ung\x00fcltige Batch-Move-Operation"
+	IBX_IBXConst_SSQLDialectInvalid,	L"Ung\x00fcltiger SQL-Dialekt"
+	IBX_IBXConst_SSPBConstantNotSupported,	L"SPB-Konstante nicht unterst\x00fctzt"
+	IBX_IBXConst_SSPBConstantUnknown,	L"SPB-Konstante unbekannt"
+	IBX_IBXConst_SServiceActive,	L"Operation kann nicht durchgef\x00fchrt werden - Dienst ist nicht verbunden"
+	IBX_IBXConst_SServiceInActive,	L"Operation kann nicht durchgef\x00fchrt werden - Dienst ist verbunden"
+	IBX_IBXConst_SServerNameMissing,	L"Server-Name fehlt"
+	IBX_IBXConst_SQueryParamsError,	L"Abfrageparameter fehlen oder sind nicht korrekt"
+	IBX_IBXConst_SStartParamsError,	L"Start-Parameter fehlen oder sind nicht korrekt"
+	IBX_IBXConst_SOutputParsingError,	L"Unerwarteter Wert f\x00fcr Ausgabepuffer"
+	IBX_IBXConst_SUseSpecificProcedures,	L"Generisches ServiceStart ist hier nicht anwendbar: Verwenden Sie spezifische Prozeduren, um die Konfigurationsparameter festzulegen"
+	IBX_IBXConst_SSQLMonitorAlreadyPresent,	L"Es gibt schon eine Instanz des SQL-Monitors"
+	IBX_IBXConst_SIsASelectStatement,	L"Verwenden Sie Open f\x00fcr eine Select-Anweisung"
+	IBX_IBXConst_SRequiredParamNotSet,	L"Wert f\x00fcr erforderlichen Parameter nicht festgelegt"
+	IBX_IBXConst_SNoStoredProcName,	L"Stored Procedure wurde kein Name zugewiesen"
+	IBX_IBXConst_SIsAExecuteProcedure,	L"Verwenden Sie ExecProc f\x00fcr Prozeduren; verwenden Sie TQuery f\x00fcr Select-Prozeduren"
+	IBX_IBXConst_SUpdateFailed,	L"Aktualisierung misslungen"
+	IBX_IBXConst_SNotCachedUpdates,	L"CachedUpdates ist nicht aktiviert"
+	IBX_IBXConst_SNotLiveRequest,	L"Die Anforderung ist nicht \"live\" - \x00c4nderung nicht m\x00f6glich"
+	IBX_IBXConst_SNoProvider,	L"Kein Provider"
+	IBX_IBXConst_SNoRecordsAffected,	L"Keine Datens\x00e4tze betroffen"
+	IBX_IBXConst_SNoTableName,	L"Kein Tabellenname zugewiesen"
+	IBX_IBXConst_SCannotCreatePrimaryIndex,	L"Prim\x00e4rindex kann nicht erzeugt werden; wird automatisch erzeugt"
+	IBX_IBXConst_SCannotDropSystemIndex,	L"Systemindex kann nicht entfernt werden"
+	IBX_IBXConst_STableNameMismatch,	L"Fehlende \x00dcbereinstimmung bei Tabellennamen"
+	IBX_IBXConst_SIndexFieldMissing,	L"Indexfeld fehlt"
+	IBX_IBXConst_SInvalidCancellation,	L"W\x00e4hrend der Verarbeitung k\x00f6nnen Ereignisse nicht abgebrochen werden"
+	IBX_IBXConst_SInvalidEvent,	L"Ung\x00fcltiges Ereignis"
+	IBX_IBXConst_SCannotUpdate,	L"Aktualisierung nicht m\x00f6glich. (Keine Aktualisierungs-Abfrage)"
+	IBX_IBXConst_SCannotDelete,	L"Aus der Datenmenge kann nichts gel\x00f6scht werden. (Keine L\x00f6sch-Abfrage)"
+	IBX_IBXConst_SCannotRefresh,	L"Zeile kann nicht aktualisiert werden. (Keine Aktualisierungs-Abfrage)"
+	IBX_IBXConst_SBufferNotSet,	L"Puffer nicht festgelegt"
+	IBX_IBXConst_SCircularReference,	L"Zirkul\x00e4re Verweise sind nicht zul\x00e4ssig"
+	IBX_IBXConst_SSQLParseError,	L"SQL-Analysefehler:\r\n\r\n%s"
+	IBX_IBXConst_SUserAbort,	L"Abbruch durch Benutzer"
+	IBX_IBXConst_SDataSetUniDirectional,	L"Datenmenge ist unidirektional"
+	IBX_IBXConst_SCannotCreateSharedResource,	L"Gemeinsam genutzte Ressource kann nicht erzeugt werden. (Windows-Fehler %d)"
+	IBX_IBXConst_SWindowsAPIError,	L"Fehler der Windows-API. (Windows-Fehler %d [$%.8x])"
+	IBX_IBXConst_SColumnListsDontMatch,	L"Spaltenlisten stimmen nicht \x00fcberein"
+	IBX_IBXConst_SColumnTypesDontMatch,	L"Spaltentypen stimmen nicht \x00fcberein. (Von Index: %d; Bis Index: %d)"
+	IBX_IBXConst_SCantEndSharedTransaction,	L"Beenden einer gemeinsamen Transaktion nur durch Erzwingen und bei \x00dcbereinstimmung mit TimeoutAction der Transaktion m\x00f6glich"
+	IBX_IBXConst_SFieldUnsupportedType,	L"Nicht unterst\x00fctzter Feldtyp"
+	IBX_IBXConst_SCircularDataLink,	L"Zirkul\x00e4rer DataLink-Verweis"
+	IBX_IBXConst_SEmptySQLStatement,	L"Leere SQL-Anweisung"
+	IBX_IBXConst_SDatasetClosed,	L"Datenmenge geschlossen"
+	IBX_IBXConst_SUnknownSQLDataType,	L"Unbekannter SQL-Datentyp (%d)"
+	IBX_IBXConst_SInvalidColumnIndex,	L"Ung\x00fcltiger Spaltenindex (Index \x00fcberschreitet den zul\x00e4ssigen Bereich)"
+	IBX_IBXConst_SInvalidParamColumnIndex,	L"Ung\x00fcltiger Parameterindex (Index \x00fcberschreitet den zul\x00e4ssigen Bereich)"
+	IBX_IBXConst_SInvalidDataConversion,	L"Ung\x00fcltige Datenkonvertierung"
+	IBX_IBXConst_SColumnIsNotNullable,	L"Spalte kann nicht auf null gesetzt werden (%s)"
+	IBX_IBXConst_SBlobCannotBeRead,	L"Blob-Stream kann nicht gelesen werden"
+	IBX_IBXConst_SBlobCannotBeWritten,	L"Blob-Stream kann nicht geschrieben werden"
+	IBX_IBXConst_SEmptyQuery,	L"Leere Abfrage"
+	IBX_IBXConst_SCannotOpenNonSQLSelect,	L"Eine Nicht-Select-Anweisung kann nicht \"ge\x00f6ffnet\" werden. Verwenden Sie ExecQuery"
+	IBX_IBXConst_SNoFieldAccess,	L"Kein Zugriff auf Feld \"%s\""
+	IBX_IBXConst_SFieldReadOnly,	L"Feld \"%s\" ist schreibgesch\x00fctzt"
+	IBX_IBXConst_SFieldNotFound,	L"Feld \"%s\" nicht gefunden"
+	IBX_IBXConst_SNotEditing,	L"Nicht im Bearbeitungsmodus"
+	IBX_IBXConst_SCannotInsert,	L"In Datenmenge kann nicht eingef\x00fcgt werden. (Keine Einf\x00fcge-Abfrage)"
+	IBX_IBXConst_SCannotPost,	L"Zur\x00fcckschreiben nicht m\x00f6glich. (Keine Aktualisierungs-/Einf\x00fcgen-Abfrage)"
+	IBX_IBXConst_SNotInTransaction,	L"Transaktion ist nicht aktiv"
+	IBX_IBXConst_SInTransaction,	L"Transaktion ist aktiv"
+	IBX_IBXConst_STimeoutNegative,	L"Werte f\x00fcr Zeit\x00fcberschreitung d\x00fcrfen nicht negativ sein"
+	IBX_IBXConst_SNoDatabasesInTransaction,	L"In der Transaktionskomponente sind keine Datenbanken aufgef\x00fchrt"
+	IBX_IBXConst_SUpdateWrongDB,	L"Aktualisieren der falschen Datenbank"
+	IBX_IBXConst_SUpdateWrongTR,	L"Aktualisieren der falschen Transaktion. Eindeutige Transaktion erwartet"
+	IBX_IBXConst_SDatabaseNotAssigned,	L"Datenbank ist nicht zugewiesen"
+	IBX_IBXConst_STransactionNotAssigned,	L"Transaktion ist nicht zugewiesen"
+	IBX_IBXConst_SXSQLDAIndexOutOfRange,	L"XSQLDA-Index au\x00dferhalb des g\x00fcltigen Bereichs"
+	IBX_IBXConst_SXSQLDANameDoesNotExist,	L"XSQLDA-Name ist nicht vorhanden (%s)"
+	IBX_IBXConst_SEOF,	L"Dateiende"
+	IBX_IBXConst_SBOF,	L"Dateianfang"
+	IBX_IBXConst_SInvalidStatementHandle,	L"Ung\x00fcltiges Anweisungs-Handle"
+	IBX_IBXConst_SSQLOpen,	L"IBSQL ge\x00f6ffnet"
+	IBX_IBXConst_SSQLClosed,	L"IBSQL geschlossen"
+	IBX_IBXConst_SDatasetOpen,	L"Datenmenge ge\x00f6ffnet"
+	IBX_IBXConst_SInterBaseInstallMissing,	L"InterBase-Installations-DLL ibinstall.dll im Pfad nicht gefunden. Installieren Sie InterBase 6, um diese Funktion zu nutzen"
+	IBX_IBXConst_SIB60feature,	L"%s ist ein Funktion von InterBase 6. Upgraden Sie auf InterBase 6, um diese Funktion zu nutzen"
+	IBX_IBXConst_SNotSupported,	L"Nicht unterst\x00fctzte Funktion"
+	IBX_IBXConst_SNotPermitted,	L"Nicht zul\x00e4ssig"
+	IBX_IBXConst_SFileAccessError,	L"Fehler beim Zugriff auf tempor\x00e4re Datei"
+	IBX_IBXConst_SConnectionTimeout,	L"Zeit\x00fcberschreitung bei Datenbankverbindung"
+	IBX_IBXConst_SCannotSetDatabase,	L"Datenbank kann nicht festgelegt werden"
+	IBX_IBXConst_SCannotSetTransaction,	L"Transaktion kann nicht festgelegt werden"
+	IBX_IBXConst_SOperationCancelled,	L"Operation vom Benutzer abgebrochen"
+	IBX_IBXConst_SDPBConstantNotSupported,	L"DPB-Konstante (isc_dpb_%s) wird nicht unterst\x00fctzt"
+	IBX_IBXConst_SDPBConstantUnknown,	L"DPB-Konstante (%d) ist unbekannt"
+	IBX_IBXConst_STPBConstantNotSupported,	L"TPB-Konstante (isc_tpb_%s) wird nicht unterst\x00fctzt"
+	IBX_IBXConst_STPBConstantUnknown,	L"TPB-Konstante (%d) ist unbekannt"
+	IBX_IBXConst_SDatabaseClosed,	L"Operation kann nicht ausgef\x00fchrt werden - DB ist nicht ge\x00f6ffnet"
+	IBX_IBXConst_SDatabaseOpen,	L"Operation kann nicht ausgef\x00fchrt werden - DB ist aktuell ge\x00f6ffnet"
+	IBX_IBXConst_SDatabaseNameMissing,	L"Datenbankname fehlt"
+	IBX_IBXConst_StrStart,	L": [Starten]"
+	IBX_IBXConst_StrExecute,	L": [Ausf\x00fchren] "
+	IBX_IBXConst_StrNULL,	L"<NULL>"
+	IBX_IBXConst_StrBLOB,	L"<BLOB>"
+	IBX_IBXConst_StrFetch,	L": [Abrufen] "
+	IBX_IBXConst_StrPrepare,	L": [Vorbereiten] "
+	IBX_IBXConst_StrPlan,	L"  Plan: "
+	IBX_IBXConst_StrPlanCantRetrive,	L"  Plan: Plan kann nicht abgerufen werden - zu gro\x00df"
+	IBX_IBXConst_StrCommitHardComm,	L": [Eintragen (Endg\x00fcltig eintragen)]"
+	IBX_IBXConst_StrCommitRetaining,	L": [Eintragen beibehalten (Vorl\x00e4ufig eintragen)]"
+	IBX_IBXConst_StrRollback,	L": [Zur\x00fccksetzen]"
+	IBX_IBXConst_StrRollbackRetainin,	L": [Zur\x00fccksetzen beibehalten (Vorl\x00e4ufig zur\x00fccksetzen)]"
+	IBX_IBXConst_StrStartTransaction,	L": [Transaktion starten]"
+	IBX_IBXConst_StrApplication,	L"[Anwendung: "
+	IBX_IBXConst_SUnknownError,	L"Unbekannter Fehler"
+	IBX_IBXConst_SInterBaseMissing,	L"InterBase-Bibliothek %s im Pfad nicht gefunden. Installieren Sie InterBase, um diese Funktion zu nutzen"
+	Data_DBConsts_SBadFieldType,	L"Der Typ von Feld '%s' wird nicht unterst\x00fctzt"
+	Data_DBConsts_SProviderSQLNotSupported,	L"SQL wird nicht unterst\x00fctzt"
+	Data_DBConsts_SProviderExecuteNotSupported,	L"Execute wird nicht unterst\x00fctzt"
+	Data_DBConsts_SExprNoAggOnCalcs,	L"Feld '%s' ist nicht der korrekte Typ eines berechneten Feldes f\x00fcr eine Aggregierung; verwenden Sie internalcalc"
+	Data_DBConsts_SDataSetUnidirectional,	L"Diese Operation ist bei einer unidirektionalen Datenmenge nicht gestattet"
+	Data_DBConsts_SUnassignedVar,	L"Nicht zugewiesener Variant-Wert"
+	Data_DBConsts_SRecordNotFound,	L"Datensatz nicht gefunden"
+	Data_DBConsts_SBcdOverflow,	L"BCD-\x00dcberlauf"
+	Data_DBConsts_SInvalidBcdValue,	L"%s ist kein g\x00fcltiger BCD-Wert"
+	Data_DBConsts_SCouldNotParseTimeStamp,	L"SQL-TimeStamp-String konnte nicht analysiert werden"
+	Data_DBConsts_SInvalidSqlTimeStamp,	L"Ung\x00fcltige SQL-Datums-/Uhrzeitwerte"
+	IBX_IBXConst_StrMisc,	L"[Versch] "
+	IBX_IBXConst_StrError,	L"[Fehler] "
+	IBX_IBXConst_StrAttach,	L": [Verbinden]"
+	IBX_IBXConst_StrDetach,	L": [L\x00f6sen]"
+	IBX_IBXConst_StrQuery,	L": [Abfrage]"
+	Data_DBConsts_SExprBadNullTest,	L"NULL ist nur mit '=' und '<>' erlaubt"
+	Data_DBConsts_SExprRangeError,	L"Konstante au\x00dferhalb des zul\x00e4ssigen Wertebereichs"
+	Data_DBConsts_SExprIncorrect,	L"Ung\x00fcltiger Filterausdruck"
+	Data_DBConsts_SExprNothing,	L"leer"
+	Data_DBConsts_SExprTypeMis,	L"Fehlende Typ\x00fcbereinstimmung im Ausdruck"
+	Data_DBConsts_SExprBadScope,	L"Die Operation kann keine Zusammenfassungswerte mit Datensatzwerten mischen"
+	Data_DBConsts_SExprNoArith,	L"Arithmetische Filterausdr\x00fccke werden nicht unterst\x00fctzt"
+	Data_DBConsts_SExprNotAgg,	L"Der Ausdruck ist kein Aggregat-Ausdruck"
+	Data_DBConsts_SExprBadConst,	L"Die Konstante ist nicht vom richtigen Typ %s"
+	Data_DBConsts_SExprNoAggFilter,	L"In Filtern sind keine Aggregationsausdr\x00fccke erlaubt"
+	Data_DBConsts_SExprEmptyInList,	L"Die IN-Liste darf nicht leer bleiben"
+	Data_DBConsts_SInvalidKeywordUse,	L"Ung\x00fcltige Verwendung eines Schl\x00fcsselworts"
+	Data_DBConsts_STextFalse,	L"Falsch"
+	Data_DBConsts_STextTrue,	L"Wahr"
+	Data_DBConsts_SParameterNotFound,	L"Parameter '%s' nicht gefunden"
+	Data_DBConsts_SInvalidVersion,	L"Bind-Parameter k\x00f6nnen nicht geladen werden"
+	Data_DBConsts_SDataSourceChange,	L"DataSource kann nicht ge\x00e4ndert werden"
+	Data_DBConsts_SDataSetOpen,	L"Operation bei ge\x00f6ffneter Datenmenge nicht ausf\x00fchrbar"
+	Data_DBConsts_SNotEditing,	L"Datenmenge weder im Editier- noch im Einf\x00fcgemodus"
+	Data_DBConsts_SDataSetClosed,	L"Operation bei geschlossener Datenmenge nicht ausf\x00fchrbar"
+	Data_DBConsts_SDataSetEmpty,	L"Operation bei leerer Datenmenge nicht ausf\x00fchrbar"
+	Data_DBConsts_SDataSetReadOnly,	L"Eine Datenmenge, die nur zum Lesen ist, kann nicht ge\x00e4ndert werden"
+	Data_DBConsts_SNestedDataSetClass,	L"Verschachtelte Datenmengen m\x00fcssen von %s vererbt sein"
+	Data_DBConsts_SExprTermination,	L"Filterausdruck fehlerhaft abgeschlossen"
+	Data_DBConsts_SExprNameError,	L"Nicht begrenzter Feldname"
+	Data_DBConsts_SExprStringError,	L"Nicht begrenzte String-Konstante"
+	Data_DBConsts_SExprInvalidChar,	L"Ung\x00fcltiges Zeichen in Filterausdruck: '%s'"
+	Data_DBConsts_SExprNoLParen,	L"'(' erwartet, aber %s vorgefunden"
+	Data_DBConsts_SExprNoRParen,	L"')' erwartet, jedoch %s vorgefunden"
+	Data_DBConsts_SExprNoRParenOrComma,	L"')' oder ',' erwartet, jedoch %s vorgefunden"
+	Data_DBConsts_SExprExpected,	L"Ausdruck erwartet, jedoch %s vorgefunden"
+	Data_DBConsts_SExprBadField,	L"Feld '%s' kann nicht in einem Filterausdruck verwendet werden"
+	Data_DBConsts_SInvalidFloatValue,	L"'%s' ist kein g\x00fcltiger Flie\x00dfkommawert f\x00fcr Feld '%s'"
+	Data_DBConsts_SFieldTypeMismatch,	L"Unterschiedliche Typen f\x00fcr Feld '%s'; erwartet: %s, gefunden: %s"
+	Data_DBConsts_SFieldSizeMismatch,	L"Unterschiedliche Gr\x00f6\x00dfe f\x00fcr Feld '%s'; erwartet: %d, gefunden: %d"
+	Data_DBConsts_SInvalidVarByteArray,	L"Variant-Typ oder -gr\x00f6\x00dfe f\x00fcr Feld '%s' ist ung\x00fcltig"
+	Data_DBConsts_SFieldOutOfRange,	L"Wert des Feldes '%s' ist au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	Data_DBConsts_SFieldRequired,	L"Feld '%s' muss einen Wert haben"
+	Data_DBConsts_SDataSetMissing,	L"Feld '%s' hat keine Datenmenge"
+	Data_DBConsts_SInvalidCalcType,	L"Feld '%s' kann kein berechnetes oder Nachschlage-Feld sein"
+	Data_DBConsts_SFieldReadOnly,	L"Feld '%s' kann nicht ver\x00e4ndert werden"
+	Data_DBConsts_SNotIndexField,	L"Feld '%s' ist nicht indiziert und kann nicht ver\x00e4ndert werden"
+	Data_DBConsts_SDuplicateIndexName,	L"Doppelter Indexname '%s'"
+	Data_DBConsts_SNoIndexForFields,	L"Kein Index f\x00fcr die Felder '%s' vorhanden"
+	Data_DBConsts_SIndexNotFound,	L"Index '%s' wurde nicht gefunden"
+	Data_DBConsts_SDBDuplicateName,	L"Doppelter Name '%s' in %s"
+	Data_DBConsts_SCircularDataLink,	L"Zirkul\x00e4re Datenverbindungen sind nicht erlaubt"
+	Data_DBConsts_SLookupInfoError,	L"Lookup-Information f\x00fcr Feld '%s' ist unvollst\x00e4ndig"
+	Vcl_ComStrs_sFailSetCalDateTime,	L"Kalenderzeit oder -datum konnte nicht gesetzt werden"
+	Vcl_ComStrs_sFailSetCalMaxSelRange,	L"Der max. Auswahlbereich konnte nicht gesetzt werden"
+	Vcl_ComStrs_sFailSetCalMinMaxRange,	L"Der max./min. Bereich des Kalenders konnte nicht gesetzt werden"
+	Vcl_ComStrs_sFailsetCalSelRange,	L"Der ausgew\x00e4hlte Bereich des Kalenders kann nicht gesetzt werden"
+	Data_DBConsts_SInvalidFieldSize,	L"Ung\x00fcltige Feldgr\x00f6\x00dfe"
+	Data_DBConsts_SInvalidFieldKind,	L"FieldKind ung\x00fcltig"
+	Data_DBConsts_SUnknownFieldType,	L"Typ f\x00fcr Feld '%s' ist unbekannt"
+	Data_DBConsts_SFieldNameMissing,	L"Feldname fehlt"
+	Data_DBConsts_SDuplicateFieldName,	L"Doppelter Feldname '%s'"
+	Data_DBConsts_SFieldNotFound,	L"Das Feld '%s' wurde nicht gefunden"
+	Data_DBConsts_SFieldAccessError,	L"Feld '%s' kann nicht als Typ %s angesprochen werden"
+	Data_DBConsts_SFieldValueError,	L"Ung\x00fcltiger Wert f\x00fcr Feld '%s'"
+	Data_DBConsts_SFieldRangeError,	L"%g ist kein g\x00fcltiger Wert f\x00fcr das Feld '%s'. Der zul\x00e4ssige Bereich ist %g bis %g"
+	Data_DBConsts_SBcdFieldRangeError,	L"%s ist kein g\x00fcltiger Wert f\x00fcr Feld '%s'. Der zul\x00e4ssige Bereich ist %s bis %s"
+	Data_DBConsts_SInvalidIntegerValue,	L"'%s' ist kein g\x00fcltiger Integerwert f\x00fcr Feld '%s'"
+	Data_DBConsts_SInvalidBoolValue,	L"'%s' ist kein g\x00fcltiger boolescher Wert f\x00fcr Feld '%s'"
+	System_Win_ComConst_SOleError,	L"OLE-Fehler %.8x"
+	System_Win_ComConst_SNoMethod,	L"Die Methode '%s' wird vom Automatisierungsobjekt nicht unterst\x00fctzt"
+	System_Win_ComConst_SVarNotObject,	L"Variante referenziert kein Automatisierungsobjekt"
+	System_Win_ComConst_STooManyParams,	L"Dispatch-Methoden unterst\x00fctzen maximal 64 Parameter."
+	Vcl_ComStrs_sTabFailClear,	L"Registerelement konnte nicht geleert werden"
+	Vcl_ComStrs_sTabFailDelete,	L"Registerseite mit Index %d konnte nicht gel\x00f6scht werden"
+	Vcl_ComStrs_sTabFailRetrieve,	L"Registerseite mit Index %d konnte nicht gelesen werden"
+	Vcl_ComStrs_sTabFailGetObject,	L"Objekt mit Index %d konnte nicht gelesen werden"
+	Vcl_ComStrs_sTabFailSet,	L"Registerseite  \"%s\" mit Index %d konnte nicht gesetzt werden"
+	Vcl_ComStrs_sTabFailSetObject,	L"Objekt mit Index %d konnte nicht gesetzt werden"
+	Vcl_ComStrs_sTabMustBeMultiLine,	L"F\x00fcr TabPosition tpLeft und tpRight muss MultiLine True sein"
+	Vcl_ComStrs_sPageIndexError,	L"%d ist ein ung\x00fcltiger Wert f\x00fcr PageIndex.  PageIndex muss zwischen 0 und %d liegen"
+	Vcl_ComStrs_sInvalidComCtl32,	L"Dieses Element ben\x00f6tigt COMCTL32.DLL in der Version 4.70 oder h\x00f6her"
+	Vcl_ComStrs_sDateTimeMax,	L"Das Datum \x00fcberschreitet das Maximum von %s"
+	Vcl_ComStrs_sDateTimeMin,	L"Das Datum unterschreitet das Minimum von %s"
+	Vcl_ComStrs_sNeedAllowNone,	L"Um das Datum zu setzen, m\x00fcssen Sie im Modus ShowCheckbox sein"
+	Vcl_Consts_SInvalidTaskDlgButtonCaption,	L"Caption darf nicht leer sein"
+	Vcl_Consts_SStyleLoadError,	L"Stil '%s' kann nicht geladen werden"
+	Vcl_Consts_SStyleLoadErrors,	L"Stile %s k\x00f6nnen nicht geladen werden"
+	Vcl_Consts_SStyleRegisterError,	L"Stil '%s' bereits registriert"
+	Vcl_Consts_SStyleClassRegisterError,	L"Stilklasse '%s' bereits registriert"
+	Vcl_Consts_SStyleNotFound,	L"Stil '%s' nicht gefunden"
+	Vcl_Consts_SStyleClassNotFound,	L"Stilklasse '%s' nicht gefunden"
+	Vcl_Consts_SStyleInvalidHandle,	L"Ung\x00fcltiges Stil-Handle"
+	Vcl_Consts_SStyleFormatError,	L"Ung\x00fcltiges Stilformat"
+	Vcl_Consts_SStyleHookClassRegistered,	L"Klasse '%s' ist f\x00fcr '%s' bereits registriert"
+	Vcl_Consts_SStyleHookClassNotRegistered,	L"Klasse '%s' ist f\x00fcr '%s' nicht registriert"
+	Vcl_Consts_SStyleInvalidParameter,	L"Parameter %s darf nicht nil sein"
+	Vcl_Consts_SStyleFeatureNotSupported,	L"Funktion wird von diesem Stil nicht unterst\x00fctzt"
+	Vcl_Consts_SStyleNotRegistered,	L"Der Stil '%s' ist nicht registriert"
+	Vcl_Consts_SStyleUnregisterError,	L"Die Registrierung des Systemstils kann nicht aufgehoben werden"
+	Vcl_Consts_SStyleNotRegisteredNoName,	L"Stil nicht registriert"
+	Vcl_Consts_SDockZoneNotFound,	L" - Andockzone nicht gefunden"
+	Vcl_Consts_SDockZoneHasNoCtl,	L" - Andockzone enth\x00e4lt kein Steuerelement"
+	Vcl_Consts_SDockZoneVersionConflict,	L"Fehler beim Laden der Andockzone aus dem Stream. Version %d erwartet, aber %d gefunden."
+	Vcl_Consts_SPromptArrayTooShort,	L"L\x00e4nge des Werte-Arrays muss >= der L\x00e4nge des Prompt-Arrays sein"
+	Vcl_Consts_SPromptArrayEmpty,	L"Prompt-Array darf nicht leer sein"
+	Vcl_Consts_SUsername,	L"&Benutzername"
+	Vcl_Consts_SPassword,	L"&Passwort"
+	Vcl_Consts_SDomain,	L"&Dom\x00e4ne"
+	Vcl_Consts_SLogin,	L"Anmelden"
+	Vcl_Consts_SErrorSettingCount,	L"Fehler beim Setzen von %s.Count"
+	Vcl_Consts_SListBoxMustBeVirtual,	L"Stil des Listenfeldes (%s) muss virtuell sein, damit Count gesetzt werden kann"
+	Vcl_Consts_STrayIconRemoveError,	L"Shell-Benachrichtigungssymbol kann nicht entfernt werden"
+	Vcl_Consts_SPageControlNotSet,	L"PageControl muss zuerst zugewiesen werden"
+	Vcl_Consts_SWindowsVistaRequired,	L"F\x00fcr %s ist Windows Vista oder h\x00f6her erforderlich"
+	Vcl_Consts_STaskDlgButtonCaption,	L"Button%d"
+	Vcl_Consts_STaskDlgRadioButtonCaption,	L"RadioButton%d"
+	Vcl_Consts_SmkcDel,	L"Entf"
+	Vcl_Consts_SmkcShift,	L"Umsch+"
+	Vcl_Consts_SmkcCtrl,	L"Strg+"
+	Vcl_Consts_SmkcAlt,	L"Alt+"
+	Vcl_Consts_SOutOfRange,	L"Wert muss zwischen %d und %d liegen"
+	Vcl_Consts_sAllFilter,	L"Alle"
+	Vcl_Consts_SInsertLineError,	L"Zeile kann nicht eingef\x00fcgt werden"
+	Vcl_Consts_SInvalidClipFmt,	L"Ung\x00fcltiges Zwischenablagenformat"
+	Vcl_Consts_SIconToClipboard,	L"Zwischenablage unterst\x00fctzt keine Symbole"
+	Vcl_Consts_SCannotOpenClipboard,	L"Zwischenablage %s kann nicht ge\x00f6ffnet werden"
+	Vcl_Consts_SInvalidMemoSize,	L"Text \x00fcberschreitet Memo-Kapazit\x00e4t"
+	Vcl_Consts_SInvalidPrinterOp,	L"Operation auf ausgew\x00e4hltem Drucker nicht verf\x00fcgbar"
+	Vcl_Consts_SNoDefaultPrinter,	L"Aktuell ist kein Standarddrucker ausgew\x00e4hlt"
+	Vcl_Consts_SDuplicateMenus,	L"Men\x00fc '%s' wird bereits von einem anderen Formular verwendet"
+	Vcl_Consts_SDockedCtlNeedsName,	L"Angedocktes Steuerelement muss einen Namen haben."
+	Vcl_Consts_SDockTreeRemoveError,	L"Fehler beim Entfernen des Steuerelements aus der Andock-Hierarchie"
+	Vcl_Consts_SMsgDlgYesToAll,	L"A&lle Ja"
+	Vcl_Consts_SMsgDlgClose,	L"S&chlie\x00dfen"
+	Vcl_Consts_SmkcBkSp,	L"R\x00fcck"
+	Vcl_Consts_SmkcTab,	L"Tab"
+	Vcl_Consts_SmkcEsc,	L"Esc"
+	Vcl_Consts_SmkcEnter,	L"Eingabe"
+	Vcl_Consts_SmkcSpace,	L"Leer"
+	Vcl_Consts_SmkcPgUp,	L"BildAuf"
+	Vcl_Consts_SmkcPgDn,	L"BildAb"
+	Vcl_Consts_SmkcEnd,	L"Ende"
+	Vcl_Consts_SmkcHome,	L"Pos1"
+	Vcl_Consts_SmkcLeft,	L"Links"
+	Vcl_Consts_SmkcUp,	L"Auf"
+	Vcl_Consts_SmkcRight,	L"Rechts"
+	Vcl_Consts_SmkcDown,	L"Ab"
+	Vcl_Consts_SmkcIns,	L"Einfg"
+	Vcl_Consts_SVBitmaps,	L"Bitmaps"
+	Vcl_Consts_SVTIFFImages,	L"TIFF-Grafiken"
+	Vcl_Consts_SMsgDlgWarning,	L"Warnung"
+	Vcl_Consts_SMsgDlgError,	L"Fehler"
+	Vcl_Consts_SMsgDlgInformation,	L"Informationen"
+	Vcl_Consts_SMsgDlgConfirm,	L"Best\x00e4tigen"
+	Vcl_Consts_SMsgDlgYes,	L"&Ja"
+	Vcl_Consts_SMsgDlgNo,	L"&Nein"
+	Vcl_Consts_SMsgDlgOK,	L"OK"
+	Vcl_Consts_SMsgDlgCancel,	L"Abbrechen"
+	Vcl_Consts_SMsgDlgHelp,	L"&Hilfe"
+	Vcl_Consts_SMsgDlgAbort,	L"&Abbrechen"
+	Vcl_Consts_SMsgDlgRetry,	L"&Wiederholen"
+	Vcl_Consts_SMsgDlgIgnore,	L"&Ignorieren"
+	Vcl_Consts_SMsgDlgAll,	L"&Alle"
+	Vcl_Consts_SMsgDlgNoToAll,	L"&Alle Nein"
+	Vcl_Consts_SImageCanvasNeedsBitmap,	L"Ein Bild kann nur ge\x00e4ndert werden, wenn es ein Bitmap enth\x00e4lt"
+	Vcl_Consts_SControlParentSetToSelf,	L"Steuerelement kann nicht sich selbst als Vorfahr haben"
+	Vcl_Consts_SOKButton,	L"OK"
+	Vcl_Consts_SCancelButton,	L"Abbrechen"
+	Vcl_Consts_SYesButton,	L"&Ja"
+	Vcl_Consts_SNoButton,	L"&Nein"
+	Vcl_Consts_SHelpButton,	L"&Hilfe"
+	Vcl_Consts_SCloseButton,	L"&Schlie\x00dfen"
+	Vcl_Consts_SIgnoreButton,	L"&Ignorieren"
+	Vcl_Consts_SRetryButton,	L"&Wiederholen"
+	Vcl_Consts_SAbortButton,	L"Abbrechen"
+	Vcl_Consts_SAllButton,	L"&Alle"
+	Vcl_Consts_SCannotDragForm,	L"Formulare k\x00f6nnen nicht gezogen werden"
+	Vcl_Consts_SVMetafiles,	L"Metadateien"
+	Vcl_Consts_SVEnhMetafiles,	L"Erweiterte Metadateien"
+	Vcl_Consts_SVIcons,	L"Symbole"
+	Vcl_Consts_SMDIChildNotVisible,	L"Untergeordnetes MDI-Formular kann nicht verborgen werden"
+	Vcl_Consts_SVisibleChanged,	L"Eigenschaft Visible kann in OnShow oder OnHide nicht ver\x00e4ndert werden"
+	Vcl_Consts_SCannotShowModal,	L"Sichtbares Fenster kann nicht in modales ge\x00e4ndert werden"
+	Vcl_Consts_SScrollBarRange,	L"Eigenschaft Scrollbar au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	Vcl_Consts_SPropertyOutOfRange,	L"Eigenschaft %s au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	Vcl_Consts_SMenuIndexError,	L"Men\x00fcindex au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	Vcl_Consts_SMenuReinserted,	L"Men\x00fc zweimal eingef\x00fcgt"
+	Vcl_Consts_SMenuNotFound,	L"Untermen\x00fc ist nicht im Men\x00fc"
+	Vcl_Consts_SNoTimers,	L"Nicht gen\x00fcgend Timer verf\x00fcgbar"
+	Vcl_Consts_SNotPrinting,	L"Der Drucker druckt aktuell nicht"
+	Vcl_Consts_SPrinting,	L"Druckvorgang l\x00e4uft"
+	Vcl_Consts_SPrinterIndexError,	L"Druckerindex au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	Vcl_Consts_SInvalidPrinter,	L"Ausgew\x00e4hlter Drucker ist ung\x00fcltig"
+	Vcl_Consts_SDeviceOnPort,	L"%s an %s"
+	Vcl_Consts_SGroupIndexTooLow,	L"GroupIndex darf nicht kleiner sein als der GroupIndex eines vorherigen Men\x00fcelements"
+	Vcl_Consts_SNoMDIForm,	L"Formular kann nicht erstellt werden. Aktuell sind keine MDI-Formulare aktiv"
+	Vcl_Consts_SUnknownExtension,	L"Unbekannte Bilddateierweiterung (.%s)"
+	Vcl_Consts_SUnknownClipboardFormat,	L"Nicht unterst\x00fctztes Zwischenablagenformat"
+	Vcl_Consts_SOutOfResources,	L"Systemressourcen ersch\x00f6pft"
+	Vcl_Consts_SNoCanvasHandle,	L"Canvas erlaubt kein Zeichnen"
+	Vcl_Consts_SInvalidTextFormatFlag,	L"Das Textformat-Flag '%s' wird nicht unterst\x00fctzt"
+	Vcl_Consts_SInvalidImageSize,	L"Ung\x00fcltige Bildgr\x00f6\x00dfe"
+	Vcl_Consts_SInvalidImageList,	L"Ung\x00fcltige Bilderliste"
+	Vcl_Consts_SReplaceImage,	L"Bild kann nicht ersetzt werden"
+	Vcl_Consts_SImageIndexError,	L"Ung\x00fcltiger ImageList-Index"
+	Vcl_Consts_SImageReadFail,	L"ImageList-Daten konnten nicht aus dem Stream gelesen werden"
+	Vcl_Consts_SImageWriteFail,	L"ImageList-Daten konnten nicht in den Stream geschrieben werden"
+	Vcl_Consts_SWindowDCError,	L"Fehler beim Erstellen des Fenster-Ger\x00e4tekontexts"
+	Vcl_Consts_SWindowClass,	L"Fehler beim Erzeugen einer Fensterklasse"
+	Vcl_Consts_SCannotFocus,	L"Deaktiviertes oder unsichtbares Fenster kann den Fokus nicht erhalten"
+	Vcl_Consts_SParentRequired,	L"Element '%s' hat kein \x00fcbergeordnetes Fenster"
+	Vcl_Consts_SParentGivenNotAParent,	L"Das angegebene \x00fcbergeordnete Element ist kein \x00fcbergeordnetes Element von '%s'"
+	System_RTLConsts_sObserverNoSinglecastFound,	L"Der Observer-Kollektion wurde kein Einfach-Typumwandlungs-Observer mit der ID %d hinzugef\x00fcgt"
+	System_RTLConsts_sObserverNoMulticastFound,	L"Der Observer-Kollektion wurde kein Mehrfach-Typumwandlungs-Observer mit der ID %d hinzugef\x00fcgt"
+	System_RTLConsts_sObserverNotAvailable,	L"Observer ist nicht verf\x00fcgbar"
+	System_RTLConsts_SInvalidDateString,	L"Ung\x00fcltiger Datums-String: %s"
+	System_RTLConsts_SInvalidTimeString,	L"Ung\x00fcltiger Zeit-String: %s"
+	System_RTLConsts_SInvalidOffsetString,	L"Ung\x00fcltiger Zeit-Offset-String: %s"
+	Vcl_Consts_SInvalidTabPosition,	L"Position des Registers ist nicht mit dem aktuellen Registerstil kompatibel"
+	Vcl_Consts_SInvalidTabStyle,	L"Registerstil ist nicht mit der aktuellen Position kompatibel"
+	Vcl_Consts_SInvalidBitmap,	L"Bitmap ist ung\x00fcltig"
+	Vcl_Consts_SInvalidIcon,	L"Ung\x00fcltiges Symbol"
+	Vcl_Consts_SInvalidMetafile,	L"Metadatei ist ung\x00fcltig"
+	Vcl_Consts_SInvalidPixelFormat,	L"Ung\x00fcltiges Pixel-Format"
+	Vcl_Consts_SInvalidImage,	L"Ung\x00fcltiges Bild"
+	Vcl_Consts_SScanLine,	L"Bereichs\x00fcberschreitung bei Zeilenindex"
+	Vcl_Consts_SChangeIconSize,	L"Die Gr\x00f6\x00dfe eines Symbols kann nicht ge\x00e4ndert werden"
+	Vcl_Consts_SChangeWicSize,	L"Die Gr\x00f6\x00dfe einer WIC-Grafik kann nicht ver\x00e4ndert werden"
+	System_RTLConsts_SWindows,	L"Windows"
+	System_RTLConsts_SWindowsVista,	L"Windows Vista"
+	System_RTLConsts_SWindowsServer2008,	L"Windows Server 2008"
+	System_RTLConsts_SWindows7,	L"Windows 7"
+	System_RTLConsts_SWindowsServer2008R2,	L"Windows Server 2008 R2"
+	System_RTLConsts_SWindows2000,	L"Windows 2000"
+	System_RTLConsts_SWindowsXP,	L"Windows XP"
+	System_RTLConsts_SWindowsServer2003,	L"Windows Server 2003"
+	System_RTLConsts_SWindowsServer2003R2,	L"Windows Server 2003 R2"
+	System_RTLConsts_SWindowsServer2012,	L"Windows Server 2012"
+	System_RTLConsts_SWindowsServer2012R2,	L"Windows Server 2012 R2"
+	System_RTLConsts_SWindows8,	L"Windows 8"
+	System_RTLConsts_SWindows8Point1,	L"Windows 8.1"
+	System_RTLConsts_sObserverUnsupported,	L"Observer wird nicht unterst\x00fctzt"
+	System_RTLConsts_sObserverMultipleSingleCast,	L"Der Observer-Kollektion k\x00f6nnen nicht mehrere Einfach-Typumwandlungs-Observer hinzugef\x00fcgt werden"
+	System_RTLConsts_sObserverNoInterface,	L"Das Objekt implementiert das Observer-Interface nicht"
+	System_RTLConsts_SNoSearch,	L"Suche kann nicht ge\x00f6ffnet werden"
+	System_RTLConsts_SNoTableOfContents,	L"Inhaltsverzeichnis nicht gefunden"
+	System_RTLConsts_SNoTopics,	L"Kein themenbezogenes Hilfesystem installiert"
+	System_RTLConsts_SNothingFound,	L"Keine Hilfe f\x00fcr %s gefunden"
+	System_RTLConsts_SArgumentOutOfRange,	L"Argument au\x00dferhalb des Bereichs"
+	System_RTLConsts_SGenericItemNotFound,	L"Eintrag nicht gefunden"
+	System_RTLConsts_SGenericDuplicateItem,	L"Duplikate nicht zul\x00e4ssig"
+	System_RTLConsts_SInsufficientRtti,	L"Unzureichende RTTI zur Unterst\x00fctzung dieser Operation verf\x00fcgbar"
+	System_RTLConsts_SParameterCountMismatch,	L"Parameteranzahl stimmt nicht \x00fcberein"
+	System_RTLConsts_SNonPublicType,	L"Typ '%s' ist im interface-Abschnitt einer Unit nicht deklariert"
+	System_RTLConsts_SByRefArgMismatch,	L"VAR- und OUT-Argumente m\x00fcssen exakt mit dem Parametertyp \x00fcbereinstimmen"
+	System_RTLConsts_SServiceNotFound,	L"Angegebener Dienst f\x00fcr die Anmeldeinformationen nicht gefunden"
+	System_RTLConsts_SVersionStr,	L"%s (Version %d.%d, Build %d, %5:s)"
+	System_RTLConsts_SSPVersionStr,	L"%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)"
+	System_RTLConsts_SVersion32,	L"32-Bit-Edition"
+	System_RTLConsts_SVersion64,	L"64-Bit-Edition"
+	System_RTLConsts_SLocalTimeInvalid,	L"Die angegebene \"%s\" lokale Uhrzeit ist ung\x00fcltig (befindet sich im fehlenden Zeitraum vor der Sommerzeit)."
+	System_RTLConsts_hNoFilterViewer,	L"Kein Hilfe-Viewer, der Filter unterst\x00fctzt"
+	System_RTLConsts_sArgumentOutOfRange_StringIndex,	L"String-Index au\x00dferhalb des Bereichs (%d).  Muss >= %d und <= %d sein"
+	System_RTLConsts_sArgument_InvalidHighSurrogate,	L"Hohes Ersatzzeichen ohne folgendes niedriges Ersatzzeichen bei Index: %d. \x00dcberpr\x00fcfen Sie, ob der String korrekt codiert ist"
+	System_RTLConsts_sArgument_InvalidLowSurrogate,	L"Niedriges Ersatzzeichen ohne vorausgehendes hohes Ersatzzeichen bei Index: %d. \x00dcberpr\x00fcfen Sie, ob der String korrekt codiert ist"
+	System_RTLConsts_sInvalidStringAndObjectArrays,	L"Die L\x00e4nge von String- und Objekt-Arrays muss gleich sein"
+	System_RTLConsts_sInvalidTimeoutValue,	L"Ung\x00fcltiger Wert f\x00fcr Zeit\x00fcberschreitung: %s"
+	System_RTLConsts_sTimespanTooLong,	L"TimeSpan zu lang"
+	System_RTLConsts_sInvalidTimespanDuration,	L"Die Dauer kann nicht zur\x00fcckgegeben werden, weil der absolute Wert den Wert von TTimeSpan.MaxValue \x00fcberschreitet"
+	System_RTLConsts_sTimespanValueCannotBeNan,	L"Wert darf nicht NaN"
+	System_RTLConsts_sCannotNegateTimespan,	L"Negation des Minimalwertes einer Zeitspanne ist ung\x00fcltig"
+	System_RTLConsts_sInvalidTimespanFormat,	L"Ung\x00fcltiges TimeSpan-Format"
+	System_RTLConsts_sTimespanElementTooLong,	L"TimeSpan-Element zu lang"
+	System_RTLConsts_SNoContext,	L"Keine kontextsensitive Hilfe installiert"
+	System_RTLConsts_SNoContextFound,	L"Keine Hilfe f\x00fcr Kontext %d gefunden"
+	System_RTLConsts_SNoIndex,	L"Index kann nicht ge\x00f6ffnet werden"
+	System_RTLConsts_SThreadCreateError,	L"Fehler beim Erzeugen des Thread: %s"
+	System_RTLConsts_SThreadError,	L"Thread-Fehler: %s (%d)"
+	System_RTLConsts_SThreadExternalTerminate,	L"Ein extern erstellter Thread kann nicht beendet werden"
+	System_RTLConsts_SThreadExternalWait,	L"Auf einen extern erstellten Thread kann nicht gewartet werden"
+	System_RTLConsts_SThreadStartError,	L"Start kann f\x00fcr einen laufenden oder unterbrochenen Thread nicht aufgerufen werden"
+	System_RTLConsts_SThreadExternalCheckTerminated,	L"CheckTerminated kann nicht f\x00fcr einen extern erstellten Thread aufgerufen werden"
+	System_RTLConsts_SThreadExternalSetReturnValue,	L"SetReturnValue kann nicht f\x00fcr einen extern erstellten Thread aufgerufen werden"
+	System_RTLConsts_SParamIsNil,	L"Parameter %s darf nicht Nil sein"
+	System_RTLConsts_SParamIsNegative,	L"Parameter %s darf kein negativer Wert sein"
+	System_RTLConsts_SInputBufferExceed,	L"Eingabepuffer f\x00fcr %s = %d, %s = %d \x00fcberschritten"
+	System_RTLConsts_SInvalidCharsInPath,	L"Ung\x00fcltige Zeichen im Pfad"
+	System_RTLConsts_SPathTooLong,	L"Der angegebene Pfad ist zu lang"
+	System_RTLConsts_SPathNotFound,	L"Der angegebene Pfad wurde nicht gefunden"
+	System_RTLConsts_SPathFormatNotSupported,	L"Das Pfadformat wird nicht unterst\x00fctzt"
+	System_RTLConsts_SFileNotFound,	L"Die angegebene Datei wurde nicht gefunden"
+	System_RTLConsts_SMissingDateTimeField,	L"?"
+	System_RTLConsts_SListCountError,	L"Zu viele Eintr\x00e4ge in der Liste (%d)"
+	System_RTLConsts_SListIndexError,	L"Listenindex au\x00dferhalb des g\x00fcltigen Bereichs (%d)"
+	System_RTLConsts_SMemoryStreamError,	L"Expandieren des Speicher-Stream wegen Speichermangel nicht m\x00f6glich"
+	System_RTLConsts_SNoComSupport,	L"%s wurde nicht als COM-Klasse registriert"
+	System_RTLConsts_SPropertyException,	L"Fehler beim Lesen von %s%s%s: %s"
+	System_RTLConsts_SReadError,	L"Stream-Lesefehler"
+	System_RTLConsts_SReadOnlyProperty,	L"Eigenschaft kann nur gelesen werden"
+	System_RTLConsts_SRegCreateFailed,	L"Erzeugung von Schl\x00fcssel %s misslungen"
+	System_RTLConsts_SRegGetDataFailed,	L"Fehler beim Holen der Daten f\x00fcr '%s'"
+	System_RTLConsts_SRegSetDataFailed,	L"Fehler beim Setzen der Daten f\x00fcr '%s'"
+	System_RTLConsts_SResNotFound,	L"Ressource %s nicht gefunden"
+	System_RTLConsts_SSeekNotImplemented,	L"%s.Seek nicht implementiert"
+	System_RTLConsts_SSortedListError,	L"Operation f\x00fcr sortierte Listen nicht zul\x00e4ssig"
+	System_RTLConsts_SUnknownGroup,	L"%s befindet sich nicht in einer Gruppe f\x00fcr Klassenregistrierungen"
+	System_RTLConsts_SUnknownProperty,	L"Eigenschaft %s existiert nicht"
+	System_RTLConsts_SWriteError,	L"Stream-Schreibfehler"
+	System_RTLConsts_SDuplicateItem,	L"Liste gestattet keine doppelten Eintr\x00e4ge ($0%x)"
+	System_RTLConsts_SDuplicateName,	L"Komponente mit der Bezeichnung %s existiert bereits"
+	System_RTLConsts_SDuplicateString,	L"In der String-Liste sind Duplikate nicht zul\x00e4ssig"
+	System_RTLConsts_SFCreateErrorEx,	L"Datei \"%s\" kann nicht erstellt werden. %s"
+	System_RTLConsts_SFOpenErrorEx,	L"Datei %s kann nicht ge\x00f6ffnet werden. %s"
+	System_RTLConsts_SIniFileWriteError,	L"In %s kann nicht geschrieben werden"
+	System_RTLConsts_SInvalidFileName,	L"Ung\x00fcltiger Dateiname - %s"
+	System_RTLConsts_SInvalidImage,	L"Ung\x00fcltiges Stream-Format"
+	System_RTLConsts_SInvalidName,	L"''%s'' ist kein g\x00fcltiger Komponentenname"
+	System_RTLConsts_SInvalidProperty,	L"Ung\x00fcltiger Eigenschaftswert"
+	System_RTLConsts_SInvalidPropertyElement,	L"Ung\x00fcltiges Eigenschaftselement: %s"
+	System_RTLConsts_SInvalidPropertyPath,	L"Ung\x00fcltiger Pfad f\x00fcr Eigenschaft"
+	System_RTLConsts_SInvalidPropertyType,	L"Ung\x00fcltiger Eigenschaftstyp: %s"
+	System_RTLConsts_SInvalidPropertyValue,	L"Ung\x00fcltiger Eigenschaftswert"
+	System_RTLConsts_SInvalidRegType,	L"Ung\x00fcltiger Datentyp f\x00fcr '%s'"
+	System_RTLConsts_SListCapacityError,	L"Kapazit\x00e4t der Liste ist ersch\x00f6pft (%d)"
+	System_SysConst_SInvalidSourceArray,	L"Ung\x00fcltiges Quell-Array"
+	System_SysConst_SInvalidDestinationArray,	L"Ung\x00fcltiges Ziel-Array"
+	System_SysConst_SCharIndexOutOfBounds,	L"Zeichenindex au\x00dferhalb des g\x00fcltigen Bereichs (%d)"
+	System_SysConst_SByteIndexOutOfBounds,	L"Startindex au\x00dferhalb des g\x00fcltigen Bereichs (%d)"
+	System_SysConst_SInvalidCharCount,	L"Ung\x00fcltige Anzahl (%d)"
+	System_SysConst_SInvalidDestinationIndex,	L"Ung\x00fcltiger Zielindex (%d)"
+	System_SysConst_SInvalidCodePage,	L"Ung\x00fcltige Codeseite"
+	System_SysConst_SInvalidEncodingName,	L"Ung\x00fcltiger Codierungsname"
+	System_SysConst_SNoMappingForUnicodeCharacter,	L"Keine Zuordnung f\x00fcr Unicode-Zeichen in der Multibyte-Zielcodeseite vorhanden"
+	System_RTLConsts_SAncestorNotFound,	L"Vorfahr f\x00fcr '%s' nicht gefunden"
+	System_RTLConsts_SAssignError,	L"%s kann nicht zu %s zugewiesen werden"
+	System_RTLConsts_SBitsIndexError,	L"Bits-Index au\x00dferhalb des zul\x00e4ssigen Bereichs"
+	System_RTLConsts_SCantWriteResourceStreamError,	L"In einen zum Lesen ge\x00f6ffneten Ressourcen-Stream kann nicht geschrieben werden"
+	System_RTLConsts_SCheckSynchronizeError,	L"CheckSynchronize wurde vom Thread $%x aufgerufen, der NICHT der Haupt-Thread ist."
+	System_RTLConsts_SClassNotFound,	L"Klasse %s nicht gefunden"
+	System_RTLConsts_SDuplicateClass,	L"Klasse mit der Bezeichnung %s existiert bereits"
+	System_SysConst_SLongMonthNameDec,	L"Dezember"
+	System_SysConst_SShortDayNameSun,	L"So"
+	System_SysConst_SShortDayNameMon,	L"Mo"
+	System_SysConst_SShortDayNameTue,	L"Di"
+	System_SysConst_SShortDayNameWed,	L"Mi"
+	System_SysConst_SShortDayNameThu,	L"Do"
+	System_SysConst_SShortDayNameFri,	L"Fr"
+	System_SysConst_SShortDayNameSat,	L"Sa"
+	System_SysConst_SLongDayNameSun,	L"Sonntag"
+	System_SysConst_SLongDayNameMon,	L"Montag"
+	System_SysConst_SLongDayNameTue,	L"Dienstag"
+	System_SysConst_SLongDayNameWed,	L"Mittwoch"
+	System_SysConst_SLongDayNameThu,	L"Donnerstag"
+	System_SysConst_SLongDayNameFri,	L"Freitag"
+	System_SysConst_SLongDayNameSat,	L"Samstag"
+	System_SysConst_SCannotCreateDir,	L"Verzeichnis kann nicht erstellt werden"
+	System_SysConst_SShortMonthNameAug,	L"Aug"
+	System_SysConst_SShortMonthNameSep,	L"Sep"
+	System_SysConst_SShortMonthNameOct,	L"Okt"
+	System_SysConst_SShortMonthNameNov,	L"Nov"
+	System_SysConst_SShortMonthNameDec,	L"Dez"
+	System_SysConst_SLongMonthNameJan,	L"Januar"
+	System_SysConst_SLongMonthNameFeb,	L"Februar"
+	System_SysConst_SLongMonthNameMar,	L"M\x00e4rz"
+	System_SysConst_SLongMonthNameApr,	L"April"
+	System_SysConst_SLongMonthNameMay,	L"Mai"
+	System_SysConst_SLongMonthNameJun,	L"Juni"
+	System_SysConst_SLongMonthNameJul,	L"Juli"
+	System_SysConst_SLongMonthNameAug,	L"August"
+	System_SysConst_SLongMonthNameSep,	L"September"
+	System_SysConst_SLongMonthNameOct,	L"Oktober"
+	System_SysConst_SLongMonthNameNov,	L"November"
+	System_SysConst_SMonitorLockException,	L"Kein Eigent\x00fcmer der Objektsperre"
+	System_SysConst_SNoMonitorSupportException,	L"Unterst\x00fctzungsfunktion f\x00fcr Monitor nicht initialisiert"
+	System_SysConst_SNotImplemented,	L"Feature nicht implementiert"
+	System_SysConst_SObjectDisposed,	L"Methode f\x00fcr freigegebenes Objekt aufgerufen"
+	System_SysConst_SAssertError,	L"%s (%s, Zeile %d)"
+	System_SysConst_SAbstractError,	L"Abstrakter Fehler"
+	System_SysConst_SModuleAccessViolation,	L"Zugriffsverletzung bei Adresse %p in Modul '%s'. %s von Adresse %p"
+	System_SysConst_SOSError,	L"Systemfehler.  Code: %d.\r\n%s%s"
+	System_SysConst_SUnkOSError,	L"Ein Aufruf einer Betriebssystemfunktion ist fehlgeschlagen"
+	System_SysConst_SShortMonthNameJan,	L"Jan"
+	System_SysConst_SShortMonthNameFeb,	L"Feb"
+	System_SysConst_SShortMonthNameMar,	L"M\x00e4r"
+	System_SysConst_SShortMonthNameApr,	L"Apr"
+	System_SysConst_SShortMonthNameMay,	L"Mai"
+	System_SysConst_SShortMonthNameJun,	L"Jun"
+	System_SysConst_SShortMonthNameJul,	L"Jul"
+	System_SysConst_SInvalidVarOpWithHResultWithPrefix,	L"Ung\x00fcltige Variantenoperation (%s%.8x)\n%s"
+	System_SysConst_SVarTypeOutOfRangeWithPrefix,	L"Benutzerdefinierter Variant-Typ (%s%.4x) au\x00dferhalb des g\x00fcltigen Bereichs"
+	System_SysConst_SVarTypeAlreadyUsedWithPrefix,	L"Benutzerdefinierter Variant-Typ (%s%.4x) bereits benutzt von %s"
+	System_SysConst_SVarTypeNotUsableWithPrefix,	L"Benutzerdefinierter Variant-Typ (%s%.4x) nicht brauchbar"
+	System_SysConst_SVarTypeTooManyCustom,	L"Es wurden zu viele benutzerdefinierte Variant-Typen registriert"
+	System_SysConst_SVarTypeCouldNotConvert,	L"Variante des Typs (%s) konnte nicht in Typ (%s) konvertiert werden"
+	System_SysConst_SVarTypeConvertOverflow,	L"\x00dcberlauf bei der Konvertierung einer Variante vom Typ (%s) in Typ (%s)"
+	System_SysConst_SVarOverflow,	L"Variant-\x00dcberlauf"
+	System_SysConst_SVarInvalid,	L"Ung\x00fcltiges Argument"
+	System_SysConst_SVarBadType,	L"Ung\x00fcltiger Variant-Typ"
+	System_SysConst_SVarNotImplemented,	L"Operation nicht unterst\x00fctzt"
+	System_SysConst_SVarUnexpected,	L"Unerwarteter Variant-Fehler"
+	System_SysConst_SExternalException,	L"Externe Exception %x"
+	System_SysConst_SAssertionFailed,	L"Auswertung von assert fehlgeschlagen"
+	System_SysConst_SIntfCastError,	L"Interface nicht unterst\x00fctzt"
+	System_SysConst_SSafecallException,	L"Exception in safecall-Methode"
+	System_SysConst_SException,	L"Exception %s in Modul %s bei %p.\r\n%s%s\r\n"
+	System_SysConst_SExceptTitle,	L"Anwendungsfehler"
+	System_SysConst_SInvalidFormat,	L"Format '%s' ung\x00fcltig oder nicht kompatibel mit Argument"
+	System_SysConst_SArgumentMissing,	L"Kein Argument f\x00fcr Format '%s'"
+	System_SysConst_SDispatchError,	L"Variant-Methodenaufruf nicht unterst\x00fctzt"
+	System_SysConst_SReadAccess,	L"Lesen"
+	System_SysConst_SWriteAccess,	L"Schreiben"
+	System_SysConst_SExecuteAccess,	L"Ausf\x00fchrung"
+	System_SysConst_SInvalidAccess,	L"Ung\x00fcltiger Zugriff"
+	System_SysConst_SFormatTooLong,	L"Format-String zu lang"
+	System_SysConst_SVarArrayCreate,	L"Fehler beim Erzeugen von Variante oder sicherem Array"
+	System_SysConst_SVarArrayBounds,	L"Variante oder sicheres Array-Index au\x00dferhalb des g\x00fcltigen Bereichs"
+	System_SysConst_SVarArrayLocked,	L"Variante oder sicheres Array ist gesperrt"
+	System_SysConst_SInvalidVarCast,	L"Ung\x00fcltige Varianten-Typumwandlung"
+	System_SysConst_SInvalidVarOp,	L"Ung\x00fcltige Variantenoperation"
+	System_SysConst_SInvalidVarNullOp,	L"Ung\x00fcltige NULL-Variantenoperation"
+	System_SysConst_SInvalidInput,	L"Ung\x00fcltige numerische Eingabe"
+	System_SysConst_SDivByZero,	L"Division durch Null"
+	System_SysConst_SRangeError,	L"Fehler bei Bereichspr\x00fcfung"
+	System_SysConst_SIntOverflow,	L"Integer\x00fcberlauf"
+	System_SysConst_SInvalidOp,	L"Ung\x00fcltige Gleitkommaoperation"
+	System_SysConst_SZeroDivide,	L"Gleitkommadivision durch Null"
+	System_SysConst_SOverflow,	L"Gleitkomma\x00fcberlauf"
+	System_SysConst_SUnderflow,	L"Gleitkommaunterlauf"
+	System_SysConst_SInvalidPointer,	L"Ung\x00fcltige Zeigeroperation"
+	System_SysConst_SInvalidCast,	L"Ung\x00fcltige Typumwandlung"
+	System_SysConst_SAccessViolationArg3,	L"Zugriffsverletzung bei Adresse %p. %s von Adresse %p"
+	System_SysConst_SAccessViolationNoArg,	L"Zugriffsverletzung"
+	System_SysConst_SStackOverflow,	L"Stack-\x00dcberlauf"
+	System_SysConst_SControlC,	L"Strg+C gedr\x00fcckt"
+	System_SysConst_SPrivilege,	L"Privilegierte Anweisung"
+	System_SysConst_SOperationAborted,	L"Operation abgebrochen"
+	System_SysConst_SUnknown,	L"<unbekannt>"
+	System_SysConst_SInvalidInteger,	L"'%s' ist kein g\x00fcltiger Integerwert"
+	System_SysConst_SInvalidFloat,	L"'%s' ist kein g\x00fcltiger Gleitkommawert"
+	System_SysConst_SInvalidDate,	L"'%s' ist kein g\x00fcltiges Datum"
+	System_SysConst_SInvalidTime,	L"'%s' ist keine g\x00fcltige Uhrzeit"
+	System_SysConst_SInvalidDateTime,	L"'%s' ist keine g\x00fcltige Datums- und Uhrzeitangabe"
+	System_SysConst_SInvalidTimeStamp,	L"'%d.%d' ist kein g\x00fcltiger Zeitstempel"
+	System_SysConst_SInvalidGUID,	L"'%s' kein g\x00fcltiger Wert f\x00fcr GUID"
+	System_SysConst_STimeEncodeError,	L"Ung\x00fcltiges Argument zum Codieren der Uhrzeit"
+	System_SysConst_SDateEncodeError,	L"Ung\x00fcltiges Argument zum Codieren des Datums"
+	System_SysConst_SOutOfMemory,	L"Zu wenig Arbeitsspeicher"
+	System_SysConst_SInOutError,	L"E/A-Fehler %d"
+	System_SysConst_STooManyOpenFiles,	L"Zu viele ge\x00f6ffnete Dateien"
+	System_SysConst_SAccessDenied,	L"Dateizugriff verweigert"
+	System_SysConst_SEndOfFile,	L"Versuch hinter dem Dateiende zu lesen"
+	System_SysConst_SDiskFull,	L"Zu wenig Speicherplatz"
+END
+
+/* d:\programme\embarcadero\studio\15.0\lib\Win32\release\Controls.res */
+/* c:\Bachmann\Delphi\Delphi XE7\Komponenten\TMS\TMS-Component-Pack-7.5.3.0\AdvEditGlyphs.res */
+/* d:\programme\embarcadero\studio\15.0\lib\Win32\release\Buttons.res */
+/* d:\programme\embarcadero\studio\15.0\lib\Win32\release\FileCtrl.res */
+/* c:\Bachmann\Delphi\Delphi XE7\Komponenten\TMS\TMS-Component-Pack-7.5.3.0\AdvDirectoryEdit.RES */
+/* C:\Bachmann\Delphi\Delphi XE7\Projekte\TSI3\TSI\Server\Form\Datamodul.TSIServer.dfm */
+/* C:\Bachmann\Delphi\Delphi XE7\Projekte\TSI3\TSI\Server\Form\Form.TSIServer.dfm */
+/* C:\Bachmann\Delphi\Delphi XE7\Projekte\TSI3\TSI\Server\Form\TSIServer.res */
+/* C:\Bachmann\Delphi\Delphi XE7\Projekte\TSI3\TSI\Server\Form\TSIServer.drf */

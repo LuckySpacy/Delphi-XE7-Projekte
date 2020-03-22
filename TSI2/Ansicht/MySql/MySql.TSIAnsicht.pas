@@ -51,6 +51,12 @@ begin
   fFeldList.Add('Aktie', ftString);
   fFeldList.Add('Depot', ftBoolean);
   fFeldList.Add('LetzterKurs', ftTimeStampOffset);
+  fFeldList.Add('Kurs', ftfloat);
+  fFeldList.Add('Kursdatum', ftTimeStampOffset);
+  fFeldList.Add('JHochkurs', ftFloat);
+  fFeldList.Add('JHochdatum', ftTimeStampOffset);
+  fFeldList.Add('HJTiefkurs', ftFloat);
+  fFeldList.Add('HJTiefdatum', ftTimeStampOffset);
   fFeldList.Add('TSI27', ftfloat);
   fFeldList.Add('TSI12', ftfloat);
   fFeldList.Add('BI_ID', ftInteger);
