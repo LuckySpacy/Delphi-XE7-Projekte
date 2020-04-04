@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.416,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.038,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.860,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.230,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.734,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.092,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\fntConnectIB.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.286,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.464,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\fntNewConnectIB.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.676,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\o_DBIniObj.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.020,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\o_DBIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.703,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\fntSqlEditor.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.733,=D:\Delphi\XE2\Test\SqlEditor2\source\tbSqlHighlighter.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.431,D:\Delphi\XE2\Test\SqlEditor2\source\c_types.pas=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.073,=D:\Delphi\XE2\Test\SqlEditor2\source\tbSqlHighlighterBase.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.036,=D:\Delphi\XE2\Test\SqlEditor2\source\o_richvieweditobj.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.080,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.192,=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.296,=D:\Delphi\XE2\Test\SqlEditor2\source\o_System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.608,D:\Delphi\XE2\Test\SqlEditor2\source\fntDataChange.pas=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.880,=D:\Delphi\XE2\Test\SqlEditor2\source\o_RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.551,=D:\Delphi\XE2\Test\SqlEditor2\source\u_Allgfunc.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,=D:\Delphi\XE2\Test\SqlEditor2\source\o_sysfolderlocation.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.958,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\fntGrid.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.295,=D:\Delphi\XE2\Test\SqlEditor2\source\o_printer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.703,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas=D:\Delphi\XE2\Test\SqlEditor2\source\fntSqlEditor.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.972,=D:\Delphi\XE2\Test\SqlEditor2\source\nf_System.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.627,=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.168,=D:\Delphi\XE2\Test\SqlEditor2\source\o_nf.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.054,=C:\Users\tbachmann\Documents\RAD Studio\Projekte\Unit17.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.274,=D:\Delphi\XE2\Test\SqlEditor2\source\nf_RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.608,D:\Delphi\XE2\Test\SqlEditor2\source\fntDataChange.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.958,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\fntGrid.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.363,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\fntSqlEdit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.pas=D:\Delphi\XE2\Test\SqlEditor2\source\DataModul.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\DataModul.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.092,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\fntConnectIB.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.363,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\fntSqlEdit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.436,C:\Users\tbachmann\Documents\RAD Studio\Projekte\Project13.dproj=D:\Delphi\XE2\Test\SqlEditor2\source\SqlEditor.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.464,D:\Delphi\XE2\Test\SqlEditor2\source\Unit1.dfm=D:\Delphi\XE2\Test\SqlEditor2\source\fntNewConnectIB.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
