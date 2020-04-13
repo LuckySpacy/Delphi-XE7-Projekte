@@ -3,3 +3,4 @@ Username=dokuorga
 Passwort=agroukod
 Server=localhost
 Databasename=localhost:C:\bachmann\db\DOKUORGA.FDB
+ReorgFilename=c:\Bachmann\DB\Export\dokuorga.dbu

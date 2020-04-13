@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D4BC9479-9A72-4E4A-A155-C08B0D60C38F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Server\Source\Webserver.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\Source\WebClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ServerUI\Source\ServerUI.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Webserver">
+        <MSBuild Projects="Server\Source\Webserver.dproj"/>
+    </Target>
+    <Target Name="Webserver:Clean">
+        <MSBuild Projects="Server\Source\Webserver.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Webserver:Make">
+        <MSBuild Projects="Server\Source\Webserver.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebClient">
+        <MSBuild Projects="Client\Source\WebClient.dproj"/>
+    </Target>
+    <Target Name="WebClient:Clean">
+        <MSBuild Projects="Client\Source\WebClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebClient:Make">
+        <MSBuild Projects="Client\Source\WebClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServerUI">
+        <MSBuild Projects="ServerUI\Source\ServerUI.dproj"/>
+    </Target>
+    <Target Name="ServerUI:Clean">
+        <MSBuild Projects="ServerUI\Source\ServerUI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServerUI:Make">
+        <MSBuild Projects="ServerUI\Source\ServerUI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Webserver;WebClient;ServerUI"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Webserver:Clean;WebClient:Clean;ServerUI:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Webserver:Make;WebClient:Make;ServerUI:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

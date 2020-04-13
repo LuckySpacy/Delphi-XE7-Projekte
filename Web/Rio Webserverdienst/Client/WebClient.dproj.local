@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.04.09 10:36:51.378,=C:\Users\tbachmann.GB\Documents\Embarcadero\Studio\Projekte\Unit2.pas</Transaction>
+    <Transaction>2020.04.09 10:37:21.066,C:\Entwicklung\Delphi\Rio\Test\Webserver\Test 3\Client\Form.WebClient.pas=C:\Users\tbachmann.GB\Documents\Embarcadero\Studio\Projekte\Unit2.pas</Transaction>
+    <Transaction>2020.04.09 10:37:21.066,C:\Entwicklung\Delphi\Rio\Test\Webserver\Test 3\Client\Form.WebClient.dfm=C:\Users\tbachmann.GB\Documents\Embarcadero\Studio\Projekte\Unit2.dfm</Transaction>
+    <Transaction>2020.04.09 10:37:29.786,C:\Entwicklung\Delphi\Rio\Test\Webserver\Test 3\Client\WebClient.dproj=C:\Users\tbachmann.GB\Documents\Embarcadero\Studio\Projekte\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

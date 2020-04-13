@@ -1,0 +1,80 @@
+object frm_Webserver: Tfrm_Webserver
+  Left = 0
+  Top = 0
+  Caption = 'Webserver'
+  ClientHeight = 218
+  ClientWidth = 384
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 177
+    Width = 384
+    Height = 41
+    Align = alBottom
+    Caption = 'Panel1'
+    ShowCaption = False
+    TabOrder = 0
+    object Button1: TButton
+      AlignWithMargins = True
+      Left = 187
+      Top = 6
+      Width = 75
+      Height = 29
+      Margins.Left = 10
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'Button1'
+      TabOrder = 0
+    end
+    object btn_Start: TButton
+      AlignWithMargins = True
+      Left = 11
+      Top = 6
+      Width = 75
+      Height = 29
+      Margins.Left = 10
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'Start'
+      TabOrder = 1
+      OnClick = btn_StartClick
+    end
+    object btn_Stop: TButton
+      AlignWithMargins = True
+      Left = 99
+      Top = 6
+      Width = 75
+      Height = 29
+      Margins.Left = 10
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'Stop'
+      TabOrder = 2
+      OnClick = btn_StopClick
+    end
+  end
+  object Memo: TMemo
+    Left = 0
+    Top = 0
+    Width = 384
+    Height = 177
+    Align = alClient
+    Lines.Strings = (
+      'Memo')
+    TabOrder = 1
+  end
+end
