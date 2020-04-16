@@ -15,7 +15,10 @@ uses
   Log4D in '..\..\..\Log4d\Log4D.pas',
   Objekt.WebserverXML in '..\..\ServerUI\Source\Objekt\Objekt.WebserverXML.pas',
   Datenmodul.DM in 'Form\Datenmodul.DM.pas' {DM: TDataModule},
-  Objekt.Verschluesseln in '..\..\..\Allgemein\Objekt\Objekt.Verschluesseln.pas';
+  Objekt.Verschluesseln in '..\..\..\Allgemein\Objekt\Objekt.Verschluesseln.pas',
+  Objekt.BaseList in 'Objekt\Objekt.BaseList.pas',
+  Objekt.Tabellenfeld in 'Objekt\Objekt.Tabellenfeld.pas',
+  Objekt.TabellenfeldList in 'Objekt\Objekt.TabellenfeldList.pas';
 
 {$R *.res}
 

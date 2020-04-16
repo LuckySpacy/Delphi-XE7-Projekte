@@ -45,22 +45,14 @@ begin
 end;
 
 function TVerschluesseln.Entschluesseln(aValue: string): string;
-var
-  fEncoding : TEncoding;
 begin
-  fEncoding := TEncoding.Create;
   fCodec.DecryptString(Result, aValue, TEncoding.ANSI);
-  FreeAndNil(fEncoding);
 end;
 
 
 function TVerschluesseln.Verschluesseln(aValue: string): string;
-var
-  fEncoding : TEncoding;
 begin
-  fEncoding := TEncoding.Create;
   fCodec.EncryptString(aValue, Result, TEncoding.ANSI);
-  FreeAndNil(fEncoding);
 end;
 
 

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.333,C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\Form\Form.ClientUI.dfm=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.860,C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\ClientUI.dproj=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.098,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.504,=C:\Bachmann\Delphi\Delphi XE7\Projekte\Allgemein\Objekt\Objekt.Verschluesseln.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.333,C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\Form\Form.ClientUI.pas=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.847,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.750,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.240,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.325,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\AppletModule1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.925,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\AppletModule1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,=C:\Bachmann\Delphi\Delphi XE7\Projekte\Allgemein\Units\u_RegIni.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.768,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.668,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.035,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.630,=C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.018,C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\Objekt\Objekt.ClientUIEinstellung.pas=C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\ClientUI\Source\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.858,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.682,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.553,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.142,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.727,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.756,=C:\Users\TomBa\OneDrive\Dokumente\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

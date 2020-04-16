@@ -135,3 +135,10 @@ Web/Client/Source/WebClient.exe
 Web/OPTIMACHANGELOG.FDB
 Web/Client/Source/WebClientRio.exe
 Web/Client/Source/Win32/
+Web/Client/Source/__history/
+Web/ClientUI/Source/__history/
+Web/ClientUI/Source/Form/__history/
+Web/ClientUI/Source/Objekt/__history/
+Web/ClientUI/Source/Win32/
+Web/WebQuery/__history/
+Web/ClientUI/Source/ClientUI.exe

@@ -91,6 +91,13 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Objekt\Objekt.WebClient.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.Feld.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.FeldList.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.BaseList.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.DatenFelderList.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.DatenFelder.pas"/>
+        <DCCReference Include="..\..\WebQuery\WebQuery.DatenList.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -119,6 +126,12 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment>
+                <DeployFile LocalName="WebClient.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>WebClient.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\WebClient.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>WebClient.exe</RemoteName>

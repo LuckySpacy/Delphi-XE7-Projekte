@@ -18,11 +18,13 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure btn_StartClick(Sender: TObject);
     procedure btn_StopClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     fServer: TWebServer;
     fWebserverXML: TWebserverXML;
     fVerschlusseln: TVerschluesseln;
     fPath: string;
+    fTrenner: string;
     procedure OptimaChangeLog(aSql: string; var aDataStream: TMemoryStream);
   public
   end;
@@ -35,7 +37,7 @@ implementation
 {$R *.dfm}
 
 uses
-  Datenmodul.DM;
+  Datenmodul.DM, Objekt.Tabellenfeld;
 
 
 
@@ -48,7 +50,7 @@ begin
   fWebserverXML := nil;
   fPath := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)));
   fVerschlusseln := TVerschluesseln.Create;
-
+  fTrenner := '# #';
 end;
 
 procedure Tfrm_Webserver.FormDestroy(Sender: TObject);
@@ -66,28 +68,63 @@ var
   List: TStringList;
   s: string;
   i1: Integer;
+  Tabellenfeld: TTabellenfeld;
 begin
   Memo.Lines.Add(aSql);
   List := TStringList.Create;
 
   dm.qry_OptimaChangeLog.Close;
   DM.qry_OptimaChangeLog.SQL.Text := aSql;
-  dm.IBT_OptimaChangeLog.StartTransaction;
-  dm.qry_OptimaChangeLog.Open;
-  while not dm.qry_OptimaChangeLog.Eof do
-  begin
-    s := '';
-    for i1 := 0 to dm.qry_OptimaChangeLog.FieldList.Count -1 do
-      s := s + dm.qry_OptimaChangeLog.FieldList[i1].AsString + '# #';
-    List.Add(s);
-    dm.qry_OptimaChangeLog.Next;
-  end;
-  dm.qry_OptimaChangeLog.Close;
-  dm.IBT_OptimaChangeLog.Rollback;
+//  DM.qry_OptimaChangeLog.SQL.Text := 'select * from kunde where ku_name = "AA" order by ku_name';
+//  DM.qry_OptimaChangeLog.SQL.Text := 'select * from kunde where ku_name = ' + QuotedStr('AA') + ' order by ku_name';
+  //DM.qry_OptimaChangeLog.SQL.Text := 'select * from kunde where ku_name = :kuname order by ku_name';
+  //dm.qry_OptimaChangeLog.ParamByName('kuname').AsString := 'ÄÄ';
 
-  aDataStream.Position := 0;
-  List.SaveToStream(aDataStream);
-  FreeAndNil(List);
+  if dm.IBT_OptimaChangeLog.InTransaction then
+    dm.IBT_OptimaChangeLog.Rollback;
+
+
+  dm.IBT_OptimaChangeLog.StartTransaction;
+  try
+    try
+      dm.qry_OptimaChangeLog.Open;
+      //if not dm.qry_OptimaChangeLog.Eof then
+      //begin
+
+        s := '';
+        for i1 := 0 to dm.qry_OptimaChangeLog.FieldList.Count -1 do
+        begin
+          s := s + UpperCase(dm.qry_OptimaChangeLog.Fields[i1].FieldName) + fTrenner;
+          Tabellenfeld := DM.OptimaChangeLogTabelleInfo(UpperCase(dm.qry_OptimaChangeLog.Fields[i1].FieldName));
+          s := s + Tabellenfeld.Feldtyp + fTrenner;
+          s := s + Tabellenfeld.Feldsize + fTrenner;
+        end;
+        List.Add(s);
+
+      //end;
+
+      while not dm.qry_OptimaChangeLog.Eof do
+      begin
+        s := '';
+        for i1 := 0 to dm.qry_OptimaChangeLog.FieldList.Count -1 do
+          s := s + dm.qry_OptimaChangeLog.FieldList[i1].AsString + fTrenner;
+        List.Add(s);
+        dm.qry_OptimaChangeLog.Next;
+      end;
+    except
+      on E: Exception do
+      begin
+        List.Text := E.Message;
+      end;
+    end;
+    dm.qry_OptimaChangeLog.Close;
+  finally
+    dm.IBT_OptimaChangeLog.Rollback;
+    aDataStream.Position := 0;
+    List.SaveToStream(aDataStream);
+    FreeAndNil(List);
+  end;
+
 
   {
   List.Add('Hallo Thomas. Wie gehts dir? äöüÄÖÜß');
@@ -130,6 +167,11 @@ procedure Tfrm_Webserver.btn_StopClick(Sender: TObject);
 begin
   fServer.Stop;
   Caption := 'Gestoppt';
+end;
+
+procedure Tfrm_Webserver.Button1Click(Sender: TObject);
+begin
+  dm.OptimaChangeLogTabelleInfo('KU_ID');
 end;
 
 end.

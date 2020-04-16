@@ -37,6 +37,7 @@ object frm_Webserver: Tfrm_Webserver
       Align = alLeft
       Caption = 'Button1'
       TabOrder = 0
+      OnClick = Button1Click
     end
     object btn_Start: TButton
       AlignWithMargins = True

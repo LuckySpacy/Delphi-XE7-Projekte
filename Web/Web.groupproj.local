@@ -2,6 +2,6 @@
 <BorlandProject>
 	<Transactions/>
 	<Default.Personality>
-		<Projects ActiveProject="C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\Server\Source\Webserver.dproj"/>
+		<Projects ActiveProject="C:\Bachmann\Delphi\Delphi XE7\Projekte\Web\Client\Source\WebClient.dproj"/>
 	</Default.Personality>
 </BorlandProject>

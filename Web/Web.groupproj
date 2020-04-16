@@ -12,6 +12,9 @@
         <Projects Include="ServerUI\Source\ServerUI.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ClientUI\Source\ClientUI.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="ServerUI:Make">
         <MSBuild Projects="ServerUI\Source\ServerUI.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ClientUI">
+        <MSBuild Projects="ClientUI\Source\ClientUI.dproj"/>
+    </Target>
+    <Target Name="ClientUI:Clean">
+        <MSBuild Projects="ClientUI\Source\ClientUI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientUI:Make">
+        <MSBuild Projects="ClientUI\Source\ClientUI.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Webserver;WebClient;ServerUI"/>
+        <CallTarget Targets="Webserver;WebClient;ServerUI;ClientUI"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Webserver:Clean;WebClient:Clean;ServerUI:Clean"/>
+        <CallTarget Targets="Webserver:Clean;WebClient:Clean;ServerUI:Clean;ClientUI:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Webserver:Make;WebClient:Make;ServerUI:Make"/>
+        <CallTarget Targets="Webserver:Make;WebClient:Make;ServerUI:Make;ClientUI:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

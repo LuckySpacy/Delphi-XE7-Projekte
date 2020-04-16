@@ -1,5 +1,7 @@
 object DM: TDM
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
   Height = 185
   Width = 366
   object IBD_OptimaChangeLog: TIBDatabase
@@ -14,8 +16,8 @@ object DM: TDM
   end
   object IBT_OptimaChangeLog: TIBTransaction
     DefaultDatabase = IBD_OptimaChangeLog
-    Left = 144
-    Top = 32
+    Left = 176
+    Top = 16
   end
   object qry_OptimaChangeLog: TIBQuery
     Database = IBD_OptimaChangeLog
@@ -25,5 +27,17 @@ object DM: TDM
     ParamCheck = True
     Left = 248
     Top = 60
+  end
+  object qry_Tabellenfeld: TIBQuery
+    BufferChunks = 1000
+    CachedUpdates = False
+    ParamCheck = True
+    Left = 80
+    Top = 96
+  end
+  object IBT_Tabellenfeld: TIBTransaction
+    DefaultDatabase = IBD_OptimaChangeLog
+    Left = 176
+    Top = 120
   end
 end

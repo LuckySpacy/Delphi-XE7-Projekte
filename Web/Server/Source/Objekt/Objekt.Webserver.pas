@@ -62,9 +62,9 @@ end;
 procedure TWebServer.ServerCommandGet(AContext: TIdContext;
   ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
 var
-  DataString: String;
+  //DataString: String;
   Groesse: string;
-  Param: UTF8string;
+  Param: String;
   List: TStringList;
 begin
   Groesse := '';
@@ -86,7 +86,7 @@ begin
       if fDataStream <> nil then
         FreeAndNil(fDataStream);
       fDataStream := TMemoryStream.Create;
-      Param := Hex2String(ARequestInfo.QueryParams);
+      Param := String(Hex2String(ARequestInfo.QueryParams));
       fOnOptimaChangeLog(Param, fDataStream);
       ErzeugeZipStream;
       AResponseInfo.ContentType := 'text/html';

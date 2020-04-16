@@ -38,6 +38,20 @@ object Form1: TForm1
       TabOrder = 0
       OnClick = btn_OptimaChangeLogClick
     end
+    object Button1: TButton
+      AlignWithMargins = True
+      Left = 134
+      Top = 6
+      Width = 110
+      Height = 29
+      Margins.Left = 10
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'OptimaChangeLog'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
   end
   object Panel2: TPanel
     Left = 0
@@ -56,6 +70,7 @@ object Form1: TForm1
       Align = alClient
       Lines.Strings = (
         'Memo')
+      ScrollBars = ssVertical
       TabOrder = 0
     end
   end
