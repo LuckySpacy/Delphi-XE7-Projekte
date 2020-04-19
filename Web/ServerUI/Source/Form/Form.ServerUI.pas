@@ -21,14 +21,12 @@ type
     btn_Schliessen: TButton;
     Panel5: TPanel;
     Panel6: TPanel;
-    Label1: TLabel;
-    edt_Port: TSpinEdit;
     GroupBox1: TGroupBox;
     Panel7: TPanel;
     Label4: TLabel;
     Label2: TLabel;
     Label3: TLabel;
-    Panel8: TPanel;
+    pnl_EditDatenbank: TPanel;
     cbx_Datenbankart: TComboBox;
     edt_Datenbankpfad: TAdvDirectoryEdit;
     edt_Datenbankname: TEdit;
@@ -38,6 +36,15 @@ type
     Label7: TLabel;
     edt_Passwort: TEdit;
     edt_Username: TEdit;
+    Webserver: TGroupBox;
+    Panel9: TPanel;
+    Label1: TLabel;
+    Panel10: TPanel;
+    edt_Port: TAdvEdit;
+    Label8: TLabel;
+    edt_WebUsername: TEdit;
+    Label9: TLabel;
+    edt_WebPasswort: TEdit;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btn_SchliessenClick(Sender: TObject);
@@ -93,7 +100,7 @@ procedure TForm1.FormShow(Sender: TObject);
 begin
   fWebserverXML.LadeModule(lsb.Items);
   ClearAttributFelder;
-  edt_Port.Value := StrToInt(fWebserverXML.WebserverPort);
+  edt_Port.IntValue := StrToInt(fWebserverXML.WebserverPort);
   if lsb.Items.Count > 0 then
   begin
     lsb.ItemIndex := 0;
@@ -135,6 +142,16 @@ begin
   ModulAttribute.Datenbankname := edt_Datenbankname.Text;
   ModulAttribute.Pfad          := edt_Datenbankpfad.Text;
   ModulAttribute.Art           := cbx_Datenbankart.Text;
+
+  ModulAttribute.WebserverUsername := '';
+  ModulAttribute.WebserverPasswort := '';
+
+  if edt_WebUsername.Text > '' then
+    ModulAttribute.WebserverUsername := fVerschluesseln.Verschluesseln(edt_WebUsername.Text);
+  if edt_WebPasswort.Text > '' then
+    ModulAttribute.WebserverPasswort := fVerschluesseln.Verschluesseln(edt_WebPasswort.Text);
+
+
   fWebserverXML.SaveModulAttribute(fModulName);
 end;
 
@@ -197,11 +214,14 @@ begin
   edt_DatenbankPort.IntValue := 0;
   edt_Passwort.Text := '';
   edt_Username.Text := '';
+  edt_Port.Text := '80';
+  edt_WebUsername.Text := '';
+  edt_WebPasswort.Text := '';
 end;
 
 procedure TForm1.edt_PortExit(Sender: TObject);
 begin
-  fWebserverXML.WebserverPort := IntToStr(edt_Port.Value);
+  fWebserverXML.WebserverPort := IntToStr(edt_Port.IntValue);
 end;
 
 procedure TForm1.FuelleAttributFelder;
@@ -226,6 +246,10 @@ begin
     if SameText(cbx_Datenbankart.Items[i1], ModulAttribute.Art) then
       cbx_Datenbankart.ItemIndex := i1;
   end;
+  if ModulAttribute.WebserverUsername > '' then
+    edt_WebUsername.Text := fVerschluesseln.Entschluesseln(ModulAttribute.WebserverUsername);
+  if ModulAttribute.WebserverPasswort > '' then
+    edt_WebPasswort.Text := fVerschluesseln.Entschluesseln(ModulAttribute.WebserverPasswort);
 end;
 
 

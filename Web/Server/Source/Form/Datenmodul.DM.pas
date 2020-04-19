@@ -13,13 +13,18 @@ type
     qry_OptimaChangeLog: TIBQuery;
     qry_Tabellenfeld: TIBQuery;
     IBT_Tabellenfeld: TIBTransaction;
+    IBD_DokuOrga: TIBDatabase;
+    IBT_DokuOrga: TIBTransaction;
+    qry_DokuOrga: TIBQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleDestroy(Sender: TObject);
   private
     fOptimaChangeLog_TabellenfeldList: TTabellenfeldList;
+    fDokuOrga_TabellenfeldList: TTabellenfeldList;
     function ReadAndGetFeldInfo(aFeldName: string; aTabellenfeldList: TTabellenfeldList; aIBT: TIBTransaction): TTabellenfeld;
   public
     function OptimaChangeLogTabelleInfo(aFeldName: string): TTabellenfeld;
+    function DokuOrgaTabelleInfo(aFeldName: string): TTabellenfeld;
   end;
 
 var
@@ -42,11 +47,21 @@ begin
                                ' and   t1.RDB$RELATION_NAME =  t2.RDB$RELATION_NAME' +
                                ' and   t2.RDB$FIELD_SOURCE = t3.RDB$FIELD_NAME' +
                                ' and   t2.rdb$field_name = :SuchFeldName';
+  fDokuOrga_TabellenfeldList := TTabellenfeldList.Create(nil);
 end;
 
 procedure TDM.DataModuleDestroy(Sender: TObject);
 begin
   FreeAndNil(fOptimaChangeLog_TabellenfeldList);
+  FreeAndNil(fDokuOrga_TabellenfeldList);
+end;
+
+function TDM.DokuOrgaTabelleInfo(aFeldName: string): TTabellenfeld;
+begin
+  Result := fDokuOrga_TabellenfeldList.getItemByFeldname(Uppercase(aFeldName));
+  if Result <> nil then
+    exit;
+  Result := ReadAndGetFeldInfo(aFeldName, fDokuOrga_TabellenfeldList, IBT_OptimaChangeLog);
 end;
 
 function TDM.OptimaChangeLogTabelleInfo(aFeldName: string): TTabellenfeld;

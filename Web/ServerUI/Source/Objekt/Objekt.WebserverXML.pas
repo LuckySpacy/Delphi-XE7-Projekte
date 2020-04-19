@@ -16,6 +16,8 @@ type
     Datenbankname: string;
     Pfad: string;
     Art: string;
+    WebserverUsername: string;
+    WebserverPasswort: string;
     procedure Init;
   end;
 
@@ -38,6 +40,8 @@ type
     procedure NeuesModul(aModul: string);
     procedure LoescheModul(aModul: string);
     property WebserverPort: string read getWebserverPort write setWebserverPort;
+    function WebserverUsername: string;
+    function WebserverPasswort: string;
   end;
 
 implementation
@@ -131,6 +135,12 @@ var
 begin
   fModulAttribute.Init;
   WebserverNode := fDocument.DocumentElement;
+  fModulAttribute.WebserverUsername := '';
+  fModulAttribute.WebserverPasswort := '';
+  if WebserverNode.Attributes['Username'] <> null then
+    fModulAttribute.WebserverUsername := WebserverNode.Attributes['Username'];
+  if WebserverNode.Attributes['Passwort'] <> null then
+    fModulAttribute.WebserverPasswort := WebserverNode.Attributes['Passwort'];
   for i1 := 0 to WebserverNode.ChildNodes.Count -1 do
   begin
     Node := WebserverNode.ChildNodes[i1];
@@ -160,6 +170,8 @@ var
   DatenbankNode: IXMLNode;
 begin
   WebserverNode := fDocument.DocumentElement;
+  WebServerNode.Attributes['Username'] := fModulAttribute.WebserverUsername;
+  WebServerNode.Attributes['Passwort'] := fModulAttribute.WebserverPasswort;
   for i1 := 0 to WebserverNode.ChildNodes.Count -1 do
   begin
     Node := WebserverNode.ChildNodes[i1];
@@ -185,6 +197,40 @@ begin
   WebserverNode := fDocument.DocumentElement;
   WebserverNode.Attributes['Port'] := Value;
   fDocument.SaveToFile(fXMLFilename);
+end;
+
+function TWebserverXML.WebserverPasswort: string;
+var
+  WebserverNode: IXMLNode;
+begin
+  Result := '';
+  WebserverNode := fDocument.DocumentElement;
+  if WebserverNode.Attributes['Passwort'] = null then
+    exit;
+  Result := WebserverNode.Attributes['Passwort'];
+  if Result > '' then
+  begin
+    if fVerschluesseln = nil then
+      fVerschluesseln := TVerschluesseln.Create;
+    Result := fVerschluesseln.Entschluesseln(Result);
+  end;
+end;
+
+function TWebserverXML.WebserverUsername: string;
+var
+  WebserverNode: IXMLNode;
+begin
+  Result := '';
+  WebserverNode := fDocument.DocumentElement;
+  if WebserverNode.Attributes['Username'] = null then
+    exit;
+  Result := WebserverNode.Attributes['Username'];
+  if Result > '' then
+  begin
+    if fVerschluesseln = nil then
+      fVerschluesseln := TVerschluesseln.Create;
+    Result := fVerschluesseln.Entschluesseln(Result);
+  end;
 end;
 
 procedure TWebserverXML.NeuesModul(aModul: string);

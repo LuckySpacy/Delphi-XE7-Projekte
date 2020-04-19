@@ -19,10 +19,13 @@ type
     fPasswort: string;
     fZipStream: TMemoryStream;
     fOnOptimaChangeLog: TDataStreamEvent;
+    fPort: Integer;
+    fOnDokuOrga: TDataStreamEvent;
     procedure ServerCommandGet(AContext: TIdContext;
       ARequestInfo: TIdHTTPRequestInfo; AResponseInfo: TIdHTTPResponseInfo);
     procedure ErzeugeZipStream;
     function Hex2String(const Buffer: string): AnsiString;
+    procedure setPort(const Value: Integer);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
@@ -30,6 +33,8 @@ type
     property Username: string read fUsername write fUsername;
     property Passwort: string read fPasswort write fPasswort;
     property OnOptimaChangeLog: TDataStreamEvent read fOnOptimaChangeLog write fOnOptimaChangeLog;
+    property OnDokuOrga: TDataStreamEvent read fOnDokuOrga write fOnDokuOrga;
+    property Port: Integer read fPort write setPort;
     procedure Start;
     procedure Stop;
   end;
@@ -94,11 +99,35 @@ begin
       SetLength(Groesse, fZipStream.Size);
       fZipStream.Read(Groesse[1], fZipStream.Size);
     end;
+
+    if ARequestInfo.Document = '/DokuOrga' then
+    begin
+      if not Assigned(fOnOptimaChangeLog) then
+        exit;
+      if fDataStream <> nil then
+        FreeAndNil(fDataStream);
+      fDataStream := TMemoryStream.Create;
+      Param := String(Hex2String(ARequestInfo.QueryParams));
+      fOnDokuOrga(Param, fDataStream);
+      ErzeugeZipStream;
+      AResponseInfo.ContentType := 'text/html';
+      AResponseInfo.ContentStream := fZipStream;
+      SetLength(Groesse, fZipStream.Size);
+      fZipStream.Read(Groesse[1], fZipStream.Size);
+    end;
+
+
   finally
     FreeAndNil(List);
   end;
 end;
 
+
+procedure TWebServer.setPort(const Value: Integer);
+begin
+  fPort := Value;
+  fServer.DefaultPort := fPort;
+end;
 
 procedure TWebServer.Start;
 begin

@@ -28,7 +28,6 @@ object frm_ClientUI: Tfrm_ClientUI
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 0
-    ExplicitTop = 152
     object btn_Schliessen: TButton
       AlignWithMargins = True
       Left = 406
@@ -39,7 +38,6 @@ object frm_ClientUI: Tfrm_ClientUI
       Caption = 'Schlie'#223'en'
       TabOrder = 0
       OnClick = btn_SchliessenClick
-      ExplicitLeft = 528
     end
     object btn_Abbrechen: TButton
       AlignWithMargins = True
@@ -51,7 +49,6 @@ object frm_ClientUI: Tfrm_ClientUI
       Caption = 'Abbrechen'
       TabOrder = 1
       OnClick = btn_AbbrechenClick
-      ExplicitLeft = 528
     end
   end
   object Panel3: TPanel
@@ -64,9 +61,6 @@ object frm_ClientUI: Tfrm_ClientUI
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 1
-    ExplicitLeft = 148
-    ExplicitWidth = 458
-    ExplicitHeight = 226
     object Panel6: TPanel
       Left = 0
       Top = 0
@@ -77,9 +71,6 @@ object frm_ClientUI: Tfrm_ClientUI
       Caption = 'Panel5'
       ShowCaption = False
       TabOrder = 0
-      ExplicitTop = 41
-      ExplicitWidth = 458
-      ExplicitHeight = 185
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 5
@@ -93,10 +84,6 @@ object frm_ClientUI: Tfrm_ClientUI
         Align = alClient
         Caption = 'Webserver'
         TabOrder = 0
-        ExplicitLeft = 3
-        ExplicitTop = 3
-        ExplicitWidth = 452
-        ExplicitHeight = 182
         object Panel7: TPanel
           AlignWithMargins = True
           Left = 5
@@ -108,7 +95,6 @@ object frm_ClientUI: Tfrm_ClientUI
           Caption = 'Panel7'
           ShowCaption = False
           TabOrder = 0
-          ExplicitHeight = 159
           object Label3: TLabel
             AlignWithMargins = True
             Left = 3
@@ -118,7 +104,6 @@ object frm_ClientUI: Tfrm_ClientUI
             Margins.Top = 11
             Align = alTop
             Caption = 'Passwort:'
-            ExplicitTop = 138
             ExplicitWidth = 48
           end
           object Label5: TLabel
@@ -130,7 +115,6 @@ object frm_ClientUI: Tfrm_ClientUI
             Margins.Top = 4
             Align = alTop
             Caption = 'Url:'
-            ExplicitTop = 57
             ExplicitWidth = 17
           end
           object Label6: TLabel
@@ -142,7 +126,6 @@ object frm_ClientUI: Tfrm_ClientUI
             Margins.Top = 11
             Align = alTop
             Caption = 'Port:'
-            ExplicitTop = 84
             ExplicitWidth = 24
           end
           object Label7: TLabel
@@ -154,7 +137,6 @@ object frm_ClientUI: Tfrm_ClientUI
             Margins.Top = 11
             Align = alTop
             Caption = 'Username:'
-            ExplicitTop = 111
             ExplicitWidth = 52
           end
         end
@@ -168,8 +150,6 @@ object frm_ClientUI: Tfrm_ClientUI
           Caption = 'Panel8'
           ShowCaption = False
           TabOrder = 1
-          ExplicitWidth = 374
-          ExplicitHeight = 165
           object edt_URL: TEdit
             AlignWithMargins = True
             Left = 3
@@ -180,8 +160,6 @@ object frm_ClientUI: Tfrm_ClientUI
             TabOrder = 0
             Text = 'edt_URL'
             OnExit = edt_URLExit
-            ExplicitTop = 57
-            ExplicitWidth = 368
           end
           object edt_Port: TAdvEdit
             AlignWithMargins = True
@@ -208,8 +186,6 @@ object frm_ClientUI: Tfrm_ClientUI
             Text = '0'
             Visible = True
             Version = '3.3.2.8'
-            ExplicitTop = 84
-            ExplicitWidth = 368
           end
           object edt_Passwort: TEdit
             AlignWithMargins = True
@@ -221,8 +197,6 @@ object frm_ClientUI: Tfrm_ClientUI
             TabOrder = 2
             Text = 'edt_Datenbankname'
             OnExit = edt_PasswortExit
-            ExplicitTop = 138
-            ExplicitWidth = 368
           end
           object edt_Username: TEdit
             AlignWithMargins = True
@@ -234,8 +208,6 @@ object frm_ClientUI: Tfrm_ClientUI
             TabOrder = 3
             Text = 'edt_Datenbankname'
             OnExit = edt_UsernameExit
-            ExplicitTop = 111
-            ExplicitWidth = 368
           end
         end
       end

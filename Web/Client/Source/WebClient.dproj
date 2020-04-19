@@ -98,6 +98,8 @@
         <DCCReference Include="..\..\WebQuery\WebQuery.DatenFelderList.pas"/>
         <DCCReference Include="..\..\WebQuery\WebQuery.DatenFelder.pas"/>
         <DCCReference Include="..\..\WebQuery\WebQuery.DatenList.pas"/>
+        <DCCReference Include="..\..\..\Allgemein\Units\u_RegIni.pas"/>
+        <DCCReference Include="..\..\..\Allgemein\Objekt\Objekt.Verschluesseln.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

@@ -10,7 +10,9 @@ uses
   WebQuery in '..\..\WebQuery\WebQuery.pas',
   WebQuery.DatenFelderList in '..\..\WebQuery\WebQuery.DatenFelderList.pas',
   WebQuery.DatenFelder in '..\..\WebQuery\WebQuery.DatenFelder.pas',
-  WebQuery.DatenList in '..\..\WebQuery\WebQuery.DatenList.pas';
+  WebQuery.DatenList in '..\..\WebQuery\WebQuery.DatenList.pas',
+  u_RegIni in '..\..\..\Allgemein\Units\u_RegIni.pas',
+  Objekt.Verschluesseln in '..\..\..\Allgemein\Objekt\Objekt.Verschluesseln.pas';
 
 {$R *.res}
 

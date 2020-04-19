@@ -13,12 +13,20 @@ type
     fZip: TZipFile;
     fHttp: TIdHTTP;
     fOnWebserverConnectError: TNotifyEvent;
+    fPasswort: string;
+    fUsername: string;
+    fPort: Integer;
+    fOnWebserverNotAutorisiert: TNotifyEvent;
     function String2Hex(const Buffer: AnsiString): string;
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
     procedure get(aUrl, aPath, aQueryParam: string; var aDataStream: TMemoryStream);
     property OnWebserverConnectError: TNotifyEvent read fOnWebserverConnectError write fOnWebserverConnectError;
+    property OnWebserverNotAutorisiert: TNotifyEvent read fOnWebserverNotAutorisiert write fOnWebserverNotAutorisiert;
+    property Username: string read fUsername write fUsername;
+    property Passwort: string read fPasswort write fPasswort;
+    property Port: Integer read fPort write fPort;
   end;
 
 implementation
@@ -33,6 +41,9 @@ begin
   inherited Create(AOwner);
   fZip  := TZipFile.Create;
   fHttp := TIdHTTP.Create(nil);
+  fUsername := '';
+  fPasswort := '';
+  fPort     := 80;
 end;
 
 destructor TWebClient.Destroy;
@@ -50,7 +61,22 @@ var
   ZipHeader: TZipHeader;
   s: string;
 begin
-  s := aUrl + aPath + '?' + String2Hex(AnsiString(aQueryParam));
+  if (aUrl[Length(aUrl)] = '/') or (aUrl[Length(aUrl)] = '\') then
+    aUrl := copy(aUrl, 1, Length(aUrl)-1);
+
+  s := aUrl + '/' + aPath + '?' + String2Hex(AnsiString(aQueryParam));
+  if fPort <> 80 then
+    s := aUrl + ':' + IntToStr(fPort) + '/' + aPath + '?' + String2Hex(AnsiString(aQueryParam));
+
+  fHttp.Request.BasicAuthentication := false;
+
+  if (fUsername > '') and (fPasswort > '') then
+  begin
+    fHttp.Request.BasicAuthentication := true;
+    fHttp.Request.Username := fUsername;
+    fHttp.Request.Password := fPasswort;
+  end;
+
   ZipStream := TMemoryStream.Create;
   try
     try
@@ -61,6 +87,16 @@ begin
         //ShowMessage(e.Message);
         if Assigned(fOnWebserverConnectError) then
           fOnWebserverConnectError(Self);
+        exit;
+      end;
+      on E: EIdHTTPProtocolException do
+      begin
+        //ShowMessage(IntToStr(E.ErrorCode));
+        if E.ErrorCode = 401 then
+        begin
+          if Assigned(fOnWebserverNotAutorisiert) then
+            fOnWebserverNotAutorisiert(Self);
+        end;
         exit;
       end;
     end;

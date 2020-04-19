@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Server UI'
-  ClientHeight = 257
+  ClientHeight = 330
   ClientWidth = 606
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,7 +20,7 @@ object Form1: TForm1
   object Splitter1: TSplitter
     Left = 145
     Top = 0
-    Height = 226
+    Height = 299
     ExplicitLeft = 232
     ExplicitTop = 48
     ExplicitHeight = 100
@@ -29,13 +29,13 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 145
-    Height = 226
+    Height = 299
     Align = alLeft
     BevelOuter = bvNone
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 0
-    ExplicitHeight = 261
+    ExplicitHeight = 226
     object Panel4: TPanel
       Left = 0
       Top = 0
@@ -75,18 +75,18 @@ object Form1: TForm1
       Left = 3
       Top = 35
       Width = 139
-      Height = 188
+      Height = 261
       Align = alClient
       ItemHeight = 13
       TabOrder = 1
       OnClick = lsbClick
       OnEnter = lsbEnter
-      ExplicitHeight = 223
+      ExplicitHeight = 188
     end
   end
   object Panel2: TPanel
     Left = 0
-    Top = 226
+    Top = 299
     Width = 606
     Height = 31
     Align = alBottom
@@ -94,7 +94,7 @@ object Form1: TForm1
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 1
-    ExplicitTop = 261
+    ExplicitTop = 226
     object btn_Schliessen: TButton
       AlignWithMargins = True
       Left = 528
@@ -111,18 +111,18 @@ object Form1: TForm1
     Left = 148
     Top = 0
     Width = 458
-    Height = 226
+    Height = 299
     Align = alClient
     BevelOuter = bvNone
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 2
-    ExplicitHeight = 261
+    ExplicitHeight = 226
     object Panel5: TPanel
       Left = 0
       Top = 0
       Width = 458
-      Height = 41
+      Height = 113
       Align = alTop
       BevelOuter = bvNone
       Caption = 'Panel5'
@@ -130,36 +130,140 @@ object Form1: TForm1
       ShowCaption = False
       ShowHint = False
       TabOrder = 0
-      object Label1: TLabel
-        Left = 16
-        Top = 9
-        Width = 76
-        Height = 13
-        Caption = 'Webserver Port'
-      end
-      object edt_Port: TSpinEdit
-        Left = 98
-        Top = 6
-        Width = 63
-        Height = 22
-        MaxValue = 0
-        MinValue = 0
+      object Webserver: TGroupBox
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 452
+        Height = 110
+        Align = alTop
+        Caption = 'Webserver'
         TabOrder = 0
-        Value = 0
-        OnExit = edt_PortExit
+        object Panel9: TPanel
+          Left = 2
+          Top = 15
+          Width = 87
+          Height = 93
+          Align = alLeft
+          BevelOuter = bvNone
+          Caption = 'Panel9'
+          ShowCaption = False
+          TabOrder = 0
+          ExplicitHeight = 124
+          object Label1: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 62
+            Width = 81
+            Height = 13
+            Margins.Top = 10
+            Align = alTop
+            Caption = 'Passwort:'
+            ExplicitWidth = 48
+          end
+          object Label8: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 10
+            Width = 81
+            Height = 13
+            Margins.Top = 10
+            Align = alTop
+            Caption = 'Webserver Port:'
+            ExplicitWidth = 80
+          end
+          object Label9: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 36
+            Width = 81
+            Height = 13
+            Margins.Top = 10
+            Align = alTop
+            Caption = 'Username:'
+            ExplicitWidth = 52
+          end
+        end
+        object Panel10: TPanel
+          Left = 89
+          Top = 15
+          Width = 361
+          Height = 93
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'pnl_EditWeb'
+          ShowCaption = False
+          TabOrder = 1
+          ExplicitHeight = 124
+          object edt_Port: TAdvEdit
+            AlignWithMargins = True
+            Left = 3
+            Top = 6
+            Width = 355
+            Height = 21
+            Margins.Top = 6
+            EditType = etNumeric
+            EmptyTextStyle = []
+            LabelFont.Charset = DEFAULT_CHARSET
+            LabelFont.Color = clWindowText
+            LabelFont.Height = -11
+            LabelFont.Name = 'Tahoma'
+            LabelFont.Style = []
+            Lookup.Font.Charset = DEFAULT_CHARSET
+            Lookup.Font.Color = clWindowText
+            Lookup.Font.Height = -11
+            Lookup.Font.Name = 'Arial'
+            Lookup.Font.Style = []
+            Lookup.Separator = ';'
+            Align = alTop
+            Color = clWindow
+            TabOrder = 0
+            Text = '0'
+            Visible = True
+            OnExit = edt_PortExit
+            Version = '3.3.2.8'
+            ExplicitLeft = 6
+            ExplicitTop = 11
+          end
+          object edt_WebUsername: TEdit
+            AlignWithMargins = True
+            Left = 3
+            Top = 33
+            Width = 355
+            Height = 21
+            Align = alTop
+            TabOrder = 1
+            Text = 'edt_Datenbankname'
+            ExplicitTop = 111
+            ExplicitWidth = 368
+          end
+          object edt_WebPasswort: TEdit
+            AlignWithMargins = True
+            Left = 3
+            Top = 60
+            Width = 355
+            Height = 21
+            Align = alTop
+            TabOrder = 2
+            Text = 'edt_Datenbankname'
+            ExplicitTop = 138
+            ExplicitWidth = 368
+          end
+        end
       end
     end
     object Panel6: TPanel
       Left = 0
-      Top = 41
+      Top = 113
       Width = 458
-      Height = 185
+      Height = 186
       Align = alClient
       BevelOuter = bvNone
       Caption = 'Panel5'
       ShowCaption = False
       TabOrder = 1
-      ExplicitHeight = 220
+      ExplicitTop = 41
+      ExplicitHeight = 185
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -169,6 +273,8 @@ object Form1: TForm1
         Align = alTop
         Caption = 'Datenbank'
         TabOrder = 0
+        ExplicitLeft = 6
+        ExplicitTop = -30
         object Panel7: TPanel
           AlignWithMargins = True
           Left = 5
@@ -246,14 +352,14 @@ object Form1: TForm1
             ExplicitWidth = 52
           end
         end
-        object Panel8: TPanel
+        object pnl_EditDatenbank: TPanel
           Left = 76
           Top = 15
           Width = 374
           Height = 165
           Align = alClient
           BevelOuter = bvNone
-          Caption = 'Panel8'
+          Caption = 'pnl_EditDatenbank'
           ShowCaption = False
           TabOrder = 1
           object cbx_Datenbankart: TComboBox
@@ -270,6 +376,7 @@ object Form1: TForm1
             Items.Strings = (
               'Firebird'
               'MySql')
+            ExplicitTop = -12
           end
           object edt_Datenbankpfad: TAdvDirectoryEdit
             AlignWithMargins = True
@@ -354,7 +461,7 @@ object Form1: TForm1
             Width = 368
             Height = 21
             Align = alTop
-            TabOrder = 4
+            TabOrder = 5
             Text = 'edt_Datenbankname'
           end
           object edt_Username: TEdit
@@ -364,7 +471,7 @@ object Form1: TForm1
             Width = 368
             Height = 21
             Align = alTop
-            TabOrder = 5
+            TabOrder = 4
             Text = 'edt_Datenbankname'
           end
         end
