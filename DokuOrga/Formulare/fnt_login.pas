@@ -89,6 +89,11 @@ end;
 
 procedure Tfrm_Login.btn_OkClick(Sender: TObject);
 begin
+// muss wieder raus
+    FPW_OK := true;
+    close;
+  exit;
+
   if CheckPasswort then
   begin
     FPW_OK := true;

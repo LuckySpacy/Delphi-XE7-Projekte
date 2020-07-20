@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A5AFBF26-D01E-4A35-8BF0-4D30AFD6EC56}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DokuOrgaWeb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Web\Client\Source\WebClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Web\Server\Source\Webserver.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\DokuOrga\Formulare\DokuOrga.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DokuOrgaWeb">
+        <MSBuild Projects="DokuOrgaWeb.dproj"/>
+    </Target>
+    <Target Name="DokuOrgaWeb:Clean">
+        <MSBuild Projects="DokuOrgaWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DokuOrgaWeb:Make">
+        <MSBuild Projects="DokuOrgaWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebClient">
+        <MSBuild Projects="..\Web\Client\Source\WebClient.dproj"/>
+    </Target>
+    <Target Name="WebClient:Clean">
+        <MSBuild Projects="..\Web\Client\Source\WebClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebClient:Make">
+        <MSBuild Projects="..\Web\Client\Source\WebClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Webserver">
+        <MSBuild Projects="..\Web\Server\Source\Webserver.dproj"/>
+    </Target>
+    <Target Name="Webserver:Clean">
+        <MSBuild Projects="..\Web\Server\Source\Webserver.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Webserver:Make">
+        <MSBuild Projects="..\Web\Server\Source\Webserver.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DokuOrga">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj"/>
+    </Target>
+    <Target Name="DokuOrga:Clean">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DokuOrga:Make">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DokuOrgaWeb;WebClient;Webserver;DokuOrga"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DokuOrgaWeb:Clean;WebClient:Clean;Webserver:Clean;DokuOrga:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DokuOrgaWeb:Make;WebClient:Make;Webserver:Make;DokuOrga:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

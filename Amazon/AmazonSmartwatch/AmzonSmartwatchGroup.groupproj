@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8D61F2C8-822E-473A-877C-C2DDFFB23ECB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AmazonSmartwatch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Smartwatch\Smartwatch.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AmazonSmartwatch">
+        <MSBuild Projects="AmazonSmartwatch.dproj"/>
+    </Target>
+    <Target Name="AmazonSmartwatch:Clean">
+        <MSBuild Projects="AmazonSmartwatch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AmazonSmartwatch:Make">
+        <MSBuild Projects="AmazonSmartwatch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Smartwatch">
+        <MSBuild Projects="..\..\Smartwatch\Smartwatch.dproj"/>
+    </Target>
+    <Target Name="Smartwatch:Clean">
+        <MSBuild Projects="..\..\Smartwatch\Smartwatch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Smartwatch:Make">
+        <MSBuild Projects="..\..\Smartwatch\Smartwatch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AmazonSmartwatch;Smartwatch"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AmazonSmartwatch:Clean;Smartwatch:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AmazonSmartwatch:Make;Smartwatch:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4B7EE6E4-9D56-4983-AEF7-BC8CAA30E541}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DokuOrgaWeb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\DokuOrga\Formulare\DokuOrga.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DokuOrgaWeb">
+        <MSBuild Projects="DokuOrgaWeb.dproj"/>
+    </Target>
+    <Target Name="DokuOrgaWeb:Clean">
+        <MSBuild Projects="DokuOrgaWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DokuOrgaWeb:Make">
+        <MSBuild Projects="DokuOrgaWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DokuOrga">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj"/>
+    </Target>
+    <Target Name="DokuOrga:Clean">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DokuOrga:Make">
+        <MSBuild Projects="..\DokuOrga\Formulare\DokuOrga.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DokuOrgaWeb;DokuOrga"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DokuOrgaWeb:Clean;DokuOrga:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DokuOrgaWeb:Make;DokuOrga:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

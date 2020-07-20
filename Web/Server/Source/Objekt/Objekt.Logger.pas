@@ -13,7 +13,7 @@ type
     fWebserverLog: log4d.TLogLogger;
   public
     constructor Create;
-    destructor Destroy;
+    destructor Destroy; override;
     procedure Info(aValue: string);
     procedure Warn(aValue: string);
     procedure Error(aValue: string);
@@ -50,7 +50,7 @@ end;
 
 destructor TLogger.Destroy;
 begin
-
+  inherited;
 end;
 
 procedure TLogger.Error(aValue: string);

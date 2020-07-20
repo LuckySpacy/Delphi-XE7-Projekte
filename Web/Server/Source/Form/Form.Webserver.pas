@@ -155,7 +155,7 @@ begin
 
   ModulAttribute := fWebserverXML.ModulAttribute('OptimaChangeLog');
 
-  if not dm.IBD_OptimaChangeLog.Connected then
+  if (ModulAttribute.Datenbankname > '') and (not dm.IBD_OptimaChangeLog.Connected) then
   begin
     dm.IBD_OptimaChangeLog.Params.Clear;
     dm.IBD_OptimaChangeLog.Params.Add('user_name=' + ModulAttribute.Username);
