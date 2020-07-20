@@ -26,7 +26,8 @@ uses
   Form.Artikel in 'Form\Form.Artikel.pas' {frm_Artikel},
   Form.Memo in 'Form\Form.Memo.pas' {frm_Memo},
   Form.Artikeleigenschaft in 'Form\Form.Artikeleigenschaft.pas' {frm_Artikeleigenschaft},
-  DB.ArtikelEigenschaft in 'Datenbank\DB.ArtikelEigenschaft.pas';
+  DB.ArtikelEigenschaft in 'Datenbank\DB.ArtikelEigenschaft.pas',
+  Form.Artikeleigenschaft2 in 'Form\Form.Artikeleigenschaft2.pas' {frm_Artikeleigenschaft2};
 
 {$R *.res}
 
@@ -34,6 +35,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(Tfrm_Smartwatch, frm_Smartwatch);
+  Application.CreateForm(Tfrm_Artikeleigenschaft2, frm_Artikeleigenschaft2);
   //Application.CreateForm(Tdm, dm);
   Application.Run;
 end.

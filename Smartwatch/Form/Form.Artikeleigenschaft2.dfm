@@ -1,10 +1,10 @@
-object frm_Artikel: Tfrm_Artikel
+object frm_Artikeleigenschaft2: Tfrm_Artikeleigenschaft2
   Left = 0
   Top = 0
   BorderStyle = bsNone
-  Caption = 'Artikel'
-  ClientHeight = 338
-  ClientWidth = 651
+  Caption = 'frm_Artikeleigenschaft2'
+  ClientHeight = 433
+  ClientWidth = 677
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,133 +20,29 @@ object frm_Artikel: Tfrm_Artikel
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 651
+    Width = 677
     Height = 41
     Align = alTop
-    BevelOuter = bvNone
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 0
-    object Panel2: TPanel
-      Left = 0
-      Top = 0
-      Width = 89
-      Height = 41
-      Align = alLeft
-      BevelOuter = bvNone
-      Caption = 'Panel1'
-      ShowCaption = False
+    ExplicitLeft = 48
+    ExplicitTop = 24
+    ExplicitWidth = 185
+    object edt_Checkbox: TEdit
+      Left = 16
+      Top = 11
+      Width = 641
+      Height = 21
       TabOrder = 0
-      object Label1: TLabel
-        AlignWithMargins = True
-        Left = 3
-        Top = 3
-        Width = 83
-        Height = 13
-        Align = alTop
-        Caption = 'Firma'
-        ExplicitWidth = 26
-      end
-    end
-    object Panel3: TPanel
-      Left = 89
-      Top = 0
-      Width = 562
-      Height = 41
-      Align = alClient
-      BevelOuter = bvNone
-      Caption = 'Panel3'
-      ShowCaption = False
-      TabOrder = 1
-      object cbo_Firma: TComboBox
-        AlignWithMargins = True
-        Left = 3
-        Top = 3
-        Width = 556
-        Height = 21
-        Align = alTop
-        Style = csDropDownList
-        TabOrder = 0
-      end
-    end
-  end
-  object Panel4: TPanel
-    Left = 0
-    Top = 41
-    Width = 651
-    Height = 32
-    Align = alTop
-    Caption = 'Panel4'
-    TabOrder = 1
-    object btn_Neu: TTBButton
-      AlignWithMargins = True
-      Left = 4
-      Top = 4
-      Width = 75
-      Height = 24
-      Flat = True
-      SelectColor = clSkyBlue
-      DownColor = clSkyBlue
-      BtnLabel.HAlign = tbHLeft
-      BtnLabel.VAlign = tbVTop
-      BtnLabel.HMargin = 3
-      BtnLabel.VMargin = 0
-      BtnLabel.Caption = 'Neu'
-      BtnLabel.HTextAlign = tbHTextCenter
-      BtnLabel.VTextAlign = tbVTextCenter
-      BtnLabel.Font.Charset = DEFAULT_CHARSET
-      BtnLabel.Font.Color = clWindowText
-      BtnLabel.Font.Height = -11
-      BtnLabel.Font.Name = 'Tahoma'
-      BtnLabel.Font.Style = []
-      BtnLabel.Wordwrap = True
-      BtnImage.AlignLeft = True
-      BtnImage.AlignRight = False
-      BtnImage.Margin = 10
-      BtnImage.Height = 16
-      BtnImage.Width = 16
-      ImageIndex = -1
-      OnClick = btn_NeuClick
-      Align = alLeft
-    end
-    object btn_Loeschen: TTBButton
-      AlignWithMargins = True
-      Left = 85
-      Top = 4
-      Width = 75
-      Height = 24
-      Flat = True
-      SelectColor = clSkyBlue
-      DownColor = clSkyBlue
-      BtnLabel.HAlign = tbHLeft
-      BtnLabel.VAlign = tbVTop
-      BtnLabel.HMargin = 3
-      BtnLabel.VMargin = 0
-      BtnLabel.Caption = 'L'#246'schen'
-      BtnLabel.HTextAlign = tbHTextCenter
-      BtnLabel.VTextAlign = tbVTextCenter
-      BtnLabel.Font.Charset = DEFAULT_CHARSET
-      BtnLabel.Font.Color = clWindowText
-      BtnLabel.Font.Height = -11
-      BtnLabel.Font.Name = 'Tahoma'
-      BtnLabel.Font.Style = []
-      BtnLabel.Wordwrap = True
-      BtnImage.AlignLeft = True
-      BtnImage.AlignRight = False
-      BtnImage.Margin = 10
-      BtnImage.Height = 16
-      BtnImage.Width = 16
-      ImageIndex = -1
-      OnClick = btn_LoeschenClick
-      Align = alLeft
     end
   end
   object grd: TAdvStringGrid
     AlignWithMargins = True
     Left = 3
-    Top = 76
-    Width = 645
-    Height = 259
+    Top = 44
+    Width = 671
+    Height = 386
     Cursor = crDefault
     Align = alClient
     DrawingStyle = gdsClassic
@@ -157,10 +53,8 @@ object frm_Artikel: Tfrm_Artikel
     Font.Style = []
     ParentFont = False
     ScrollBars = ssBoth
-    TabOrder = 2
+    TabOrder = 1
     HoverRowCells = [hcNormal, hcSelected]
-    OnDblClickCell = grdDblClickCell
-    OnEditCellDone = grdEditCellDone
     ActiveCellFont.Charset = DEFAULT_CHARSET
     ActiveCellFont.Color = clWindowText
     ActiveCellFont.Height = -11
@@ -247,7 +141,8 @@ object frm_Artikel: Tfrm_Artikel
     SearchFooter.MatchCaseCaption = 'Match case'
     SortSettings.DefaultFormat = ssAutomatic
     Version = '7.4.6.3'
-    ExplicitLeft = -2
-    ExplicitTop = 75
+    ExplicitTop = 3
+    ExplicitWidth = 643
+    ExplicitHeight = 244
   end
 end

@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids,
-  AdvObj, BaseGrid, AdvGrid, DB.Artikel, DB.EigenschaftList, DB.ArtikelEigenschaft;
+  AdvObj, BaseGrid, AdvGrid, DB.Artikel, DB.EigenschaftList, DB.ArtikelEigenschaft,
+  Vcl.ComCtrls, Form.Artikeleigenschaft2;
 
 type
   RCol = Record
@@ -18,15 +19,18 @@ type
 type
   Tfrm_Artikeleigenschaft = class(TForm)
     pnl_Top: TPanel;
+    lbl_Artikel: TLabel;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
     pnl_Bottom: TPanel;
     pnl_Left: TPanel;
-    pnl_Client: TPanel;
-    lbl_Artikel: TLabel;
     Panel1: TPanel;
     Label1: TLabel;
     Panel2: TPanel;
     cbo_Eigenschaftname: TComboBox;
+    pnl_Client: TPanel;
     grd: TAdvStringGrid;
+    tbs_Artikeleigenschaft2: TTabSheet;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -44,6 +48,7 @@ type
     fFieldList: TStringList;
     fGridIniFile: string;
     fCol: RCol;
+    fFormArtikeleigenschaft2: Tfrm_Artikeleigenschaft2;
     procedure LadeSpaltenBreite;
     procedure SaveSpaltenBreite;
     procedure AktualGrid;
@@ -94,6 +99,9 @@ begin //
   fGridIniFile := Smartwatch.GridIni;
 
 
+  fFormArtikeleigenschaft2 := Tfrm_Artikeleigenschaft2.Create(nil);
+  fFormArtikeleigenschaft2.Parent := tbs_Artikeleigenschaft2;
+  fFormArtikeleigenschaft2.Align := alClient;
 
 end;
 
@@ -104,6 +112,7 @@ begin //
   FreeAndNil(fEigenschaftList);
   FreeAndNil(fEigenschaftList);
   FreeAndNil(fArtikelEigenschaft);
+  FreeAndNil(fFormArtikeleigenschaft2);
 end;
 
 procedure Tfrm_Artikeleigenschaft.FormShow(Sender: TObject);
@@ -136,6 +145,8 @@ begin //
 
   AktualGrid;
   LadeSpaltenBreite;
+
+  fFormArtikeleigenschaft2.Show;
 
 end;
 
