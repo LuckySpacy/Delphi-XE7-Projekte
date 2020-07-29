@@ -10,8 +10,10 @@ type
   private
     fMatch: string;
     fNr: string;
+    fSaId: Integer;
     procedure setMatch(const Value: string);
     procedure setNr(const Value: String);
+    procedure setSaId(const Value: Integer);
   protected
     function getGeneratorName: string; override;
     function getTableName: string; override;
@@ -21,6 +23,7 @@ type
     destructor Destroy; override;
     property Match: string read fMatch write setMatch;
     property Nr: String read fNr write setNr;
+    property SaId: Integer read fSaId write setSaId;
     procedure Init; override;
     procedure LoadByQuery(aQuery: TMySQLQuery); override;
     procedure Save;
@@ -89,13 +92,15 @@ var
   Sql: string;
 begin
   if fId = 0 then
-    Sql := 'insert into artikel (ar_match, ar_nr) values (:match, :nr)'
+    Sql := 'insert into artikel (ar_match, ar_nr, ar_sa_id, ar_datum) values (:match, :nr, :said, :datum)'
   else
-    Sql := ' update artikel set ar_match = :match, ar_nr = :nr'  +
+    Sql := ' update artikel set ar_match = :match, ar_nr = :nr, ar_sa_id = :said, ar_datum = :datum'  +
            ' where ar_id = ' + IntToStr(fId);
  fQuery.SQL.Text := Sql;
  fQuery.ParamByName('match').AsString := fMatch;
  fQuery.ParamByName('nr').AsString := fNr;
+ fQuery.ParamByName('said').AsInteger := fSaId;
+ fQuery.ParamByName('datum').AsDateTime := trunc(now);
  fQuery.Database.StartTransaction;
  fQuery.ExecSQL;
  fQuery.Database.Commit;
@@ -116,6 +121,11 @@ end;
 procedure TDBArtikel.setNr(const Value: String);
 begin
   UpdateV(fNr, Value);
+end;
+
+procedure TDBArtikel.setSaId(const Value: Integer);
+begin
+  UpdateV(fSaId, Value);
 end;
 
 procedure TDBArtikel.Delete;

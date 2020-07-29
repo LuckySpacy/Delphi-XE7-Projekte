@@ -14,7 +14,7 @@ type
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
     property Item[Index:Integer]: TViewArtikel read getItem;
-    procedure ReadAll(aFi_Id: Integer);
+    procedure ReadAll(aFi_Id, aSa_Id: Integer);
   end;
 
 implementation
@@ -41,7 +41,7 @@ begin
   Result := TViewArtikel(fList.Items[Index]);
 end;
 
-procedure TViewArtikelList.ReadAll(aFi_Id: Integer);
+procedure TViewArtikelList.ReadAll(aFi_Id, aSa_Id: Integer);
 var
   x: TViewArtikel;
   Sql: String;
@@ -51,6 +51,7 @@ begin
   try
     sql := ' select * from artikel' +
            ' join firmaartikel on ar_id = fa_ar_id and fa_fi_id = ' + IntToStr(aFi_Id) +
+           ' where ar_sa_id = ' + IntToStr(aSa_Id) +
            ' order by ar_match';
 
     fQuery.SQL.Text := Sql;

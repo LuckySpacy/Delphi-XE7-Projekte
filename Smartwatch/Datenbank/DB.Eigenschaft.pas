@@ -10,7 +10,9 @@ type
   private
     fMatch: string;
     fEnId: Integer;
+    fSaId: Integer;
     procedure setMatch(const Value: string);
+    procedure setSaId(const Value: Integer);
   protected
     function getGeneratorName: string; override;
     function getTableName: string; override;
@@ -20,6 +22,7 @@ type
     destructor Destroy; override;
     property Match: string read fMatch write setMatch;
     property EnId: Integer read fEnId write fEnId;
+    property SaId: Integer read fSaId write setSaId;
     procedure Init; override;
     procedure LoadByQuery(aQuery: TMySQLQuery); override;
     procedure Save;
@@ -63,6 +66,7 @@ begin
   inherited;
   fMatch := '';
   fEnId  := 0;
+  fSaId  := 0;
 end;
 
 procedure TDBEigenschaft.LoadByQuery(aQuery: TMySQLQuery);
@@ -72,6 +76,7 @@ begin
     exit;
   fMatch := aQuery.FieldByName('ei_match').AsString;
   fEnId  := aQuery.FieldByName('ei_en_id').AsInteger;
+  fSaId  := aQuery.FieldByName('ei_sa_id').AsInteger;
 end;
 
 procedure TDBEigenschaft.Save;
@@ -79,13 +84,15 @@ var
   Sql: string;
 begin
   if fId = 0 then
-    Sql := 'insert into eigenschaft (ei_match, ei_en_id) values (:match, :enid)'
+    Sql := 'insert into eigenschaft (ei_match, ei_en_id, ei_sa_id, ei_datum) values (:match, :enid, :said, :datum)'
   else
-    Sql := ' update eigenschaft set ei_match = :match, ei_en_id = :enid'  +
+    Sql := ' update eigenschaft set ei_match = :match, ei_en_id = :enid, ei_sa_id = :said, ei_datum = :datum '  +
            ' where ei_id = ' + IntToStr(fId);
  fQuery.SQL.Text := Sql;
  fQuery.ParamByName('match').AsString := fMatch;
  fQuery.ParamByName('enid').AsInteger := fEnId;
+ fQuery.ParamByName('said').AsInteger := fSaId;
+ fQuery.ParamByName('datum').AsDateTime := trunc(now);
  fQuery.ExecSQL;
 end;
 
@@ -102,6 +109,11 @@ end;
 procedure TDBEigenschaft.setMatch(const Value: string);
 begin
   UpdateV(fMatch, Value);
+end;
+
+procedure TDBEigenschaft.setSaId(const Value: Integer);
+begin
+  UpdateV(fSaId, Value);
 end;
 
 end.

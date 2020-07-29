@@ -90,7 +90,7 @@ begin
   if fEi_En_Id > -1 then
     exit;
   cbo_Eigenschaftname.Clear;
-  dam.qry.SQL.Text := 'select * from eigenschaftname order by en_match';
+  dam.qry.SQL.Text := 'select * from eigenschaftname where en_sa_id = 1 order by en_match';
   dam.qry.Open;
   while not dam.qry.Eof do
   begin
@@ -224,6 +224,7 @@ begin
       exit;
     x.Match := '';
     x.enid  := fei_en_id;
+    x.SaId  := 1;
     x.Save;
     fEigenschaftList.ReadAll(fEi_En_Id);
     AktualGrid;

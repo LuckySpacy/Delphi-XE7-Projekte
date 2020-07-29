@@ -146,6 +146,7 @@ begin //
   AktualGrid;
   LadeSpaltenBreite;
 
+  fFormArtikeleigenschaft2.ArId := fArId;
   fFormArtikeleigenschaft2.Show;
 
 end;

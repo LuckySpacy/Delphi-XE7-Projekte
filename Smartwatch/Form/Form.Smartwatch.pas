@@ -103,6 +103,7 @@ begin
   if fFormArtikel = nil then
   begin
     fFormArtikel := Tfrm_Artikel.Create(nil);
+    fFormArtikel.SaId := 1; // Smartwatch
     fFormArtikel.Parent := pnl_Client;
     fFormArtikel.Align := alClient;
     fFormArtikel.OnArtNrDblClick := ArNrDblClick;

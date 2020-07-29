@@ -26,15 +26,13 @@ object frm_Artikeleigenschaft2: Tfrm_Artikeleigenschaft2
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 0
-    ExplicitLeft = 48
-    ExplicitTop = 24
-    ExplicitWidth = 185
     object edt_Checkbox: TEdit
-      Left = 16
+      Left = 3
       Top = 11
-      Width = 641
+      Width = 654
       Height = 21
       TabOrder = 0
+      OnKeyUp = edt_CheckboxKeyUp
     end
   end
   object grd: TAdvStringGrid
@@ -55,6 +53,8 @@ object frm_Artikeleigenschaft2: Tfrm_Artikeleigenschaft2
     ScrollBars = ssBoth
     TabOrder = 1
     HoverRowCells = [hcNormal, hcSelected]
+    OnGetAlignment = grdGetAlignment
+    OnCheckBoxClick = grdCheckBoxClick
     ActiveCellFont.Charset = DEFAULT_CHARSET
     ActiveCellFont.Color = clWindowText
     ActiveCellFont.Height = -11
@@ -141,8 +141,5 @@ object frm_Artikeleigenschaft2: Tfrm_Artikeleigenschaft2
     SearchFooter.MatchCaseCaption = 'Match case'
     SortSettings.DefaultFormat = ssAutomatic
     Version = '7.4.6.3'
-    ExplicitTop = 3
-    ExplicitWidth = 643
-    ExplicitHeight = 244
   end
 end

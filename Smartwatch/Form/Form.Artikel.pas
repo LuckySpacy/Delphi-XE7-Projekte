@@ -45,6 +45,7 @@ type
     fFirmaArtikel: TDBFirmaArtikel;
     fFa_FI_ID: Integer;
     fOnArtNrDblClick: TArtNrDblClick;
+    fSaId: Integer;
     procedure LadeSpaltenBreite;
     procedure SaveSpaltenBreite;
     procedure AktualGrid;
@@ -53,6 +54,7 @@ type
     function ShowMemo(aValue: string): string;
   public
     property OnArtNrDblClick: TArtNrDblClick read fOnArtNrDblClick write fOnArtNrDblClick;
+    property SaId: Integer read fSaId write fSaId;
   end;
 
 var
@@ -121,7 +123,7 @@ end;
 procedure Tfrm_Artikel.FormShow(Sender: TObject);
 begin
   fFa_FI_ID := Integer(cbo_Firma.Items.Objects[cbo_Firma.ItemIndex]);
-  fArtikelList.ReadAll(fFa_FI_ID);
+  fArtikelList.ReadAll(fFa_FI_ID, fSaId);
   AktualGrid;
   LadeSpaltenBreite;
 end;
@@ -299,11 +301,12 @@ begin
     fFa_FI_ID := Integer(cbo_Firma.Items.Objects[cbo_Firma.ItemIndex]);
     if fFa_FI_ID < 0 then
       exit;
+    Artikel.SaId := fSaId;
     Artikel.Save;
     FirmaArtikel.Fi_Id := fFA_FI_Id;
     FirmaArtikel.Ar_Id := Artikel.Id;
     FirmaArtikel.Save;
-    fArtikelList.ReadAll(fFa_FI_ID);
+    fArtikelList.ReadAll(fFa_FI_ID, fSaId);
     AktualGrid;
   finally
     FreeAndNil(Artikel);
@@ -332,7 +335,7 @@ begin
     exit;
   x := TViewArtikel(grd.Objects[0, grd.Row]);
   x.Delete;
-  fArtikelList.ReadAll(fFa_FI_ID);
+  fArtikelList.ReadAll(fFa_FI_ID, fSaId);
   AktualGrid;
 end;
 

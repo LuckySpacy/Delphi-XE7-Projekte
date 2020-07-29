@@ -137,6 +137,8 @@
             <Form>frm_Artikeleigenschaft2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="View\View.Eigenschaft.pas"/>
+        <DCCReference Include="View\View.EigenschaftList.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

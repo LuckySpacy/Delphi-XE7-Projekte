@@ -247,7 +247,5 @@ object frm_Artikel: Tfrm_Artikel
     SearchFooter.MatchCaseCaption = 'Match case'
     SortSettings.DefaultFormat = ssAutomatic
     Version = '7.4.6.3'
-    ExplicitLeft = -2
-    ExplicitTop = 75
   end
 end

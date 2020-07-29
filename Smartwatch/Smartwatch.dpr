@@ -27,7 +27,9 @@ uses
   Form.Memo in 'Form\Form.Memo.pas' {frm_Memo},
   Form.Artikeleigenschaft in 'Form\Form.Artikeleigenschaft.pas' {frm_Artikeleigenschaft},
   DB.ArtikelEigenschaft in 'Datenbank\DB.ArtikelEigenschaft.pas',
-  Form.Artikeleigenschaft2 in 'Form\Form.Artikeleigenschaft2.pas' {frm_Artikeleigenschaft2};
+  Form.Artikeleigenschaft2 in 'Form\Form.Artikeleigenschaft2.pas' {frm_Artikeleigenschaft2},
+  View.Eigenschaft in 'View\View.Eigenschaft.pas',
+  View.EigenschaftList in 'View\View.EigenschaftList.pas';
 
 {$R *.res}
 

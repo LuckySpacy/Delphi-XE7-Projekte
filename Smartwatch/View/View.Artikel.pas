@@ -18,6 +18,7 @@ type
     fFaId: Integer;
     fqry: TMySqlQuery;
     fFiNr: String;
+    fSaId: Integer;
     procedure setAr_Id(const Value: Integer);
     procedure setFi_Id(const Value: Integer);
     procedure setImageUrl(const Value: string);
@@ -25,6 +26,7 @@ type
     procedure setNr(const Value: String);
     procedure setWebseite(const Value: String);
     procedure setFiNr(const Value: String);
+    procedure setSaId(const Value: Integer);
   protected
     function getGeneratorName: string; override;
     function getTableName: string; override;
@@ -40,6 +42,7 @@ type
     property Nr: String read fNr write setNr;
     property FiNr: String read fFiNr write setFiNr;
     property Fa_Id: Integer read fFaId;
+    property Sa_Id: Integer read fSaId write setSaId;
     procedure Init; override;
     procedure LoadByQuery(aQuery: TMySQLQuery); override;
     procedure Save;
@@ -93,6 +96,7 @@ begin
   fNr       := '';
   fArId     := 0;
   fFaId     := 0;
+  fSaId     := 0;
 end;
 
 procedure TViewArtikel.LoadByQuery(aQuery: TMySQLQuery);
@@ -109,6 +113,7 @@ begin
   fNr    := aQuery.FieldByName('ar_nr').AsString;
   fArId    := aQuery.FieldByName('ar_id').AsInteger;
   fFaId    := aQuery.FieldByName('fa_id').AsInteger;
+  fSaId    := aQuery.FieldByName('ar_sa_id').AsInteger;
 end;
 
 procedure TViewArtikel.Save;
@@ -125,6 +130,7 @@ begin
     Artikel.Read(fArId);
   Artikel.Match := fMatch;
   Artikel.Nr    := fNr;
+  Artikel.SaId  := fSaId;
   Artikel.Save;
 
   fqry.Close;
@@ -171,6 +177,11 @@ end;
 procedure TViewArtikel.setNr(const Value: String);
 begin
   fNr := Value;
+end;
+
+procedure TViewArtikel.setSaId(const Value: Integer);
+begin
+  fSaId := Value;
 end;
 
 procedure TViewArtikel.setWebseite(const Value: String);
