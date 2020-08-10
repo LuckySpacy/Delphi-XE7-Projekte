@@ -139,6 +139,38 @@ object frm_Artikel: Tfrm_Artikel
       ImageIndex = -1
       OnClick = btn_LoeschenClick
       Align = alLeft
+      ExplicitTop = 5
+    end
+    object btn_Einlesen: TTBButton
+      AlignWithMargins = True
+      Left = 166
+      Top = 4
+      Width = 107
+      Height = 24
+      Flat = True
+      SelectColor = clSkyBlue
+      DownColor = clSkyBlue
+      BtnLabel.HAlign = tbHLeft
+      BtnLabel.VAlign = tbVTop
+      BtnLabel.HMargin = 3
+      BtnLabel.VMargin = 0
+      BtnLabel.Caption = 'Text einlesen'
+      BtnLabel.HTextAlign = tbHTextCenter
+      BtnLabel.VTextAlign = tbVTextCenter
+      BtnLabel.Font.Charset = DEFAULT_CHARSET
+      BtnLabel.Font.Color = clWindowText
+      BtnLabel.Font.Height = -11
+      BtnLabel.Font.Name = 'Tahoma'
+      BtnLabel.Font.Style = []
+      BtnLabel.Wordwrap = True
+      BtnImage.AlignLeft = True
+      BtnImage.AlignRight = False
+      BtnImage.Margin = 10
+      BtnImage.Height = 16
+      BtnImage.Width = 16
+      ImageIndex = -1
+      OnClick = btn_LoeschenClick
+      Align = alLeft
     end
   end
   object grd: TAdvStringGrid

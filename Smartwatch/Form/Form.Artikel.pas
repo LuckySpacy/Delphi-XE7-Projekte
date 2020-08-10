@@ -30,6 +30,7 @@ type
     btn_Neu: TTBButton;
     btn_Loeschen: TTBButton;
     grd: TAdvStringGrid;
+    btn_Einlesen: TTBButton;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);

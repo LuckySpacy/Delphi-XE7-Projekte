@@ -139,6 +139,17 @@
         </DCCReference>
         <DCCReference Include="View\View.Eigenschaft.pas"/>
         <DCCReference Include="View\View.EigenschaftList.pas"/>
+        <DCCReference Include="Form\Form.Texteinlesen.pas">
+            <Form>frm_TextEinlesen</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Form\Form.ArtikeleigenschaftUebersicht.pas">
+            <Form>frm_ArtikeleigenschaftUebersicht</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Objekt\Objekt.TextEinlesen.pas"/>
+        <DCCReference Include="Objekt\Objekt.TextEinlesenWort.pas"/>
+        <DCCReference Include="Objekt\Objekt.TextEinlesenWortList.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

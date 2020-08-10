@@ -61,6 +61,73 @@ object frm_Artikeleigenschaft: Tfrm_Artikeleigenschaft
         Caption = 'pnl_Top'
         ShowCaption = False
         TabOrder = 0
+        ExplicitTop = 294
+        object btn_Einlesen: TTBButton
+          AlignWithMargins = True
+          Left = 116
+          Top = 3
+          Width = 107
+          Height = 35
+          Flat = True
+          SelectColor = clSkyBlue
+          DownColor = clSkyBlue
+          BtnLabel.HAlign = tbHLeft
+          BtnLabel.VAlign = tbVTop
+          BtnLabel.HMargin = 3
+          BtnLabel.VMargin = 0
+          BtnLabel.Caption = 'Text einlesen'
+          BtnLabel.HTextAlign = tbHTextCenter
+          BtnLabel.VTextAlign = tbVTextCenter
+          BtnLabel.Font.Charset = DEFAULT_CHARSET
+          BtnLabel.Font.Color = clWindowText
+          BtnLabel.Font.Height = -11
+          BtnLabel.Font.Name = 'Tahoma'
+          BtnLabel.Font.Style = []
+          BtnLabel.Wordwrap = True
+          BtnImage.AlignLeft = True
+          BtnImage.AlignRight = False
+          BtnImage.Margin = 10
+          BtnImage.Height = 16
+          BtnImage.Width = 16
+          ImageIndex = -1
+          OnClick = btn_EinlesenClick
+          Align = alLeft
+          ExplicitLeft = 11
+          ExplicitTop = 6
+        end
+        object btn_Uebersicht: TTBButton
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 107
+          Height = 35
+          Flat = True
+          SelectColor = clSkyBlue
+          DownColor = clSkyBlue
+          BtnLabel.HAlign = tbHLeft
+          BtnLabel.VAlign = tbVTop
+          BtnLabel.HMargin = 3
+          BtnLabel.VMargin = 0
+          BtnLabel.Caption = #220'bersicht'
+          BtnLabel.HTextAlign = tbHTextCenter
+          BtnLabel.VTextAlign = tbVTextCenter
+          BtnLabel.Font.Charset = DEFAULT_CHARSET
+          BtnLabel.Font.Color = clWindowText
+          BtnLabel.Font.Height = -11
+          BtnLabel.Font.Name = 'Tahoma'
+          BtnLabel.Font.Style = []
+          BtnLabel.Wordwrap = True
+          BtnImage.AlignLeft = True
+          BtnImage.AlignRight = False
+          BtnImage.Margin = 10
+          BtnImage.Height = 16
+          BtnImage.Width = 16
+          ImageIndex = -1
+          OnClick = btn_UebersichtClick
+          Align = alLeft
+          ExplicitLeft = 11
+          ExplicitTop = 6
+        end
       end
       object pnl_Left: TPanel
         Left = 0

@@ -121,7 +121,7 @@ begin
   linkBasis := 'https://www.amazon.de/smartwatch/s?k=smartwatch&amp;page=';
   List := TStringList.Create;
 
-  for i1 := 1 to 2 do
+  for i1 := 1 to 20 do
   begin
     Link := LinkBasis + IntToStr(i1);
     Filename := Pfad + 'x' + IntToStr(i1) + '.html';

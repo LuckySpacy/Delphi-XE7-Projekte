@@ -89,6 +89,7 @@ object frm_Smartwatch: Tfrm_Smartwatch
       ImageIndex = -1
       OnClick = btn_ArtikelClick
       Align = alLeft
+      ExplicitTop = 0
     end
   end
   object pnl_Client: TPanel

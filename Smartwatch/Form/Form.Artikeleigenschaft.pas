@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids,
   AdvObj, BaseGrid, AdvGrid, DB.Artikel, DB.EigenschaftList, DB.ArtikelEigenschaft,
-  Vcl.ComCtrls, Form.Artikeleigenschaft2;
+  Vcl.ComCtrls, Form.Artikeleigenschaft2, tbButton;
 
 type
   RCol = Record
@@ -31,6 +31,8 @@ type
     pnl_Client: TPanel;
     grd: TAdvStringGrid;
     tbs_Artikeleigenschaft2: TTabSheet;
+    btn_Einlesen: TTBButton;
+    btn_Uebersicht: TTBButton;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -39,6 +41,8 @@ type
       var HAlign: TAlignment; var VAlign: TVAlignment);
     procedure grdCheckBoxClick(Sender: TObject; ACol, ARow: Integer;
       State: Boolean);
+    procedure btn_EinlesenClick(Sender: TObject);
+    procedure btn_UebersichtClick(Sender: TObject);
   private
     fArId: Integer;
     fEnId: Integer;
@@ -54,6 +58,8 @@ type
     procedure AktualGrid;
   public
     property ArId: Integer read fArId write fArId;
+    procedure TextEinlesen;
+    procedure ArtikeleigenschaftUebersicht;
   end;
 
 var
@@ -64,7 +70,9 @@ implementation
 {$R *.dfm}
 
 uses
-  dm.Datenmodul, Objekt.Smartwatch, DB.Eigenschaft, System.UITypes;
+  dm.Datenmodul, Objekt.Smartwatch, DB.Eigenschaft, System.UITypes, Form.Texteinlesen,
+  Form.ArtikeleigenschaftUebersicht;
+
 
 
 procedure Tfrm_Artikeleigenschaft.cbo_EigenschaftnameChange(Sender: TObject);
@@ -220,6 +228,7 @@ begin
   Smartwatch.Ini.WriteIni(fGridIniFile, Self.Name + '_' + grd.Name, 'ColWidth', s);
 end;
 
+
 procedure Tfrm_Artikeleigenschaft.AktualGrid;
 var
   i1: Integer;
@@ -254,5 +263,43 @@ begin
   end;
 
 end;
+
+procedure Tfrm_Artikeleigenschaft.ArtikeleigenschaftUebersicht;
+var
+  Form: Tfrm_ArtikeleigenschaftUebersicht;
+begin
+  Form := Tfrm_ArtikeleigenschaftUebersicht.Create(nil);
+  try
+    Form.ArId := fArId;
+    Form.ShowModal;
+  finally
+    FreeAndNil(Form);
+  end;
+end;
+
+procedure Tfrm_Artikeleigenschaft.btn_EinlesenClick(Sender: TObject);
+begin
+  TextEinlesen;
+end;
+
+
+procedure Tfrm_Artikeleigenschaft.btn_UebersichtClick(Sender: TObject);
+begin
+  ArtikeleigenschaftUebersicht;
+end;
+
+procedure Tfrm_Artikeleigenschaft.TextEinlesen;
+var
+  Form: Tfrm_TextEinlesen;
+begin
+  Form := Tfrm_TextEinlesen.Create(nil);
+  try
+    Form.ArId := fArId;
+    Form.ShowModal;
+  finally
+    FreeAndNil(Form);
+  end;
+end;
+
 
 end.

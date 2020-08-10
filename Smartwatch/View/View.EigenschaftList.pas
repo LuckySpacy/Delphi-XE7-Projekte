@@ -16,6 +16,7 @@ type
     property Item[Index:Integer]: TViewEigenschaft read getItem;
     procedure ReadAll;
     procedure Filter(aValue: string);
+    procedure FilterByArtikel(aArId: Integer);
   end;
 
 
@@ -96,5 +97,33 @@ begin
   end;
 end;
 
+
+procedure TViewEigenschaftList.FilterByArtikel(aArId: Integer);
+var
+  x: TViewEigenschaft;
+  Sql: String;
+begin
+  fList.Clear;
+  fQuery.Close;
+  try
+    sql := ' select * ' +
+           ' from artikeleigenschaft' +
+           ' join eigenschaftname on en_id = ae_en_id' +
+           ' join eigenschaft on ei_id = ae_ei_id' +
+           ' where ae_ar_id = ' + IntToStr(aArId) +
+           ' order by ei_match, en_match';
+
+    fQuery.SQL.Text := Sql;
+    fquery.Open;
+    while not fQuery.Eof do
+    begin
+      x := TViewEigenschaft.Create(nil);
+      x.LoadByQuery(fquery);
+      fList.Add(x);
+      fQuery.Next;
+    end;
+  finally
+  end;
+end;
 
 end.

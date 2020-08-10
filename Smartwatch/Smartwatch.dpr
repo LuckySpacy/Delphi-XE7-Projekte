@@ -29,7 +29,12 @@ uses
   DB.ArtikelEigenschaft in 'Datenbank\DB.ArtikelEigenschaft.pas',
   Form.Artikeleigenschaft2 in 'Form\Form.Artikeleigenschaft2.pas' {frm_Artikeleigenschaft2},
   View.Eigenschaft in 'View\View.Eigenschaft.pas',
-  View.EigenschaftList in 'View\View.EigenschaftList.pas';
+  View.EigenschaftList in 'View\View.EigenschaftList.pas',
+  Form.Texteinlesen in 'Form\Form.Texteinlesen.pas' {frm_TextEinlesen},
+  Form.ArtikeleigenschaftUebersicht in 'Form\Form.ArtikeleigenschaftUebersicht.pas' {frm_ArtikeleigenschaftUebersicht},
+  Objekt.TextEinlesen in 'Objekt\Objekt.TextEinlesen.pas',
+  Objekt.TextEinlesenWort in 'Objekt\Objekt.TextEinlesenWort.pas',
+  Objekt.TextEinlesenWortList in 'Objekt\Objekt.TextEinlesenWortList.pas';
 
 {$R *.res}
 
