@@ -52,6 +52,7 @@ type
     fFieldList: TStringList;
     fGridIniFile: string;
     fCol: RCol;
+    fUpdate: TDateTime;
     fFormArtikeleigenschaft2: Tfrm_Artikeleigenschaft2;
     procedure LadeSpaltenBreite;
     procedure SaveSpaltenBreite;
@@ -154,6 +155,8 @@ begin //
   AktualGrid;
   LadeSpaltenBreite;
 
+  fUpdate := now;
+  fFormArtikeleigenschaft2.UpdateTime := fUpdate;
   fFormArtikeleigenschaft2.ArId := fArId;
   fFormArtikeleigenschaft2.Show;
 
@@ -172,7 +175,10 @@ begin
     fArtikelEigenschaft.EN_ID := x.EnId;
     fArtikelEigenschaft.EI_ID := x.Id;
     if State then
+    begin
+      fArtikelEigenschaft.Update := fUpdate;
       fArtikelEigenschaft.Save
+    end
     else
     begin
       fArtikelEigenschaft.Lese(fArId, x.EnId, x.Id);
@@ -294,6 +300,7 @@ var
 begin
   Form := Tfrm_TextEinlesen.Create(nil);
   try
+    Form.UpdateTime := fUpdate;
     Form.ArId := fArId;
     Form.ShowModal;
   finally

@@ -19,6 +19,7 @@ type
     procedure UpdateV(var aOldValue: string; aNewValue: string); overload;
     procedure UpdateV(var aOldValue: Integer; aNewValue: Integer); overload;
     procedure UpdateV(var aOldValue: Boolean; aNewValue: Boolean); overload;
+    procedure UpdateV(var aOldValue: TDateTime; aNewValue: TDateTime); overload;
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
@@ -70,6 +71,13 @@ begin
   fQuery.Close;
   fQuery.SQL.Text := 'select * from ' + getTableName + ' where ' + getTablePrefix + '_Id = ' + IntToStr(aId);
   fQuery.Open;
+end;
+
+procedure TDBBase.UpdateV(var aOldValue: TDateTime; aNewValue: TDateTime);
+begin
+  if not fDoUpdate then
+    fDoUpdate := aOldValue <> aNewValue;
+  aOldValue := aNewValue;
 end;
 
 procedure TDBBase.UpdateV(var aOldValue: string; aNewValue: string);

@@ -20,9 +20,11 @@ type
     fArId: Integer;
     fArtikel: TDBArtikel;
     fTextEinlesen: TTextEinlesen;
+    fUpdateTime: TDateTime;
     procedure ShowUebersicht;
   public
     property ArId: Integer read fArId write fArId;
+    property UpdateTime: TDateTime read fUpdateTime write fUpdateTime;
   end;
 
 var
@@ -39,7 +41,10 @@ procedure Tfrm_TextEinlesen.btn_StartenClick(Sender: TObject);
 begin
   fTextEinlesen.ArId := fArId;
   fTextEinlesen.EigenschaftText := Memo1.Text;
+  fTextEinlesen.UpdateTime := fUpdateTime;
   fTextEinlesen.Start;
+  fArtikel.ErsetzText := Memo1.Text;
+  fArtikel.Save;
   ShowUebersicht;
 end;
 
@@ -59,6 +64,7 @@ procedure Tfrm_TextEinlesen.FormShow(Sender: TObject);
 begin
   fArtikel.Read(fArId);
   pnl_Artikel.Caption := fArtikel.Match;
+  Memo1.Text := fArtikel.ErsetzText;
 end;
 
 procedure Tfrm_TextEinlesen.ShowUebersicht;

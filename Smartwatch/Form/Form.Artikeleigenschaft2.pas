@@ -39,6 +39,7 @@ type
     fFieldList: TStringList;
     fGridIniFile: string;
     fCol: RCol;
+    fUpdateTime: TDateTime;
     procedure LadeSpaltenBreite;
     procedure SaveSpaltenBreite;
     procedure AktualGrid;
@@ -46,6 +47,7 @@ type
     procedure setArId(const Value: Integer);
   public
     property ArId: Integer read fArId write setArId;
+    property UpdateTime: TDateTime read fUpdateTime write fUpdateTime;
   end;
 
 var
@@ -145,7 +147,10 @@ begin
     fArtikelEigenschaft.EI_ID := x.Ei_Id;
     x.Checked := not x.Checked;
     if State then
-      fArtikelEigenschaft.Save
+    begin
+      fArtikelEigenschaft.Update := fUpdateTime;
+      fArtikelEigenschaft.Save;
+    end
     else
     begin
       fArtikelEigenschaft.Lese(fArId, x.En_Id, x.Ei_Id);

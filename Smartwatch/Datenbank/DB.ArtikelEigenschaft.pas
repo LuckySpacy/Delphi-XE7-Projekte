@@ -11,9 +11,11 @@ type
     fArId: Integer;
     fEiId: Integer;
     fEnId: Integer;
+    fUpdate: TDateTime;
     procedure setArId(const Value: Integer);
     procedure setEiId(const Value: Integer);
     procedure setEnId(const Value: Integer);
+    procedure setUpdate(const Value: TDateTime);
   protected
     function getGeneratorName: string; override;
     function getTableName: string; override;
@@ -28,6 +30,7 @@ type
     property AR_ID: Integer read fArId write setArId;
     property EN_ID: Integer read fEnId write setEnId;
     property EI_ID: Integer read fEiId write setEiId;
+    property Update: TDateTime read fUpdate write setUpdate;
     procedure Lese(aArId, aEnId, aEiId: Integer);
     function Checked(aArId, aEnId, aEiId: Integer): Boolean;
   end;
@@ -93,6 +96,7 @@ begin
   fArId := aQuery.FieldByName('ae_ar_id').AsInteger;
   fEnId := aQuery.FieldByName('ae_en_id').AsInteger;
   fEiId := aQuery.FieldByName('ae_ei_id').AsInteger;
+  fUpdate := aQuery.FieldByName('ae_update').AsDateTime;
 end;
 
 procedure TDBArtikelEigenschaft.Save;
@@ -100,14 +104,15 @@ var
   Sql: string;
 begin
   if fId = 0 then
-    Sql := 'insert into artikeleigenschaft (ae_ar_id, ae_en_id, ae_ei_id) values (:arid, :enid, :eiid)'
+    Sql := 'insert into artikeleigenschaft (ae_ar_id, ae_en_id, ae_ei_id, ae_update) values (:arid, :enid, :eiid, :update)'
   else
-    Sql := ' update artikeleigenschaft set ae_ar_id = :arid, ae_en_id = :enid, ae_ei_id = :eiid'  +
+    Sql := ' update artikeleigenschaft set ae_ar_id = :arid, ae_en_id = :enid, ae_ei_id = :eiid, ae_update = :update'  +
            ' where ae_id = ' + IntToStr(fId);
  fQuery.SQL.Text := Sql;
  fQuery.ParamByName('arid').AsInteger := farid;
  fQuery.ParamByName('enid').AsInteger := fEnId;
  fQuery.ParamByName('eiid').AsInteger := fEiId;
+ fQuery.ParamByName('update').AsDateTime := fUpdate;
  fQuery.ExecSQL;
 end;
 
@@ -144,6 +149,11 @@ end;
 procedure TDBArtikelEigenschaft.setEnId(const Value: Integer);
 begin
   UpdateV(fEnId, Value);
+end;
+
+procedure TDBArtikelEigenschaft.setUpdate(const Value: TDateTime);
+begin
+  UpdateV(fUpdate, Value);
 end;
 
 end.

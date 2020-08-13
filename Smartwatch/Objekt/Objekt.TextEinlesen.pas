@@ -4,7 +4,7 @@ interface
 
 uses
   SysUtils, Types, Windows, Classes, Objekt.TextEinlesenWort, Objekt.TextEinlesenWortList,
-  DB.ArtikelEigenschaft;
+  DB.ArtikelEigenschaft, DB.EigenschaftList, DB.Eigenschaft;
 
 type
   TTextEinlesen = class
@@ -12,13 +12,16 @@ type
     fWortList: TTextEinlesenWortList;
     fEigenschaftText: string;
     fArtikelEigenschaft: TDBArtikeleigenschaft;
+    fEigenschaftList: TDBEigenschaftList;
     fArId: Integer;
+    fUpdate: TDateTime;
     procedure WortListAufbauen;
   protected
   public
     constructor Create;
     destructor Destroy; override;
     property ArId: Integer read fArId write fArId;
+    property UpdateTime: TDateTime read fUpdate write fUpdate;
     property EigenschaftText: string read fEigenschaftText write fEigenschaftText;
     procedure Start;
   end;
@@ -31,6 +34,8 @@ constructor TTextEinlesen.Create;
 begin
   fWortList := TTextEinlesenWortList.Create(nil);
   fArtikelEigenschaft := TDBArtikeleigenschaft.Create(nil);
+  fEigenschaftList  := TDBEigenschaftList.Create(nil);
+  fUpdate := now;
   WortListAufbauen;
 end;
 
@@ -38,6 +43,7 @@ destructor TTextEinlesen.Destroy;
 begin
   FreeAndNil(fWortList);
   FreeAndNil(fArtikelEigenschaft);
+  FreeAndNil(fEigenschaftList);
   inherited;
 end;
 
@@ -57,6 +63,7 @@ begin
       fArtikelEigenschaft.AR_ID := fArId;
       fArtikelEigenschaft.EN_ID := fWortList.Item[i1].EnId;
       fArtikelEigenschaft.EI_ID := fWortList.Item[i1].EiId;
+      fArtikelEigenschaft.Update := fUpdate;
       fArtikelEigenschaft.Save;
     end;
   end;
@@ -64,15 +71,31 @@ end;
 
 procedure TTextEinlesen.WortListAufbauen;
   procedure Add(aValue: String; aEnId, aEiId: Integer);
-  var
-    x: TTextEinlesenWort;
   begin
-    x := fWortList.Add;
-    x.Wort := aValue;
-    x.EiId := aEiId;
-    x.EnId := aEnId;
+    fWortList.Add(aValue, aEnId, aEiId);
   end;
+var
+  i1: Integer;
+  x: TDBEigenschaft;
+  Match: string;
 begin
+  fEigenschaftList.ReadAll2;
+  for i1 := 0 to fEigenschaftList.Count -1 do
+  begin
+    x := fEigenschaftList.Item[i1];
+    Match := x.Match;
+    if x.EnId = 16 then
+      Match := Match + ' Zoll';
+    if Match = 'Kamera' then
+      continue;
+    if Match = 'GPS' then
+      continue;
+    if Match = 'Apple' then
+      continue;
+    if Match = 'Kinder' then
+      Match := 'Kinder ';
+    Add(Match, x.EnId, x.Id);
+  end;
   Add('Wasserdicht', 3, 215);
   Add('wasserdicht', 3, 215);
   Add('IP68', 3, 216);
@@ -103,17 +126,47 @@ begin
   Add('Kalorienzähler', 18, 58);
   Add('Aktivit?tstracker', 18, 217);
   Add('Aktivitätstracker', 18, 217);
+  Add('Activity Tracker', 18, 217);
   Add('Aktivität', 18, 217);
   Add('Aktivit?t', 18, 217);
   Add('Aktivitäts-Tracking', 18, 217);
   Add('Gehen', 20, 279);
   Add('Laufen', 20, 201);
+
   Add('Musikfunktion', 2, 32);
   Add('Musikfunktion', 2, 31);
   Add('Musiksteuerung', 2, 31);
   Add('Musiksteuerung', 2, 32);
+
+  Add('Musik-Übertragung', 2, 32);
+  Add('Musik-Übertragung', 2, 31);
+
+
   Add('integrierte MP3-Player', 2, 32);
   Add('integrierte MP3-Player', 2, 31);
+  Add('Integrierter Musikplayer', 2, 31);
+  Add('Integrierter Musikplayer', 2, 32);
+  Add('Integrierter Musikplayer', 3, 304);
+  Add('integrierte MP3-Player', 3, 304);
+
+  Add('Steuerung der Musikwiedergabe', 2, 31);
+  Add('Steuerung der Musikwiedergabe', 2, 32);
+
+  Add('Telefonlose Musik', 2, 31);
+  Add('Telefonlose Musik', 2, 32);
+  Add('Telefonlose Musik', 3, 304);
+
+  Add('Integrierter MP3-Player', 2, 31);
+  Add('Integrierter MP3-Player', 2, 32);
+  Add('Integrierter MP3-Player', 3, 304);
+
+
+
+
+  Add('Onboard-Musik', 2, 31);
+  Add('Onboard-Musik', 2, 32);
+  Add('Onboard-Musik', 3, 304);
+
   Add('Telefon', 2, 19);
   Add('SMS', 2, 49);
   Add('Facebook', 19, 171);
@@ -204,9 +257,14 @@ begin
   Add('Da Fit', 19, 282);
   Add('Kalender', 2, 26);
   Add('Remote-Kamera', 2, 28);
+  Add('Kamerafunktion', 2, 28);
+  Add('Kamera-Fernbedienung', 2, 28);
   Add('Bluetooth 5.0', 5, 253);
   Add('Bewegungs-Reminder', 18, 57);
   Add('Find-my-Phone', 2, 283);
+  Add('Smartphonesuche', 2, 283);
+  Add('Finde-die-Uhr', 2, 283);
+  Add('Telefon Suchen', 2, 283);
   Add('Vibration', 3, 63);
   Add('Seilspringen', 20, 289);
   Add('Tanzen', 20, 288);
@@ -225,6 +283,13 @@ begin
   Add('Umgebungslichtsensor', 4, 79);
   Add('integriertes GPS', 4, 68);
   Add('integrierten GPS', 4, 68);
+  Add('Integriertes GPS', 4, 68);
+  Add('integriertem GPS', 4, 68);
+  Add('Integriertem GPS', 4, 68);
+  Add('Integrierter GPS', 4, 68);
+  Add('GPS-Chip', 4, 68);
+  Add('UNGEBUNDENES GPS', 4, 68);
+  Add('Ungebundenes GPS', 4, 68);
   Add('Anrufe', 2, 19);
   Add('Nachrichten', 2, 49);
   Add('AMOLED', 14, 226);
@@ -232,6 +297,7 @@ begin
   Add('Withings', 1, 291);
   Add('Apple Health', 19, 260);
   Add('Google Pay', 2, 238);
+  Add('Google pay', 2, 238);
   Add('Apple Pay', 2, 239);
   Add('Sprachsteuerung', 2, 250);
   Add('Sprachbefehl', 2, 250);
@@ -239,16 +305,16 @@ begin
   Add('Android Wear 2.0', 10, 125);
   Add('Gyrosensor', 4, 229);
   Add('Gyroskop', 4, 229);
-  Add('Thermometer', 4, 78);
-  Add('temperatur', 4, 78);
-  Add('Temperatur', 4, 78);
+  Add(' Thermometer', 4, 78);
+  Add(' temperatur', 4, 78);
+  Add(' Temperatur', 4, 78);
   Add('Terminerinnerung', 2, 48);
   Add(' Erinnerung', 2, 48);
   Add('Google Maps', 19, 292);
   Add('Umgebungslichtsensor', 4, 79);
   Add(' 3G,', 5, 86);
   Add('GLONASS', 5, 91);
-  Add('Garmin Pay', 1, 295);
+  Add('Garmin Pay', 2, 295);
   Add('1,2 Zoll', 16, 152);
   Add('Gorilla Glas', 14, 296);
   Add('Stresslevel', 2, 243);
@@ -261,6 +327,59 @@ begin
   Add('Smartwatch iOS', 5, 237);
   Add('Wecker', 2, 53);
   Add('Jogging', 20, 201);
+  Add('Herzfrequenz Sensor', 4, 230);
+  Add('Push-Instant-Informationen', 2, 49);
+  Add('Wi-Fi', 5, 99);
+  Add('Erdmagnetfeldsensor,', 4, 67);
+  Add('Luftdrucksensor,', 4, 65);
+  Add('PULSTRACKING,', 4, 73);
+  Add('Pulstracking,', 4, 73);
+  Add('Pulsfrequenz,', 4, 73);
+  Add('wear os by google', 10, 235);
+  Add('nfc', 5, 97);
+  Add('kontaktlosem bezahlen', 2, 305);
+  Add('Vibrieren', 3, 63);
+
+  Add('Schlafanalyse', 4, 76);
+  Add('Schlaf-Index', 4, 76);
+  Add('Tiefschlafphasen', 4, 76);
+  Add('Kamera-Fernauslöser', 2, 28);
+  Add('trinkerinnerung', 18, 246);
+  Add('Trinkerinnerung', 18, 246);
+  Add('Untätigkeits-Erinnerung', 18, 57);
+  Add('Erinnerung bei zu langem Sitzen', 18, 57);
+  Add('Inaktivität', 18, 57);
+  Add('sitzende Erinnerung', 18, 57);
+  Add('lange sitzende Mahnung', 18, 57);
+
+  Add('Fernsteuerung der Telefonkamera', 2, 28);
+  Add('Wirkungsentfernung', 2, 313);
+  Add('1.54', 16, 156);
+  Add('SOS-Notruftaste', 2, 38);
+  Add('Weckfunktion', 2, 53);
+  Add('Telefonfunktion', 2, 46);
+  Add('Sesshaft erinnern', 18, 57);
+  Add('Sesshaft Erinnerung', 18, 57);
+  Add('Sitzende Erinnerung', 18, 57);
+  Add('vibriert', 3, 63);
+  Add('vibrierende', 3, 63);
+  Add('Fernbedienung der Kamera', 2, 28);
+  Add('Telefon suchen', 2, 283);
+  Add('Kamerasteuerung', 2, 28);
+  Add('Blutdruckmonitor', 18, 245);
+  Add('weiblichen physiologischen Zyklus', 18, 247);
+  Add('Anti-Lost', 2, 313);
+  Add('verbundenes GPS', 2, 218);
+  Add('Eingebautes GPS', 4, 68);
+  Add('connected-GPS', 2, 218);
+
+  Add('Windows', 5, 317);
+
+
+  Add('Garmin Pay', 2, 305);
+  Add('Apple Pay', 2, 305);
+  Add('Google Pay', 2, 305);
+  Add('Google pay', 2, 305);
 
 end;
 

@@ -14,6 +14,8 @@ type
     fEiMatch: string;
     fEnMatch: string;
     fChecked: Boolean;
+    fUpdate: TDateTime;
+    fNeu: Boolean;
   protected
     function getGeneratorName: string; override;
     function getTableName: string; override;
@@ -30,6 +32,8 @@ type
     property EN_ID: Integer read fEnId write fEnId;
     property EN_Match: string read fEnMatch write fEnMatch;
     property Checked: Boolean read fChecked write fChecked;
+    property Update: TDateTime read fUpdate write fUpdate;
+    property Neu: Boolean read fNeu write fNeu;
   end;
 
 implementation
@@ -79,6 +83,8 @@ begin
   fEiMatch:= '';
   fEnMatch:= '';
   fChecked := false;
+  fNeu := false;
+  fUpdate := 0;
 end;
 
 procedure TViewEigenschaft.LoadByQuery(aQuery: TMySQLQuery);

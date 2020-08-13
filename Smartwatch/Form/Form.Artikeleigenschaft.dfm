@@ -61,7 +61,6 @@ object frm_Artikeleigenschaft: Tfrm_Artikeleigenschaft
         Caption = 'pnl_Top'
         ShowCaption = False
         TabOrder = 0
-        ExplicitTop = 294
         object btn_Einlesen: TTBButton
           AlignWithMargins = True
           Left = 116
@@ -92,8 +91,6 @@ object frm_Artikeleigenschaft: Tfrm_Artikeleigenschaft
           ImageIndex = -1
           OnClick = btn_EinlesenClick
           Align = alLeft
-          ExplicitLeft = 11
-          ExplicitTop = 6
         end
         object btn_Uebersicht: TTBButton
           AlignWithMargins = True
@@ -125,8 +122,6 @@ object frm_Artikeleigenschaft: Tfrm_Artikeleigenschaft
           ImageIndex = -1
           OnClick = btn_UebersichtClick
           Align = alLeft
-          ExplicitLeft = 11
-          ExplicitTop = 6
         end
       end
       object pnl_Left: TPanel
@@ -311,6 +306,10 @@ object frm_Artikeleigenschaft: Tfrm_Artikeleigenschaft
     object tbs_Artikeleigenschaft2: TTabSheet
       Caption = 'Eigenschaft 2'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
     end
   end
 end

@@ -25,7 +25,6 @@ object frm_ArtikeleigenschaftUebersicht: Tfrm_ArtikeleigenschaftUebersicht
     Align = alTop
     Caption = 'pnl_Artikel'
     TabOrder = 0
-    ExplicitWidth = 862
   end
   object pnl_Client: TPanel
     Left = 0
@@ -35,10 +34,6 @@ object frm_ArtikeleigenschaftUebersicht: Tfrm_ArtikeleigenschaftUebersicht
     Align = alClient
     Caption = 'pnl_Client'
     TabOrder = 1
-    ExplicitLeft = 320
-    ExplicitTop = 96
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object grd: TAdvStringGrid
       AlignWithMargins = True
       Left = 4
@@ -57,6 +52,7 @@ object frm_ArtikeleigenschaftUebersicht: Tfrm_ArtikeleigenschaftUebersicht
       ScrollBars = ssBoth
       TabOrder = 0
       HoverRowCells = [hcNormal, hcSelected]
+      OnGetCellColor = grdGetCellColor
       OnGetAlignment = grdGetAlignment
       OnCheckBoxClick = grdCheckBoxClick
       ActiveCellFont.Charset = DEFAULT_CHARSET
@@ -145,10 +141,8 @@ object frm_ArtikeleigenschaftUebersicht: Tfrm_ArtikeleigenschaftUebersicht
       SearchFooter.MatchCaseCaption = 'Match case'
       SortSettings.DefaultFormat = ssAutomatic
       Version = '7.4.6.3'
-      ExplicitLeft = 3
-      ExplicitTop = 3
-      ExplicitWidth = 643
-      ExplicitHeight = 244
+      ExplicitLeft = 8
+      ExplicitTop = 6
     end
   end
 end

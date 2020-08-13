@@ -29,6 +29,8 @@ type
     procedure FormShow(Sender: TObject);
     procedure grdGetAlignment(Sender: TObject; ARow, ACol: Integer;
       var HAlign: TAlignment; var VAlign: TVAlignment);
+    procedure grdGetCellColor(Sender: TObject; ARow, ACol: Integer;
+      AState: TGridDrawState; ABrush: TBrush; AFont: TFont);
   private
     fArId: Integer;
     fArtikel: TDBArtikel;
@@ -137,6 +139,22 @@ procedure Tfrm_ArtikeleigenschaftUebersicht.grdGetAlignment(Sender: TObject;
 begin
   if ACol = fCol.CheckBox then
     HAlign := taCenter;
+end;
+
+procedure Tfrm_ArtikeleigenschaftUebersicht.grdGetCellColor(Sender: TObject;
+  ARow, ACol: Integer; AState: TGridDrawState; ABrush: TBrush; AFont: TFont);
+var
+  x: TViewEigenschaft;
+begin
+  if grd.Objects[0, ARow] = nil then
+    exit;
+  x := TViewEigenschaft(grd.Objects[0, ARow]);
+  if x = nil then
+    exit;
+  if x.Neu then
+    AFont.Color := clBlue
+  else
+    AFont.Color := clBlack;
 end;
 
 procedure Tfrm_ArtikeleigenschaftUebersicht.LadeSpaltenBreite;

@@ -15,6 +15,7 @@ type
     destructor Destroy; override;
     property Item[Index:Integer]: TDBEigenschaft read getItem;
     procedure ReadAll(aEI_EN_Id: Integer);
+    procedure ReadAll2;
   end;
 
 implementation
@@ -62,5 +63,25 @@ begin
   end;
 end;
 
+
+procedure TDBEigenschaftList.ReadAll2;
+var
+  x: TDBEigenschaft;
+begin
+  fList.Clear;
+  fQuery.Close;
+  try
+    fQuery.SQL.Text := 'select * from eigenschaft order by ei_match';
+    fquery.Open;
+    while not fQuery.Eof do
+    begin
+      x := TDBEigenschaft.Create(nil);
+      x.LoadByQuery(fquery);
+      fList.Add(x);
+      fQuery.Next;
+    end;
+  finally
+  end;
+end;
 
 end.

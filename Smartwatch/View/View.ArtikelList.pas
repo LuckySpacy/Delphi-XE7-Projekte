@@ -52,7 +52,7 @@ begin
     sql := ' select * from artikel' +
            ' join firmaartikel on ar_id = fa_ar_id and fa_fi_id = ' + IntToStr(aFi_Id) +
            ' where ar_sa_id = ' + IntToStr(aSa_Id) +
-           ' order by ar_datum desc, ar_match';
+           ' order by ar_id desc, ar_datum desc, ar_match';
 
     fQuery.SQL.Text := Sql;
     fquery.Open;

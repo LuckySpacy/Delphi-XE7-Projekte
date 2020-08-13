@@ -9,6 +9,7 @@ type
   TViewEigenschaftList = class(TDBBaseList)
   private
     function getItem(Index: Integer): TViewEigenschaft;
+    procedure setFieldNeu;
   protected
   public
     constructor Create(AOwner: TComponent); override;
@@ -71,6 +72,7 @@ begin
 end;
 
 
+
 procedure TViewEigenschaftList.Filter(aValue: string);
 var
   x: TViewEigenschaft;
@@ -120,10 +122,43 @@ begin
       x := TViewEigenschaft.Create(nil);
       x.LoadByQuery(fquery);
       fList.Add(x);
+      x.Update :=  fquery.FieldByName('ae_update').AsDateTime;
       fQuery.Next;
     end;
+    setFieldNeu;
   finally
   end;
+end;
+
+
+procedure TViewEigenschaftList.setFieldNeu;
+var
+  i1: Integer;
+  Max: TDateTime;
+  Min: TDateTime;
+  x: TViewEigenschaft;
+begin
+  Max := 0;
+  Min := now;
+  for i1 := 0 to fList.Count -1 do
+  begin
+    x := TViewEigenschaft(fList.Items[i1]);
+    x.Neu := false;
+    if x.Update > Max then
+      Max := x.Update;
+    if x.Update < Min then
+      Min := x.Update;
+  end;
+  if Min = Max then
+    exit;
+
+  for i1 := 0 to fList.Count -1 do
+  begin
+    x := TViewEigenschaft(fList.Items[i1]);
+    if x.Update = Max then
+      x.Neu := true;
+  end;
+
 end;
 
 end.
